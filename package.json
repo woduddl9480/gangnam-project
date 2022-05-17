@@ -4,11 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-<<<<<<< HEAD
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12",
-=======
->>>>>>> a307fdfeb939e7f2f150b9940ff7eacf3e196e9d
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -22,11 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-<<<<<<< HEAD
     "test": "echo"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> a307fdfeb939e7f2f150b9940ff7eacf3e196e9d
   },
   "repository": {
     "type": "git",
