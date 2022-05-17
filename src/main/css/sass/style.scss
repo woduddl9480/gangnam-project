@@ -3,6 +3,6 @@
 @import './kkami';
 
 .style{
-    color: $blue;
+    color: blue;
     @include flex;
 }

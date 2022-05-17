@@ -1,5 +1,11 @@
-@mixin flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin inner($pst: relative, $mxw: 1200px) {
+    position: $pst;
+    max-width: $mxw;
+    width: 100%;
+    margin: 0 auto;
+}
+@mixin flex($display: flex, $justify: space-between, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
 }
