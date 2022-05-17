@@ -60,13 +60,13 @@ function handleError(err) {
 //     .pipe(browserSync.reload({ stream : true }));
 // });
 
-gulp.task('connect-sync', function() {
-    connect.server({}, function (){
-      browserSync({
-        proxy: 'localhost:8080'
-      });
-    });
-});
+// gulp.task('connect-sync', function() {
+//     connect.server({}, function (){
+//       browserSync({
+//         proxy: 'localhost:8080'
+//       });
+//     });
+// });
 
 // gulp.task('gulp_js', function(){
 //     return gulp.src(paths.dev.js, {sourcemaps: true})
