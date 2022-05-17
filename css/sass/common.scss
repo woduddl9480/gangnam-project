@@ -4,4 +4,8 @@
 
 .inner {
     @include inner;
+} 
+
+.font_orange {
+    color: $font_orange;
 }
