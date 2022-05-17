@@ -15,8 +15,8 @@ var gulp = require('gulp'),
 // const using = require('gulp-using');  
 var babel = require('gulp-babel');
 var sass = require('gulp-sass')(require('sass'));
-var devsrc = './src/main/css/';
-var pubsrc = './src/main/css/';
+var devsrc = './css/';
+var pubsrc = './css/';
 var paths = {
     "dev" : {
         "css" : devsrc + 'sass/*.scss'
