@@ -137,8 +137,13 @@ gulp.task('clean', function(){
 //     return browserSync.init({ port : 8001, server: { baseDir: './' } });
 // });
 
+<<<<<<< HEAD
 gulp.task('default', gulp.parallel( 'gulp_css','babel', 'gulp_watch'  ));
 gulp.task('dev',gulp.parallel('clean', 'gulp_css' , 'babel', 'gulp_watch' ))
+=======
+gulp.task('default', gulp.parallel('gulp_css','babel', 'gulp_watch'  ));
+gulp.task('dev',gulp.parallel('clean','gulp_css' , 'babel', 'gulp_watch' ))
+>>>>>>> a307fdfeb939e7f2f150b9940ff7eacf3e196e9d
 
 //아래 설치하기
 // npm i gulp gulp-uglify gulp-minify-css gulp-clean-css del gulp-connect-php browser-sync gulp-babel gulp-sass sass @babel/preset-env @babel/core
