@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    vertical-align: top;
+    outline: 0
+}
+
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    vertical-align: top;
+    outline: 0
+}
+
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #222;
+    letter-spacing: -.5px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-print-color-adjust: exact
+}
+
+strong {
+    font-weight: 700
+}
+
+li,
+ol,
+ul {
+    list-style: none;
+    margin: 0
+}
+
+hr,
+img {
+    border: none
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed
+}
+
+td,
+th {
+    vertical-align: middle
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    -moz-border-radius: 0
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 30px 0 13px;
+    background-image: url(/img/portal/2022/main/select_arrow.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 14px center
+}
+
+select::-ms-expand {
+    display: none
+}
+
+a,
+button {
+    cursor: pointer
+}
+
+button,
+input[type=button],
+input[type=file],
+input[type=image],
+input[type=reset],
+input[type=submit] {
+    border: none;
+    background: 0 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+input::placeholder {
+    color: #aaa
+}
+
+input::-webkit-input-placeholder {
+    color: #aaa
+}
+
+input:-ms-input-placeholder {
+    color: #aaa
+}
+
+input:-mos-input-placeholder {
+    color: #aaa
+}
+
+label {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400
+}
+
+input[type=checkbox]+label:before {
+    content: "";
+    position: inherit;
+    left: auto;
+    top: auto;
+    width: inherit;
+    height: inherit;
+    border: none;
+    border-radius: 0;
+    background: 0 0
+}
+
+input[type=checkbox]:checked+label:before {
+    background: 0 0;
+    border: none
+}
+
+caption,
+hr,
+legend {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background: 0 0;
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+    opacity: 0
+}
+
+fieldset,
+iframe {
+    border: none
+}
+
+sub,
+sup {
+    line-height: 1
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit
+}
+
+a:focus {
+    text-decoration: none;
+    color: inherit
+}
+
+.btn {
+    padding: 0
+}
+
+.teacher {
+    background: 0 0
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin: 0
+}
+
+p {
+    margin: 0
+}
+
+address {
+    line-height: inherit;
+    margin: 0
+}
+
+.small {
+    font-size: inherit
+}
+
+.slick-dotted.slick-slider {
+    margin: 0
+}
+
+.swiper-wrapper {
+    height: inherit
+}
+
+.swiper-slide {
+    height: inherit
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+
+.flex-container>* {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto
+}
+
+.flex-item-1 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.flex-item-2 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2
+}
+
+.flex-item-3 {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3
+}
+
+.flex-direction-row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.flex-direction-col {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-direction-rowre {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.flex-direction-colre {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+}
+
+.flex-wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.flex-nowrap {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+.flex-justify-start {
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.flex-justify-end {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.flex-justify-center {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.flex-justify-between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.flex-justify-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.flex-align-start {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.flex-align-end {
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.flex-align-center {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.flex-align-baseline {
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline
+}
+
+.flex-align-stretch {
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.flex-acontent-start {
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start
+}
+
+.flex-acontent-end {
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end
+}
+
+.flex-acontent-center {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center
+}
+
+.flex-acontent-between {
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between
+}
+
+.flex-acontent-around {
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around
+}
+
+.flex-acontent-stretch {
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+
+.flex-item-align-start {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.flex-item-align-end {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end
+}
+
+.flex-item-align-center {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+.flex-item-align-baseline {
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline
+}
+
+.flex-item-align-stretch {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch
+}

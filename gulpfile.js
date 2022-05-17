@@ -75,7 +75,7 @@ gulp.task('connect-sync', function() {
 //     .pipe( stripDebug() )
 //     .pipe(plumber()).on('error', handleError)
 //     .pipe(gulp.dest(paths.pub.js))
-//     .pipe(browserSync.reload({ stream : true }));
+//     .pipe(browserSync.reload({ stream : true }));    
     
 
 // });
@@ -140,5 +140,5 @@ gulp.task('clean', function(){
 gulp.task('default', gulp.parallel('connect-sync', 'gulp_css','babel', 'gulp_watch'  ));
 gulp.task('dev',gulp.parallel('clean','connect-sync', 'gulp_css' , 'babel', 'gulp_watch' ))
 
-
+//아래 설치하기
 // npm i gulp gulp-uglify gulp-minify-css gulp-clean-css del gulp-connect-php browser-sync gulp-babel gulp-sass sass @babel/preset-env @babel/core
