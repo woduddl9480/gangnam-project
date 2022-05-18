@@ -3,9 +3,6 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 
+.wrap {overflow: hidden; position: relative; min-width: 1200px; min-height: 100vh;}
 .inner {position:relative; max-width:1200px; width:100%; margin:0 auto}
-
-.bar {width: 1px; height: 10px; background-color: #dcdcdc;}
-
-
 .font_orange {color:#ea563a!important;}
