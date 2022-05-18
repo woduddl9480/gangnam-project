@@ -183,8 +183,12 @@ var schoolType = '/High';
 		.header_renewal .header_top .inner {display: flex; justify-content: space-between; align-items: center; height: 47px;}
 		.header_renewal .header_top .inner .info_btn {}
 		.header_renewal .header_top .inner .info_btn ul {display: flex;}
-		.header_renewal .header_top .inner .info_btn ul li {}
+		.header_renewal .header_top .inner .info_btn ul li {position: relative; padding-left: 12px; margin-left: 12px;}
 		.header_renewal .header_top .inner .info_btn ul li a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 14px; color: #333;}
+		.header_renewal .header_top .inner .info_btn ul li::before {content: ''; position: absolute; top: 0; left: 0; width: 1px; height: 10px; background-color: #dcdcdc;}
+		.header_renewal .header_top .inner .info_btn ul li:first-of-type {padding-left: 0; margin-left: 0;}
+		.header_renewal .header_top .inner .info_btn ul li:first-of-type::before {display: none;}
+
 		.header_renewal .header_top .inner .user_btn {}
 		.header_renewal .header_top .inner .user_btn ul {display: flex;}
 		.header_renewal .header_top .inner .user_btn ul li {position: relative; padding-left: 12px; margin-left: 12px;}
@@ -195,6 +199,14 @@ var schoolType = '/High';
 		
 		.header_renewal .header_logo {}
 		.header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center; height: 88px;}
+		.header_renewal .header_logo .inner .logo {display: flex; align-items: center;}
+		.header_renewal .header_logo .inner .logo h1 {margin-right: 20px;}
+		.header_renewal .header_logo .inner .switch_area {display: flex; align-items: center;}
+		.header_renewal .header_logo .inner .switch_area > div {}
+		.header_renewal .header_logo .inner .switch_area > div.txt {margin-right: 15px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #17978b;}
+		.header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border: 2px solid #17978b; border-radius: 20px;}
+		.header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #17978b; text-align: center;}
+		.header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); background-color: #17978b; border-radius: 18px; color: #fff;}
 		
 		.header_renewal .header_gnb .inner {display: flex; justify-content: center; align-items: center; height: 53px;}
 		.header_renewal .header_gnb .inner .gnb_area {}
@@ -204,7 +216,24 @@ var schoolType = '/High';
 		.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li:first-of-type {margin-left: 0;}
 		.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #333;}
 
+		.header_search {}
+		.header_search .inner {display: flex; justify-content: space-between; align-items: center;}
+		.header_search .inner .left {display: flex; justify-content: center; align-items: center;}
+		.header_search .inner .left .search_area {}
+		.header_search .inner .left .search_area > div {position: relative;}
+		.header_search .inner .left .search_area > div input[type="text"] {width: 300px; height: 48px; padding: 0 0 0 30px; border: 2px solid #28426f; border-radius: 25px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; }
+		.header_search .inner .left .search_area > div input[type="text"]::placeholder {color: #888;}
+		.header_search .inner .left .search_area > div input[type="text"]::-webkit-input-placeholder {color: #888;}
+		.header_search .inner .left .search_area > div input[type="text"]:-ms-input-placeholder {color: #888;}
+		.header_search .inner .left .search_area > div input[type="text"]:-mos-input-placeholder {color: #888;}
+		
+		.header_search .inner .left .search_area > div input[type="submit"] {position: absolute; top: 0; right: 0;}
 
+		.header_search .inner .right .link_area {}
+		.header_search .inner .right .link_area ul {display: flex; align-items: center;}
+		.header_search .inner .right .link_area ul li {margin-right: 10px;}
+		.header_search .inner .right .link_area ul li:last-of-type {margin-right: 0;}
+		.header_search .inner .right .link_area ul li a {display: flex; justify-content: center; align-items: center; width: 94px; height: 32px; background-color: #333; border-radius: 18px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #fff;}
 
 	</style>
 	<header class="header_renewal">
@@ -231,19 +260,19 @@ var schoolType = '/High';
 			<div class="inner">
 				<div class="logo">
 					<h1>
-						<a href=""><img src="/220518/images/logo.png" alt=""></a>
+						<a href="/NGLMS/High/UserMain.do"><img src="/220518/images/logo.png" alt=""></a>
 					</h1>
 					<span>
 						<a href="/NGLMS/High/UserMain.do"><img src="/220518/images/memewe.png" alt=""></a>
 					</span>
 				</div>
 				<div class="switch_area">
-					<div>
+					<div class="txt">
 						중등부
 					</div>
-					<div>
-						<span>ON</span>
-						<span>OFF</span>
+					<div class="onoff">
+						<a href="">ON</a>
+						<a href="" class="active">OFF</a>
 					</div>
 				</div>
 			</div>
@@ -268,7 +297,7 @@ var schoolType = '/High';
 
 							</li>
 							<li>
-								<a href="">강남인강Pick</a>
+								<a href="" class="font_blue">강남인강Pick</a>
 
 							</li>
 							<li>
@@ -290,21 +319,27 @@ var schoolType = '/High';
 		</div>
 		<div class="header_search">
 			<div class="inner">
-				<div>
-					<span><input type="text"></span>
-					<span><input type="submit"></span>
+				<div class="left">
+					<div class="search_area">
+						<div>
+							<input type="text" placeholder="검색어를 입력해주세요.">
+							<input type="submit">
+						</div>
+					</div>
+					<div class="">
+						<ul>
+							<li><a href="">빠른 강좌 찾기</a></li>
+							<li><a href="">빠른 교재 찾기</a></li>
+						</ul>
+					</div>
 				</div>
-				<div>
-					<ul>
-						<li><a href="">빠른 강좌 찾기</a></li>
-						<li><a href="">빠른 교재 찾기</a></li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li><a href="">학습교재</a></li>
-						<li><a href="">커리큘럼</a></li>
-					</ul>
+				<div class="right">
+					<div class="link_area">
+						<ul>
+							<li><a href="">학습교재</a></li>
+							<li><a href="">커리큘럼</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
