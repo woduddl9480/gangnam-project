@@ -11,7 +11,7 @@
 .container_cs .cs_left li:nth-of-type(4) {background-image: url(/220518/images/4.png); width: 49px; height: 48px; background-repeat: no-repeat;}
 .container_cs .cs_left li:nth-of-type(5) {background-image: url(/220518/images/5.png); width: 49px; height: 48px; background-repeat: no-repeat;}
 .container_cs .cs_left li:nth-of-type(6) {background-image: url(/220518/images/6.png); width: 49px; height: 48px; background-repeat: no-repeat;}
-.container_cs .cs_right li {background-image: url(/220518/images/tel_icon.png); width: 90px; height: 85px; background-repeat: no-repeat;}
+.container_cs .cs_right li {background-image: url(/220518/images/tel_icon.png); background-repeat: no-repeat;}
 
 /* footer */
 .footer_renewal{width:100%; background:#272a2e;font-family: "NanumSquare", sans-serif;}
