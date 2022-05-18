@@ -1,7 +1,6 @@
-
-
 .inner {position:relative; max-width:1200px; width:100%; margin:0 auto}
 
+.bar {width: 1px; height: 10px; background-color: #dcdcdc;}
 
 
 .font_orange {color:#ea563a!important;}

@@ -174,16 +174,27 @@ var schoolType = '/High';
 <div class="wrap">
 
 	<!-- header -->
-	<header class="header">
+	<style>
+		.header_k {}
+		.header_k .header_top {}
+		.header_k .header_top .inner {display: flex; justify-content: space-between; align-items: center; height: 47px;}
+		.header_k .header_top .inner .info_btn {}
+		.header_k .header_top .inner .info_btn ul {display: flex;}
+		.header_k .header_top .inner .info_btn ul li {}
+		.header_k .header_top .inner .user_btn {}
+		.header_k .header_top .inner .user_btn ul {display: flex;}
+		.header_k .header_top .inner .user_btn ul li {}
+	</style>
+	<header class="header_k">
 		<div class="header_top">
 			<div class="inner">
-				<div class="">
+				<div class="info_btn">
 					<ul>
 						<li><a href="">강남인강 소개</a></li>
 						<li><a href="" class="font_orange">수능 D-269</a></li>
 					</ul>
 				</div>
-				<div class="">
+				<div class="user_btn">
 					<ul>
 						<li><a href="">로그인</a></li>
 						<li><a href="">회원가입</a></li>
@@ -217,12 +228,62 @@ var schoolType = '/High';
 		</div>
 		<div class="header_gnb">
 			<div class="inner">
+				<div class="gnb_area">
+					<nav>
+						<ul class="depth01">
+							<li>
+								<a href="">고3/N수</a>
+								<!-- <ul class="depth01">
+									<li><a href=""></a></li>
+								</ul> -->
+							</li>
+							<li>
+								<a href="">고2/고1</a>
 
+							</li>
+							<li>
+								<a href="">선생님</a>
+
+							</li>
+							<li>
+								<a href="">강남인강Pick</a>
+
+							</li>
+							<li>
+								<a href="">대학맛보기</a>
+
+							</li>
+							<li>
+								<a href="">입시정보</a>
+
+							</li>
+							<li>
+								<a href="">커뮤니티</a>
+
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 		<div class="header_search">
 			<div class="inner">
-
+				<div>
+					<span><input type="text"></span>
+					<span><input type="submit"></span>
+				</div>
+				<div>
+					<ul>
+						<li><a href="">빠른 강좌 찾기</a></li>
+						<li><a href="">빠른 교재 찾기</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="">학습교재</a></li>
+						<li><a href="">커리큘럼</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
