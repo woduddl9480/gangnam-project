@@ -13,9 +13,10 @@
 .customer_service_area .cs_left li:nth-of-type(5) {background-image: url(/220518/images/5.png); background-repeat: no-repeat;}
 .customer_service_area .cs_left li:nth-of-type(6) {background-image: url(/220518/images/6.png); background-repeat: no-repeat;}
 .customer_service_area .cs_left li background-image {padding: 32px 44px;}
-.customer_service_area .cs_right {float: right;}
-.customer_service_area .cs_right li {background-image: url(/220518/images/tel_icon.png); background-repeat: no-repeat;}
-
+.customer_service_area .cs_right {float: right; padding: 29px 30px; background-color: #f1f6ff; border-radius: 10px;}
+.customer_service_area .cs_right {background-image: url(/220518/images/tel_icon.png); background-repeat: no-repeat; font-family: "NanumSquare", sans-serif;}
+.customer_service_area .cs_right .service_name {font-size: 18px; color: #333; font-weight: bold;}
+.customer_service_area .cs_right .service_time {font-size: 16px; color: #333; font-weight: 400;}
 /* footer */
 .footer_renewal{width:100%; background:#272a2e;font-family: "NanumSquare", sans-serif;}
 .footer_renewal > div{margin: 0 auto;padding: 35px 0 30px;}
