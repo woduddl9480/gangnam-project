@@ -90,7 +90,9 @@ function handleError(err) {
 gulp.task('gulp_css', function(){
     return gulp.src(paths.dev.css)
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCss({ compatibiliy: 'ie8' }))
+    /* css min 처리 주석
+     .pipe(cleanCss({ compatibiliy: 'ie8' }))  
+    */
     .pipe(gulp.dest(paths.pub.css))
     .pipe(browserSync.reload({ stream : true }));
 });
