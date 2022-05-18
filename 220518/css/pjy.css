@@ -1,16 +1,18 @@
+.clearfix:after{content:''; display:block; clear: both;}
+
 /* footer */
-.footer{width:100%; min-width:1170px; background:#272a2e;font-family: Nanum Sqare;}
+.footer{width:100%; min-width:1170px; background:#272a2e;font-family: "NanumSquare", sans-serif;}
 .footer > div{width:1170px;margin: 0 auto;padding: 35px 0 30px;}
-.logo_area{ float: left;margin-right: 100px;margin-top: 25px;}
-.footer_info {float: left;padding: 0 0;}
-.footer_info .footer_link li {float: left;position: relative;padding-right:16px;margin-right: 17px;}
-.footer_info .footer_link li:after {content:"";display: block;width: 1px;height: 12px;background: #d9d9d9;position: absolute;top:2px;right:0;}
-.footer_info .footer_link li:first-child+li+li+li+li:after,
-.footer_info .footer_link li:first-child+li+li+li+li+li:after {display:none;}
-.footer_info .footer_link li:first-child+li+li+li+li {margin-right:20px}
-.footer_info .footer_link li a {font-size: 13px;color:#888;font-weight: bold;}
-.footer_info .footer_link li a:hover {text-decoration: underline;}
-.footer_info .footer_link li:first-child a{color:#888}
-.footer_info .footer_link li:first-child+li+li+li a{color:#888;}
-.footer_info address {margin-top: 15px;}
-.footer_info address p {font-size: 13px;color: #888;line-height: 20px;}
+.footer_logoArea{ float: left;margin-right: 100px;margin-top: 25px;}
+.footer_box {float: left;padding: 0 0;}
+.footer_box .footer_sns li {float: left;position: relative;padding-right:16px;margin-right: 17px;}
+.footer_box .footer_sns li:after {content:"";display: block;width: 1px;height: 12px;background: #d9d9d9;position: absolute;top:2px;right:0;}
+.footer_box .footer_sns li:first-child+li+li+li+li:after,
+.footer_box .footer_sns li:first-child+li+li+li+li+li:after {display:none;}
+.footer_box .footer_sns li:first-child+li+li+li+li {margin-right:20px}
+.footer_box .footer_sns li a {font-size: 14px;color:#888;font-weight: bold;}
+.footer_box .footer_sns li a:hover {text-decoration: underline;}
+.footer_box .footer_sns li:first-child a{color:#888}
+.footer_box .footer_sns li:first-child+li+li+li a{color:#888;}
+.footer_box address {margin-top: 15px;}
+.footer_box address p {font-size: 13px;color: #888;line-height: 20px;}
