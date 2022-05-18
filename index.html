@@ -207,31 +207,14 @@ var schoolType = '/High';
 		.header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border: 2px solid #17978b; border-radius: 20px;}
 		.header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #17978b; text-align: center;}
 		.header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); background-color: #17978b; border-radius: 18px; color: #fff;}
-		.header_k {}
-		.header_k  > div {border-bottom: 1px solid #f0f0f0;}
-		.header_k .header_top {}
-		.header_k .header_top .inner {display: flex; justify-content: space-between; align-items: center; height: 47px;}
-		.header_k .header_top .inner .info_btn {}
-		.header_k .header_top .inner .info_btn ul {display: flex;}
-		.header_k .header_top .inner .info_btn ul li {}
-		.header_k .header_top .inner .info_btn ul li a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 14px; color: #333;}
-		.header_k .header_top .inner .user_btn {}
-		.header_k .header_top .inner .user_btn ul {display: flex;}
-		.header_k .header_top .inner .user_btn ul li {position: relative; padding-left: 12px; margin-left: 12px;}
-		.header_k .header_top .inner .user_btn ul li::before {content: ''; position: absolute; top: 0; left: 0; width: 1px; height: 10px; background-color: #dcdcdc;}
-		.header_k .header_top .inner .user_btn ul li:first-of-type {padding-left: 0; margin-left: 0;}
-		.header_k .header_top .inner .user_btn ul li:first-of-type::before {display: none;}
-		.header_k .header_top .inner .user_btn ul li a {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #888;}
 		
-		.header_k .header_logo {}
-		.header_k .header_logo .inner {display: flex; justify-content: space-between; align-items: center; height: 88px;}
-		
-		.header_k .header_gnb .inner {display: flex; justify-content: center; align-items: center; height: 53px;}
-		.header_k .header_gnb .inner .gnb_area {}
-		.header_k .header_gnb .inner .gnb_area nav {}
-		.header_k .header_gnb .inner .gnb_area nav .depth01 {display: flex;}
-		.header_k .header_gnb .inner .gnb_area nav .depth01 > li {}
-		.header_k .header_gnb .inner .gnb_area nav .depth01 > li > a {}
+		.header_renewal .header_gnb .inner {display: flex; justify-content: center; align-items: center; height: 53px;}
+		.header_renewal .header_gnb .inner .gnb_area {}
+		.header_renewal .header_gnb .inner .gnb_area nav {}
+		.header_renewal .header_gnb .inner .gnb_area nav .depth01 {display: flex;}
+		.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li {margin-left: 85px;}
+		.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li:first-of-type {margin-left: 0;}
+		.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #333;}
 
 		.header_search {}
 		.header_search .inner {display: flex; justify-content: space-between; align-items: center;}
@@ -253,7 +236,7 @@ var schoolType = '/High';
 		.header_search .inner .right .link_area ul li a {display: flex; justify-content: center; align-items: center; width: 94px; height: 32px; background-color: #333; border-radius: 18px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #fff;}
 
 	</style>
-	<header class="header_k">
+	<header class="header_renewal">
 		<div class="header_top">
 			<div class="inner">
 				<div class="info_btn">
@@ -364,50 +347,8 @@ var schoolType = '/High';
 	<!-- //header -->
 
 	<!-- container -->
-	<div class="container_cs inner">
-		<div class="cs_left">
-			<ul>
-				<li class="voice">
-					<a href="">
-						<p class="cs_name">고객의 소리</p>
-					</a>
-				</li>
-				<li class="faq">
-					<a href="">
-						<p class="cs_name">FAQ</p>
-					</a>
-				</li>
-				<li class="chat">
-					<a href="">
-						<p class="cs_name">챗봇상담</p>
-					</a>
-				</li>
-				<li class="remote">
-					<a href="">
-						<p class="cs_name">원격지원</p>
-					</a>
-				</li>
-				<li class="guide">
-					<a href="">
-						<p class="cs_name">이용가이드</p>
-					</a>
-				</li>
-				<li class="download">
-					<a href="">
-						<p class="cs_name">다운로드</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="cs_right">
-			<ul>
-				<li>
-					<p>고객만족센터</p>
-					<p>1577-9100</p>
-					<p>365일 운영 10:00 ~ 24:00</p>
-				</li>
-			</ul>
-		</div>
+	<div class="container_renewal">
+
 	</div>
 	<!-- //container -->
 
