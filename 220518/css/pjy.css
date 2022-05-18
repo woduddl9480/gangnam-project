@@ -2,7 +2,7 @@
 
 /* footer */
 .footer_renewal{width:100%; background:#272a2e;font-family: "NanumSquare", sans-serif;}
-.footer_renewal > div{width:1170px;margin: 0 auto;padding: 35px 0 30px;}
+.footer_renewal > div{margin: 0 auto;padding: 35px 0 30px;}
 .footer_logoArea{ float: left;margin-right: 100px;margin-top: 25px;}
 .footer_box {float: left;padding: 0 0;}
 .footer_box .footer_sns li {float: left;position: relative;padding-right:16px;margin-right: 17px;}
