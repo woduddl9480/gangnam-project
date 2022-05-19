@@ -48,3 +48,7 @@
 .notice_area .notice_title .notice_button {position: absolute; top: 0; right: 0;}
 .notice_area .notice_title .notice_button .button_plus {background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
 .notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 10px;}
+.notice_area .notice_content ul {display: flex;}
+.notice_area .notice_content ul li::before { content: ""; display: block; width: 1px; height: 40px; background-color: #ddd; position: absolute; top: 78px; left: 50%;}
+.notice_area .notice_content ul li a {font-size: 16px; color:#333; font-weight: bold;}
+.notice_area .notice_content ul li span {font-size: 14px; color: #888;}
