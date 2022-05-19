@@ -69,6 +69,86 @@ $(document).ready(function(){
     });
     /* //국어 수강후기 */
 
+
+    /* 영어 수강후기 */
+    $('.english_review').on('init', function(event, slick) {
+        $('.english_counter').append('<span class="english_current"></span><span class="english_slash">/</span><span class="english_total"></span>');
+        $('.english_current').text(slick.currentSlide + 1);
+        $('.english_total').text(slick.slideCount);
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.english_prev'), 
+        nextArrow: $('.english_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.english_current').text(nextSlide + 1);
+    });
+    /* //영어 수강후기 */
+
+    
+    /* 수학 수강후기 */
+    $('.math_review').on('init', function(event, slick) {
+        $('.math_counter').append('<span class="math_current"></span><span class="math_slash">/</span><span class="math_total"></span>');
+        $('.math_current').text(slick.currentSlide + 1);
+        $('.math_total').text(slick.slideCount);
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.math_prev'), 
+        nextArrow: $('.math_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.math_current').text(nextSlide + 1);
+    });
+    /* //수학 수강후기 */
+
+    
+    /* 사회 수강후기 */
+    $('.society_review').on('init', function(event, slick) {
+        $('.society_counter').append('<span class="society_current"></span><span class="society_slash">/</span><span class="society_total"></span>');
+        $('.society_current').text(slick.currentSlide + 1);
+        $('.society_total').text(slick.slideCount);
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.society_prev'), 
+        nextArrow: $('.society_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.society_current').text(nextSlide + 1);
+    });
+    /* //사회 수강후기 */
+
+    
+    /* 과학 수강후기 */
+    $('.science_review').on('init', function(event, slick) {
+        $('.science_counter').append('<span class="science_current"></span><span class="science_slash">/</span><span class="science_total"></span>');
+        $('.science_current').text(slick.currentSlide + 1);
+        $('.science_total').text(slick.slideCount);
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.science_prev'), 
+        nextArrow: $('.science_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.science_current').text(nextSlide + 1);
+    });
+    /* //과학 수강후기 */
+
 });
 
     

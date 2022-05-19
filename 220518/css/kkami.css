@@ -95,3 +95,58 @@
 /* //메인 배너 */
 
 
+
+.container_renewal {}
+/* 강좌별 BEST */
+.best_review_area {margin-top: 40px;}
+.best_review_area .inner {}
+.best_review_area .inner {}
+.best_review_area .inner .tab_btn_area {position: absolute; top: 0; left: 0; width: 810px; text-align: right;}
+.best_review_area .inner .tab_btn_area .tab_right {display: inline-block;}
+.best_review_area .inner .tab_btn_area ul {display: flex; overflow: hidden; height: 36px; background-color: #f8f8f8; border-radius: 15px;}
+.best_review_area .inner .tab_btn_area ul > li {position: relative; width: 100px; height: 100%;}
+.best_review_area .inner .tab_btn_area ul > li::before {content: ''; position: absolute; top: 50%; transform: translateY(-50%); width: 1px; height: 12px; background-color: #ddd;}
+.best_review_area .inner .tab_btn_area ul > li:first-of-type::before {display: none;}
+.best_review_area .inner .tab_btn_area ul > li.active {width: 120px;}
+.best_review_area .inner .tab_btn_area ul > li.active button {background-color: #28426f; border-radius: 15px; color: #fff;}
+.best_review_area .inner .tab_btn_area ul > li button {width: 100%; height: 100%; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #333;}
+.best_review_area .inner .tab_item_area {}
+.best_review_area .inner .tab_item_area h2 {height: 36px; line-height: 36px;}
+.best_review_area .inner .tab_item_area > ul {}
+.best_review_area .inner .tab_item_area > ul > li {visibility: hidden; opacity: 0; height: 0;}
+.best_review_area .inner .tab_item_area > ul > li .list_item {margin-top: 20px;}
+.best_review_area .inner .tab_item_area > ul > li.active {display: flex; visibility: visible; opacity: 1; height: 100%;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best {width: 810px; margin-right: 30px;}						
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul {display: flex; flex-wrap: wrap;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li {flex-shrink: 0; overflow: hidden; width: 250px; height: 305px; margin-right: 30px; margin-bottom: 30px; background-color: #3963ab; border-radius: 11px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li:nth-of-type(3n) {margin-right: 0;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .explanation {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .explanation .color_txt {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .explanation .txt {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .subject {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .hashtag {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .txt_area .teacher {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .img_area {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_best .list_item ul > li .img_area img {}
+/* //강좌별 BEST */
+
+
+
+/* 강좌별 수강후기 */
+
+.best_review_area .inner .tab_item_area > ul > li .lecture_review {width: 360px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .top {display: flex; justify-content: space-between; align-items: center;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item {box-sizing: border-box; height: 200px; margin-top: 20px; background-color: #f8f8f8; border: 1px solid #ddd;; border-radius: 10px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item > a {box-sizing: border-box; display: block; width: 100%; height: 100%; padding: 23px 28px 0;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item:first-of-type {margin-top: 0;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top {display: flex; justify-content: space-between; align-items: center;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left {display: flex; align-items: center;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left .subject {display: flex; justify-content: center; align-items: center; height: 26px; padding: 0 10px; margin-right: 5px; border: 1px solid #28426f; border-radius: 13px; font-weight: 700; font-size: 14px; color: #28426f; letter-spacing: -0.4px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left .teacher {font-size: 14px; color: #333; letter-spacing: -0.4px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .right .star {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .tit_k {margin-top: 15px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .txt_k {max-height: 78px; margin-top: 12px; line-height: 26px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
+/* //강좌별 수강후기 */
