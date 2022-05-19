@@ -302,10 +302,7 @@ var schoolType = '/High';
 
 	<!-- container -->
 	<div class="container_renewal">
-		
-		<style>
-			.container_renewal {}
-		</style>
+				
 		<!-- 메인 배너 -->
 		<div class="main_banner_area">
 			<div class="inner">
@@ -356,11 +353,33 @@ var schoolType = '/High';
 		</div>
 		<!-- //메인 배너 -->
 
-		<!-- 강좌별 BEST -->
-		<div class="lecture_best_area">
+		<!-- 강좌별 BEST, 수강후기 -->
 
+		<style>
+			.container_renewal {}
+			.best_review_area {}
+			.best_review_area .inner {display: flex;}
+			.best_review_area .inner .lecture_best {}
+
+			.best_review_area .inner .lecture_review {}
+		</style>
+		<div class="best_review_area">
+			<div class="inner">
+				<!-- 강좌별 BEST -->
+				<div class="lecture_best">
+					<h2 class="main_tit">강좌별 BEST</h2>
+				</div>
+				<!-- //강좌별 BEST -->
+
+				
+				<!-- 강좌별 수강후기 -->
+				<div class="lecture_review">
+					<h2 class="main_tit">강좌별 수강후기</h2>
+				</div>
+				<!-- //강좌별 수강후기 -->
+			</div>
 		</div>
-		<!-- //강좌별 BEST -->
+		<!-- 강좌별 BEST, 수강후기 -->
 
 		<script>
 			$('.main_slider_for').on('init', function(event, slick) {
