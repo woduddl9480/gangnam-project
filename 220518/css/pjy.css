@@ -50,5 +50,6 @@
 .notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 10px;}
 .notice_area .notice_content ul {display: flex;}
 .notice_area .notice_content ul li::before { content: ""; display: block; width: 1px; height: 40px; background-color: #ddd; position: absolute; top: 78px; left: 50%;}
-.notice_area .notice_content ul li a {font-size: 16px; color:#333; font-weight: bold;}
+.notice_area .notice_content ul li a {width: 420px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; color:#333; font-weight: bold;}
 .notice_area .notice_content ul li span {font-size: 14px; color: #888;}
+.notice_area .notice_content ul li:last-child {padding-left: 65px;}
