@@ -1,3 +1,6 @@
+.mb30 {margin-bottom: 30px;}
+.mt30 {margin-top: 30px;}
+
 .clearfix:after{content:''; display:block; clear: both;}
 
 /* 고객센터 */
@@ -38,3 +41,7 @@
 .footer_box .footer_sns li:first-child+li+li+li a{color:#888;}
 .footer_box .footer_address {margin-top: 15px;}
 .footer_box .footer_address p {font-size: 13px;color: #888;line-height: 20px;}
+
+/* 공지사항 */
+.notice_area h1{font-family: "NanumSquare", sans-serif; font-size: 24px; font-weight: 800;}
+.notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 10px;}
