@@ -5,6 +5,10 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active');
         $('.' + layer).addClass('active').siblings().removeClass('active');
     });
+
+    $('.banner_play_stop button').on('click', function(){
+        $(this).removeClass('active').siblings().addClass('active');
+    });
 });
 
     
