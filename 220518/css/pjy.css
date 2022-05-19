@@ -32,18 +32,17 @@
 .footer_box {float: left;padding: 0 0;}
 .footer_box .footer_sns li {float: left;position: relative;padding-right:16px;margin-right: 17px;}
 .footer_box .footer_sns li::after {content:"";display: block;width: 1px;height: 12px;background: #d9d9d9;position: absolute;top:2px;right:0;}
-.footer_box .footer_sns li:first-child+li+li+li+li:after,
-.footer_box .footer_sns li:first-child+li+li+li+li+li:after {display:none;}
-.footer_box .footer_sns li:first-child+li+li+li+li {margin-right:20px}
+.footer_box .footer_sns li:last-child::after,
+.footer_box .footer_sns li:last-child::after {display:none;}
+.footer_box .footer_sns li:nth-child(5) {margin-right:20px}
 .footer_box .footer_sns li a {font-size: 14px;color:#888;font-weight: bold;}
 .footer_box .footer_sns li a:hover {text-decoration: underline;}
 .footer_box .footer_sns li:first-child a{color:#888}
-.footer_box .footer_sns li:first-child+li+li+li a{color:#888;}
+/* .footer_box .footer_sns li:first-child+li+li+li a{color:#888;} */
 .footer_box .footer_address {margin-top: 15px;}
 .footer_box .footer_address p {font-size: 13px;color: #888;line-height: 20px;}
 
 /* 공지사항 */
-
 .notice_area .notice_title {position: relative;}
 .notice_area .notice_title .notice_button {position: absolute; top: 0; right: 0;}
 .notice_area .notice_title .notice_button .button_plus {background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
