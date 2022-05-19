@@ -79,6 +79,7 @@ var schoolType = '/High';
 <link type="text/css" rel="stylesheet" href="/220518/css/kkami.css">
 <link type="text/css" rel="stylesheet" href="/220518/css/pjy.css">
 
+<script type="text/javascript" src="/220518/js/kkami.js"></script>
 <!-- swiper -->
 <!--
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -271,18 +272,26 @@ var schoolType = '/High';
 							<button type="button"></button>
 						</div>
 					</div>
-					<div class="">
-						<ul>
-							<li><a href="">빠른 강좌 찾기</a></li>
-							<li><a href="">빠른 교재 찾기</a></li>
-						</ul>
+					<div class="search_toggle_k">
+						<div class="btn_area openLayer">
+							<ul>
+								<li><button type="button" data-open="open_layer">빠른 강좌 찾기</button></li>
+								<li><button type="button" data-open="open_layer02">빠른 교재 찾기</button></li>
+							</ul>
+						</div>
+						<div class="toggle_area">
+							<ul>
+								<li class="open_layer">빠른 강좌 찾기 영역</li>
+								<li class="open_layer02">빠른 교재 찾기 영역</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="right">
-					<div class="link_area">
+					<div class="link_area_k">
 						<ul>
-							<li><a href="">학습교재</a></li>
-							<li><a href="">커리큘럼</a></li>
+							<li><a href="/NGLMS/High/LectureBook/Info.do">학습교재</a></li>
+							<li><a href="http://edu.ingang.go.kr/NGLMS/High/High3/PromotionView.do?seq=98467">커리큘럼</a></li>
 						</ul>
 					</div>
 				</div>
@@ -295,7 +304,9 @@ var schoolType = '/High';
 	<div class="container_renewal">
 		
 		<style>
-			.main_banner_area {}
+			.container_renewal {}
+
+			.main_banner_area {padding: 30px 0 0;}
 			.main_banner_area .main_banner {display: flex; height: 359px;}
 			.main_banner_area .main_banner .banner_view {position: relative; width: 950px; height: 100%;}
 			.main_banner_area .main_banner .banner_view .main_slider_for {height: 100%;}
@@ -308,9 +319,8 @@ var schoolType = '/High';
 			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span {display: inline-block; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: rgba(255, 255, 255, .5);}
 			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span.main_current {font-weight: 800; color: #fff;}
 			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span.main_slash {margin: 0 3px;}
-			
 			.main_banner_area .main_banner .main_slider_nav {width: 250px; height: 100%; margin-top: -1px;}
-			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide {box-sizing: border-box; display: flex; justify-content: center; align-items: center; height: 60px; background-color: #0d0d34; border-top: 1px solid #fff; font-family: "NanumSquare", sans-serif; font-size: 15px; color: #fff;}
+			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide {box-sizing: border-box; cursor: pointer; display: flex; justify-content: center; align-items: center; height: 60px; background-color: #0d0d34; border-top: 1px solid #fff; font-family: "NanumSquare", sans-serif; font-size: 15px; color: #fff;}
 			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide:first-of-type {border-top: none;}
 			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {background-color: #066fa7;}
 		</style>
@@ -320,16 +330,16 @@ var schoolType = '/High';
 				<div class="main_banner">
 					<div class="banner_view">
 						<div class="main_slider_for">
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
-							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
+							<div class=""><a href=""><img src="/220518/images/main_banner.png" alt=""></a></div>
 						</div>
 						<div class="banner_btn_area">
 							<div class="main_arrow">
@@ -355,35 +365,35 @@ var schoolType = '/High';
 			</div>
 		</div>
 		<script>
-				$('.main_slider_for').on('init', function(event, slick) {
-					$('.main_counter').append('<span class="main_current"></span><span class="main_slash">/</span><span class="main_total"></span>');
-					$('.main_current').text(slick.currentSlide + 1);
-					$('.main_total').text(slick.slideCount);
-				})
-				.slick({
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: true,
-					fade: true,
-					// vertical: true,
-					prevArrow: $('.main_prev'), 
-					nextArrow: $('.main_next'),
-					asNavFor: '.main_slider_nav'
-				})
-				.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-					$('.main_current').text(nextSlide + 1);
-				});
+			$('.main_slider_for').on('init', function(event, slick) {
+				$('.main_counter').append('<span class="main_current"></span><span class="main_slash">/</span><span class="main_total"></span>');
+				$('.main_current').text(slick.currentSlide + 1);
+				$('.main_total').text(slick.slideCount);
+			})
+			.slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				fade: true,
+				// vertical: true,
+				prevArrow: $('.main_prev'), 
+				nextArrow: $('.main_next'),
+				asNavFor: '.main_slider_nav'
+			})
+			.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+				$('.main_current').text(nextSlide + 1);
+			});
 
-				$('.main_slider_nav').slick({
-					slidesToShow: 6,
-					slidesToScroll: 1,
-					asNavFor: '.main_slider_for',
-					vertical: true,
-					arrows: false,
-					dots: false,
-					centerMode: false,
-					focusOnSelect: true
-				});
+			$('.main_slider_nav').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				asNavFor: '.main_slider_for',
+				vertical: true,
+				arrows: false,
+				dots: false,
+				centerMode: false,
+				focusOnSelect: true
+			});
 		  </script>
 		<!-- //메인 배너 -->
 
