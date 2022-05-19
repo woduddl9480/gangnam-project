@@ -80,8 +80,10 @@ var schoolType = '/High';
 <link type="text/css" rel="stylesheet" href="/220518/css/pjy.css">
 
 <!-- swiper -->
+<!--
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
 <!-- //220518추가 -->
 
 
@@ -294,53 +296,93 @@ var schoolType = '/High';
 		
 		<style>
 			.main_banner_area {}
-			.main_banner_area .main_banner {position: relative; width: 950px; height: 360px;}
-			.main_banner_area .main_banner .banner_btn_area {position: absolute; top: 0; right: 0; z-index: 10; display: flex; justify-content: center; align-items: center; width: 110px; height: 30px; background-color: rgba(0, 0, 0, .5); border-radius: 15px;}
-			.main_banner_area .main_banner .banner_btn_area .main_next {}
-			.main_banner_area .main_banner .banner_btn_area .main_prev {}
-			.main_banner_area .main_banner .banner_btn_area .main_counter {}
-
-			/*
-			.main_banner_area .main_banner .swiper-button-prev {background-image: url(/220518/images/chevron-up.png);}
-			.main_banner_area .main_banner .swiper-button-next {background-image: url(/220518/images/chevron-down.png);}
-			*/
+			.main_banner_area .main_banner {display: flex; height: 359px;}
+			.main_banner_area .main_banner .banner_view {position: relative; width: 950px; height: 100%;}
+			.main_banner_area .main_banner .banner_view .main_slider_for {height: 100%;}
+			.main_banner_area .main_banner .banner_view .main_slider_for .slick-list {height: 100%;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area {position: absolute; top: 20px; right: 20px; z-index: 10; display: flex; justify-content: center; align-items: center; width: 110px; height: 30px; background-color: rgba(0, 0, 0, .5); border-radius: 15px;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_arrow {margin-right: 13px;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_arrow .main_prev {display: inline-block; margin-right: 10px;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_arrow .main_next {display: inline-block;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter {}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span {display: inline-block; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: rgba(255, 255, 255, .5);}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span.main_current {font-weight: 800; color: #fff;}
+			.main_banner_area .main_banner .banner_view .banner_btn_area .main_counter span.main_slash {margin: 0 3px;}
+			
+			.main_banner_area .main_banner .main_slider_nav {width: 250px; height: 100%; margin-top: -1px;}
+			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide {box-sizing: border-box; display: flex; justify-content: center; align-items: center; height: 60px; background-color: #0d0d34; border-top: 1px solid #fff; font-family: "NanumSquare", sans-serif; font-size: 15px; color: #fff;}
+			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide:first-of-type {border-top: none;}
+			.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {background-color: #066fa7;}
 		</style>
 		<!-- 메인 배너 -->
 		<div class="main_banner_area">
 			<div class="inner">
-				<div class="swiper main_banner">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
-						<div class="swiper-slide">Slide 4</div>
-						<div class="swiper-slide">Slide 5</div>
-						<div class="swiper-slide">Slide 6</div>
-						<div class="swiper-slide">Slide 7</div>
-						<div class="swiper-slide">Slide 8</div>
-						<div class="swiper-slide">Slide 9</div>
+				<div class="main_banner">
+					<div class="banner_view">
+						<div class="main_slider_for">
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+							<div class=""><img src="/220518/images/main_banner.png" alt=""></div>
+						</div>
+						<div class="banner_btn_area">
+							<div class="main_arrow">
+								<div class="main_prev"><button type="button"><img src="/220518/images/chevron-up.png" alt=""></button></div>
+								<div class="main_next"><button type="button"><img src="/220518/images/chevron-down.png" alt=""></button></div>
+							</div>
+							<div class="main_counter"></div>
+						</div>
 					</div>
-					<div class="banner_btn_area">
-						<div class="main_next"><button type="button"><img src="/220518/images/chevron-up.png" alt=""></button></div>
-						<div class="main_prev"><button type="button"><img src="/220518/images/chevron-down.png" alt=""></button></div>
-						<div class="main_counter"></div>
-					</div>
-					
-				</div>
+					<div class="main_slider_nav">
+						<div class="">완자 과학탐구 강좌 개강01</div>
+						<div class="">완자 과학탐구 강좌 개강02</div>
+						<div class="">완자 과학탐구 강좌 개강03</div>
+						<div class="">완자 과학탐구 강좌 개강04</div>
+						<div class="">완자 과학탐구 강좌 개강05</div>
+						<div class="">완자 과학탐구 강좌 개강06</div>
+						<div class="">완자 과학탐구 강좌 개강07</div>
+						<div class="">완자 과학탐구 강좌 개강08</div>
+						<div class="">완자 과학탐구 강좌 개강09</div>
+						<div class="">완자 과학탐구 강좌 개강10</div>
+					</div>		
+				</div>			
 			</div>
 		</div>
 		<script>
-				var swiper = new Swiper(".main_banner", {
-					direction: "vertical",
-					pagination: {
-						el: ".main_counter",
-						type: "fraction",
-						dynamicBullets: true,
-					},				
-					navigation: {
-						nextEl: ".main_next",
-						prevEl: ".main_prev",
-					},
+				$('.main_slider_for').on('init', function(event, slick) {
+					$('.main_counter').append('<span class="main_current"></span><span class="main_slash">/</span><span class="main_total"></span>');
+					$('.main_current').text(slick.currentSlide + 1);
+					$('.main_total').text(slick.slideCount);
+				})
+				.slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: true,
+					fade: true,
+					// vertical: true,
+					prevArrow: $('.main_prev'), 
+					nextArrow: $('.main_next'),
+					asNavFor: '.main_slider_nav'
+				})
+				.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+					$('.main_current').text(nextSlide + 1);
+				});
+
+				$('.main_slider_nav').slick({
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					asNavFor: '.main_slider_for',
+					vertical: true,
+					arrows: false,
+					dots: false,
+					centerMode: false,
+					focusOnSelect: true
 				});
 		  </script>
 		<!-- //메인 배너 -->
