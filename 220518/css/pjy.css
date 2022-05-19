@@ -9,7 +9,7 @@
 .customer_service_area .inner > div {height: 100%;}
 .customer_service_area ul {display: flex; width: 100%; height: 100%; }
 .customer_service_area .cs_left {width: 810px; float: left; margin-right: 30px; background-color: #f1f6ff; border-radius: 10px;}
-.customer_service_area .cs_left li {position: relative; margin-right: 10px; flex-grow: 1; text-align: center;}
+.customer_service_area .cs_left li {position: relative; flex-grow: 1; text-align: center;}
 .customer_service_area .cs_left li::before { content: ""; display: block; width: 2px; height: 100px; background-color: #d8e5f7; position: absolute; top: 20px; left: 0;}
 .customer_service_area .cs_left li:first-child::before {display: none;}
 .customer_service_area .cs_left li a {display: block; box-sizing: border-box; position: absolute; width: 100%; height: 100%; padding-top: 102px; font-family: "NanumSquare", sans-serif; font-size:16px; color:#333; font-weight:bold}
