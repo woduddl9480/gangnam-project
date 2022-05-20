@@ -93,3 +93,5 @@
 .mentoring_event_area .event .event_title .button_plus {position: absolute; top: 0; right: 0;}
 .mentoring_event_area .event .event_content ul li img {display: block; width: 100%; height: 300px; border-radius: 11px; object-fit: cover; }
 
+/* 챗봇 */
+.chatbot_renewal img {position: absolute; right: 50%; margin-right: -734px; display: block; z-index: 9999; width: 104px; height: auto;}
