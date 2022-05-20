@@ -1144,18 +1144,107 @@ var schoolType = '/High';
 		<style>
 			.publisher_textbook_area {padding: 50px 0; background-color: #e3eaf7;}
 			.publisher_textbook_area .inner {display: flex; justify-content: space-between; align-items: center;}
-			.publisher_textbook_area .inner > div {padding: 30px 30px 0; background-color: #fff; border-radius: 11px;}
-			.publisher_textbook_area .inner > div.famous_publisher {width: 810px; margin-right: 30px;}
+			.publisher_textbook_area .inner > div {box-sizing: border-box; padding: 30px; background-color: #fff; border-radius: 11px;}
+			.publisher_textbook_area .inner > div.famous_publisher {width: 810px; padding: 0 0 30px; margin-right: 30px;}
+			.publisher_textbook_area .inner > div.famous_publisher .top {display: flex; justify-content: space-between; align-items: center; padding: 30px 30px 0;}
+			.publisher_textbook_area .inner > div.famous_publisher .top .left {display: flex; align-items: center;}
+			.publisher_textbook_area .inner > div.famous_publisher .top .left .main_tit {margin-right: 10px;}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item {margin-top: 30px;}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul {margin: 0 10px;}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li {text-align: center;}
+			
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area {}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area img {display: inline-block;}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area {margin-top: 10px; }
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .company {display: inline-block; height: 26px; line-height: 26px; padding: 0 10px; border: 1px solid #28426f; border-radius: 13px; font-weight: 700; font-size: 14px; color: #28426f; letter-spacing: -0.4px;}
+			.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .book {line-height: 26px; margin-top: 10px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
 			.publisher_textbook_area .inner > div.learning_textbook {width: 360px;}
+			
 		</style>
 		<div class="publisher_textbook_area">
 			<div class="inner">
+
+				<!-- 유명출판사별 강의 -->
 				<div class="famous_publisher">
+					<div class="top">
+						<div class="left">
+							<h2 class="main_tit">유명출판사별 강의</h2>
+							<div class="slide_btn_area">
+								<div class="arrow_area">
+									<button type="button" class="slide_prev famous_publisher_prev"><img src="220518/images/round_left.png" alt="이전"></button>
+									<button type="button" class="slide_next famous_publisher_next"><img src="220518/images/round_right.png" alt="다음"></button>
+								</div>
+								<div class="counter_area famous_publisher_counter">
 	
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							
+						</div>
+					</div>
+					<div class="list_item">
+						<ul class="famous_publisher_slide">
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">NE능률</div>
+									<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture2.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">진학사</div>
+									<div class="book">블랙라벨 시리즈</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture3.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">동아</div>
+									<div class="book">하이탑, 절대등급,<br>날선개념, 올쏘 시리즈</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture4.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">쎄듀</div>
+									<div class="book">천일문 입문, 기본</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">NE능률</div>
+									<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">NE능률</div>
+									<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_area"><img src="/220518/images/famous_lecture.png" alt=""></div>
+								<div class="txt_area">
+									<div class="company">NE능률</div>
+									<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<!-- //유명출판사별 강의 -->
+
+				<!-- 영역별 학습교재 -->
 				<div class="learning_textbook">
-	
+					<h2 class="main_tit">영역별 학습교재</h2>
+					<a href="/NGLMS/High/LectureBook/Info.do" class="button_plus"></a>
 				</div>
+				<!-- 영역별 학습교재 -->
 			</div>
 		</div>
 		<!-- //유명출판사강의, 영역별 학습교재 -->

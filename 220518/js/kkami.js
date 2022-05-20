@@ -149,6 +149,33 @@ $(document).ready(function(){
     });
     /* //과학 수강후기 */
 
+
+    /* 유명출판사별 강의 */
+    $('.famous_publisher_slide').on('init', function(event, slick) {
+        $('.famous_publisher_counter').append('<span class="famous_publisher_current"></span><span class="famous_publisher_slash">/</span><span class="famous_publisher_total"></span>');
+        // alert(slick.currentSlide + 1 * 4);
+        $('.famous_publisher_current').text( slick.currentSlide + 1);
+        $('.famous_publisher_total').text(Math.ceil(slick.slideCount / 4));
+        
+    })
+    .slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.famous_publisher_prev'), 
+        nextArrow: $('.famous_publisher_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.famous_publisher_current').text(nextSlide / 4 + 1);
+    });
+
+
+    
+
+    /* //유명출판사별 강의 */
+
+
 });
 
     
