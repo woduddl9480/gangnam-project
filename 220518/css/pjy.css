@@ -70,7 +70,6 @@
 .onepick_promotion_area .onepick .onepick_content ul li img {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
 
 /* 추천프로모션강좌 */
-/* .onepick_promotion_area .promotion {width: 360px;} */
 .onepick_promotion_area .promotion {width: 360px;}
 .onepick_promotion_area .promotion .promotion_title {position: relative; display: flex; margin: 30px 0 30px 0;}
 .onepick_promotion_area .promotion .promotion_title .promotion_button {position: absolute; top: 0; right: 0;}
@@ -89,7 +88,6 @@
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 14px;}
 .mentoring_event_area .mentoring .mentoring_content ul li img  {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
 /* 이벤트 */
-/* .mentoring_event_area .event {width: 360px;} */
 .mentoring_event_area .event {width: 360px;}
 .mentoring_event_area .event .event_title {position: relative; display: flex; margin: 30px 0 30px 0;}
 .mentoring_event_area .event .event_title .button_plus {position: absolute; top: 0; right: 0;}
