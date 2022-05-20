@@ -10,7 +10,7 @@ $(document).ready(function(){
         $(this).removeClass('active').siblings().addClass('active');
     });
 
-    $('.tab_btn_area .tab_right > ul > li').on('click', function(){
+    $('.tab_btn_area .tab_btn_ul > li').on('click', function(){
         var layer = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
         $('.' + layer).addClass('active').siblings().removeClass('active');
