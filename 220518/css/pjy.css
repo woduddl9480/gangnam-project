@@ -67,6 +67,7 @@
 .onepick_promotion_area .onepick .onepick_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 10px;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 14px;}
+.onepick_promotion_area .onepick .onepick_content ul li img {width: 100%; height: 187px; object-fit: cover; border-radius: 10px 10px 0 0;}
 
 /* 추천프로모션강좌 */
 /* .onepick_promotion_area .promotion {width: 360px;} */
@@ -86,7 +87,7 @@
 .mentoring_event_area .mentoring .mentoring_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 10px;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 14px;}
-
+.mentoring_event_area .mentoring .mentoring_content ul li img  {width: 100%; height: 187px; object-fit: cover; border-radius: 10px 10px 0 0;}
 /* 이벤트 */
 /* .mentoring_event_area .event {width: 360px;} */
 .mentoring_event_area .event {width: 360px;}
