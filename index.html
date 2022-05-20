@@ -1221,25 +1221,6 @@ var schoolType = '/High';
 
 				<!-- 영역별 학습교재 -->
 
-				<style>
-					/* 영역별 학습교재 */
-					.publisher_textbook_area .inner > div.learning_textbook {width: 360px;}
-					.publisher_textbook_area .inner > div.learning_textbook .top {}
-					.publisher_textbook_area .inner > div.learning_textbook .top .main_tit {}
-					.publisher_textbook_area .inner > div.learning_textbook .top .button_plus {}
-					
-					.publisher_textbook_area .inner > div.learning_textbook .cont {}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_btn_area {height: 36px;}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_btn_area .tab_btn_ul {display: flex; justify-content: center; overflow: hidden; height: 100%; background-color: #f8f8f8; border-radius: 18px;}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_btn_area .tab_btn_ul li {flex-grow: 1; text-align: center;}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_btn_area .tab_btn_ul li button {width: 100%; height: 100%; font-weight: 700; font-size: 14px; color: #333;}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_btn_area .tab_btn_ul li.active button {background-color: #28426f; border-radius: 18px; color: #fff}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area {}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul {}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul li {display: none;}
-					.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul li.active {display: block;}
-					/* //영역별 학습교재 */
-				</style>
 				<div class="learning_textbook">
 					<div class="top">
 						<h2 class="main_tit">영역별 학습교재</h2>
@@ -1257,11 +1238,66 @@ var schoolType = '/High';
 						</div>
 						<div class="tab_item_area">
 							<ul class="tab_item_ul">
-								<li class="textbook_tab active">11</li>
-								<li class="textbook_tab02">22</li>
-								<li class="textbook_tab03">33</li>
-								<li class="textbook_tab04">44</li>
-								<li class="textbook_tab05">55</li>
+								<li class="textbook_tab active">
+									<div class="list_item">
+										<ul>
+											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 화법</li>
+											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 문학</li>
+											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 독서</li>
+											<li class="ellipsis">[고3/N수][국어]자이스토리 수능국어 고전시가</li>
+											<li class="ellipsis">[고2/고1][국어]원픽 고등 국어 고전 문학</li>
+											<li class="ellipsis">[고2/고1][국어]원픽 고등 국어 고전 시가</li>
+										</ul>
+									</div>
+								</li>
+								<li class="textbook_tab02">
+									<div class="list_item">
+										<ul>
+											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 화법</li>
+											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 문학</li>
+											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 독서</li>
+											<li class="ellipsis">[고3/N수][영어]자이스토리 수능영어 고전시가</li>
+											<li class="ellipsis">[고2/고1][영어]원픽 고등 영어 고전 문학</li>
+											<li class="ellipsis">[고2/고1][영어]원픽 고등 영어 고전 시가</li>
+										</ul>
+									</div>
+								</li>
+								<li class="textbook_tab03">
+									<div class="list_item">
+										<ul>
+											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 화법</li>
+											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 문학</li>
+											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 독서</li>
+											<li class="ellipsis">[고3/N수][수학]자이스토리 수능수학 고전시가</li>
+											<li class="ellipsis">[고2/고1][수학]원픽 고등 수학 고전 문학</li>
+											<li class="ellipsis">[고2/고1][수학]원픽 고등 수학 고전 시가</li>
+										</ul>
+									</div>
+								</li>
+								<li class="textbook_tab04">
+									<div class="list_item">
+										<ul>
+											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 화법</li>
+											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 문학</li>
+											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 독서</li>
+											<li class="ellipsis">[고3/N수][사회]자이스토리 수능사회 고전시가</li>
+											<li class="ellipsis">[고2/고1][사회]원픽 고등 사회 고전 문학</li>
+											<li class="ellipsis">[고2/고1][사회]원픽 고등 사회 고전 시가</li>
+										</ul>
+									</div>
+								</li>
+								<li class="textbook_tab05">
+									<div class="list_item">
+										<ul>
+											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 화법</li>
+											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 문학</li>
+											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 독서</li>
+											<li class="ellipsis">[고3/N수][과학]자이스토리 수능과학 고전시가</li>
+											<li class="ellipsis">[고2/고1][과학]원픽 고등 과학 고전 문학</li>
+											<li class="ellipsis">[고2/고1][과학]원픽 고등 과학 고전 시가</li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
