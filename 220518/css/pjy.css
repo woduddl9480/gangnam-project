@@ -1,5 +1,7 @@
 .mb30 {margin-bottom: 30px;}
 .mt30 {margin-top: 30px;}
+.mr30 {margin-right: 30px;}
+.ml30 {margin-left: 30px;}
 .button_plus {background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
 .clearfix:after{content:''; display:block; clear: both;}
 
@@ -51,3 +53,12 @@
 .notice_area .notice_content ul li a {width: 420px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; color:#333; font-weight: bold;}
 .notice_area .notice_content ul li span {font-size: 14px; color: #888;}
 .notice_area .notice_content ul li:last-child {padding-left: 65px;}
+
+/* 강남인강원픽, 추천프로모션 */
+.onepick_promotion_area .onepick {width: 810px; margin-right: 30px;}
+.onepick_promotion_area .onepick .onepick_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.onepick_promotion_area .onepick .onepick_title .onepick_button {position: absolute; top: 0; right: 0;}
+.onepick_promotion_area .onepick .onepick_content ul {display: flex;}
+.onepick_promotion_area .onepick .onepick_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 10px;}
+.onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
+.onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 14px;}
