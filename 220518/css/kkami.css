@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* header */
-.header_renewal {}
+.header_renewal {position: absolute; top: 0; left: 0; width: 100%;}
 .header_renewal  > div {border-bottom: 1px solid #f0f0f0;}
 .header_renewal .header_top {}
 .header_renewal .header_top .inner {display: flex; justify-content: space-between; align-items: center; height: 47px;}
@@ -29,13 +29,35 @@
 .header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border: 2px solid #17978b; border-radius: 20px;}
 .header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #17978b; text-align: center;}
 .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); background-color: #17978b; border-radius: 18px; color: #fff;}
-.header_renewal .header_gnb .inner {display: flex; justify-content: center; align-items: center; height: 53px;}
+
+
+.header_renewal .header_gnb {position: relative;}
+.header_renewal .header_gnb > .inner {position: static;}
 .header_renewal .header_gnb .inner .gnb_area {}
 .header_renewal .header_gnb .inner .gnb_area nav {}
-.header_renewal .header_gnb .inner .gnb_area nav .depth01 {display: flex;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 {display: flex; justify-content: center;}
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li {margin-left: 85px;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li.active {}
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li:first-of-type {margin-left: 0;}
-.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #333;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > span {display: block; position: relative; height: 53px; text-align: center;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > span > a {display: flex; align-items: center; height: 100%; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #333;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li.active > span::before {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 150px; height: 100%; background-color: #28426f;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li.active > span > a {position: relative; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header_renewal .header_search {}
 .header_renewal .header_search .inner {display: flex; justify-content: space-between; align-items: center; height: 66px;}
 .header_renewal .header_search .inner .left {display: flex; justify-content: center; align-items: center;}
@@ -69,7 +91,7 @@
 
 
 /* 메인 배너 */
-.main_banner_area {padding: 30px 0 0;}
+.main_banner_area {padding: 30px 0 0; margin-top: 258px;}
 .main_banner_area .main_banner {display: flex; overflow: hidden; height: 359px; border-radius: 10px;}
 .main_banner_area .main_banner .banner_view {position: relative; width: 950px; height: 100%;}
 .main_banner_area .main_banner .banner_view .main_slider_for {height: 100%;}
@@ -190,6 +212,7 @@
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li.active {display: block;}
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item {}
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul {}
-.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li {position: relative; padding-left: 12px; line-height: 40px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
+.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li {position: relative; padding-left: 12px;}
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li::before {content: ''; position: absolute; top: 18px; left: 0; width: 4px; height: 4px; background-color: #333; border-radius: 2px;}				
+.publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li a {line-height: 40px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
 /* //영역별 학습교재 */

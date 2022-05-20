@@ -227,36 +227,103 @@ var schoolType = '/High';
 			<div class="inner">
 				<div class="gnb_area">
 					<nav>
+						<style>
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li.active > .depth02 {display: block;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 {display: none; position: absolute; top: calc(100% + 1px); left: 0; z-index: 20; width: 100%; background-color: #fff;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li {display: flex; background: url(/220518/images/header_bg.png) repeat center;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner {display: flex; padding: 40px 0;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner > div {flex-shrink: 0;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .left {width: 280px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .left dl {}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .left dl dt {font-weight: 800; font-size: 22px; color: #28426f; letter-spacing: -0.4px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .left dl dd {line-height: 24px; margin-top: 25px; font-weight: 700; font-size: 14px; color: #28426f;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right {width: 920px; padding: 0 40px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area {}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul {display: flex; width: 810px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li {flex-grow: 1; flex-shrink: 1; flex-basis: 180px; margin-right: 30px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li:nth-of-type(4n) {margin-right: 0;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li .box_info {box-sizing: border-box; display: flex; align-items: center; height: 40px; padding: 0 18px; border: 1px solid #28426f; border-radius: 6px; font-weight: 700; font-size: 16px; color: #28426f;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li .depth03 {margin-top: 15px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li .depth03 > li {position: relative; padding-left: 10px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li .depth03 > li::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 4px; height: 4px; background-color: #333; border-radius: 2px;}
+							.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner .right .depth03_area > ul > li .depth03 > li > a {line-height: 26px; font-size: 14px; color: #333;}
+						</style>
 						<ul class="depth01">
-							<li>
-								<a href="">고3/N수</a>
-								<!-- <ul class="depth01">
-									<li><a href=""></a></li>
-								</ul> -->
+							<li class="active">
+								<span><a href="">고3/N수</a></span>
+								<ul class="depth02">
+									<li>
+										<div class="inner">
+											<div class="left">
+												<dl>
+													<dt>고3/N수</dt>
+													<dd>
+														유명강사진과 함께하는<br>
+														강남인강이<br>
+														여러분의 학습을 도와드립니다.
+													</dd>
+												</dl>
+											</div>
+											<div class="right">	
+												<div class="depth03_area">
+													<ul>
+														<li>
+															<div class="box_info">고3/N수</div>
+															<ul class="depth03">
+																<li><a href="">고3/N수</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">영역별</div>
+															<ul class="depth03">
+																<li><a href="">국어영역</a></li>
+																<li><a href="">영어영역</a></li>
+																<li><a href="">수학영역</a></li>
+																<li><a href="">사회탐구영역</a></li>
+																<li><a href="">과학탐구영역</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">학습단계별</div>
+															<ul class="depth03">
+																<li><a href="">개념완성</a></li>
+																<li><a href="">문제풀이</a></li>
+																<li><a href="">파이널</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">프로모션</div>
+															<ul class="depth03">
+																<li><a href="">프로모션</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</li>
 							<li>
-								<a href="">고2/고1</a>
+								<span><a href="">고2/고1</a></span>
 
 							</li>
 							<li>
-								<a href="">선생님</a>
+								<span><a href="">선생님</a></span>
 
 							</li>
 							<li>
-								<a href="" class="font_blue">강남인강Pick</a>
+								<span><a href="" class="font_blue">강남인강Pick</a></span>
+							</li>
+							<li>
+								<span><a href="">대학맛보기</a></span>
+							</li>
+							<li>
+								<span><a href="">입시정보</a></span>
 
 							</li>
 							<li>
-								<a href="">대학맛보기</a>
-
-							</li>
-							<li>
-								<a href="">입시정보</a>
-
-							</li>
-							<li>
-								<a href="">커뮤니티</a>
-
+								<span><a href="">커뮤니티</a></span>
 							</li>
 						</ul>
 					</nav>
@@ -1136,8 +1203,6 @@ var schoolType = '/High';
 			</div>
 		</div>
 		<!-- 강좌별 BEST, 수강후기 -->
-
-		
 		
 
 		<!-- 유명출판사강의, 영역별 학습교재 -->		
@@ -1220,7 +1285,6 @@ var schoolType = '/High';
 				<!-- //유명출판사별 강의 -->
 
 				<!-- 영역별 학습교재 -->
-
 				<div class="learning_textbook">
 					<div class="top">
 						<h2 class="main_tit">영역별 학습교재</h2>
@@ -1241,60 +1305,60 @@ var schoolType = '/High';
 								<li class="textbook_tab active">
 									<div class="list_item">
 										<ul>
-											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 화법</li>
-											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 문학</li>
-											<li class="ellipsis">[고3/N수][국어]2022 자이스토리 수능국어 독서</li>
-											<li class="ellipsis">[고3/N수][국어]자이스토리 수능국어 고전시가</li>
-											<li class="ellipsis">[고2/고1][국어]원픽 고등 국어 고전 문학</li>
-											<li class="ellipsis">[고2/고1][국어]원픽 고등 국어 고전 시가</li>
+											<li class="ellipsis"><a href="">[고3/N수][국어]2022 자이스토리 수능국어 화법</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][국어]2022 자이스토리 수능국어 문학</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][국어]2022 자이스토리 수능국어 독서</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][국어]자이스토리 수능국어 고전시가</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][국어]원픽 고등 국어 고전 문학</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][국어]원픽 고등 국어 고전 시가</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="textbook_tab02">
 									<div class="list_item">
 										<ul>
-											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 화법</li>
-											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 문학</li>
-											<li class="ellipsis">[고3/N수][영어]2022 자이스토리 수능영어 독서</li>
-											<li class="ellipsis">[고3/N수][영어]자이스토리 수능영어 고전시가</li>
-											<li class="ellipsis">[고2/고1][영어]원픽 고등 영어 고전 문학</li>
-											<li class="ellipsis">[고2/고1][영어]원픽 고등 영어 고전 시가</li>
+											<li class="ellipsis"><a href="">[고3/N수][영어]2022 자이스토리 수능영어 화법</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][영어]2022 자이스토리 수능영어 문학</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][영어]2022 자이스토리 수능영어 독서</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][영어]자이스토리 수능영어 고전시가</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][영어]원픽 고등 영어 고전 문학</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][영어]원픽 고등 영어 고전 시가</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="textbook_tab03">
 									<div class="list_item">
 										<ul>
-											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 화법</li>
-											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 문학</li>
-											<li class="ellipsis">[고3/N수][수학]2022 자이스토리 수능수학 독서</li>
-											<li class="ellipsis">[고3/N수][수학]자이스토리 수능수학 고전시가</li>
-											<li class="ellipsis">[고2/고1][수학]원픽 고등 수학 고전 문학</li>
-											<li class="ellipsis">[고2/고1][수학]원픽 고등 수학 고전 시가</li>
+											<li class="ellipsis"><a href="">[고3/N수][수학]2022 자이스토리 수능수학 화법</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][수학]2022 자이스토리 수능수학 문학</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][수학]2022 자이스토리 수능수학 독서</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][수학]자이스토리 수능수학 고전시가</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][수학]원픽 고등 수학 고전 문학</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][수학]원픽 고등 수학 고전 시가</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="textbook_tab04">
 									<div class="list_item">
 										<ul>
-											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 화법</li>
-											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 문학</li>
-											<li class="ellipsis">[고3/N수][사회]2022 자이스토리 수능사회 독서</li>
-											<li class="ellipsis">[고3/N수][사회]자이스토리 수능사회 고전시가</li>
-											<li class="ellipsis">[고2/고1][사회]원픽 고등 사회 고전 문학</li>
-											<li class="ellipsis">[고2/고1][사회]원픽 고등 사회 고전 시가</li>
+											<li class="ellipsis"><a href="">[고3/N수][사회]2022 자이스토리 수능사회 화법</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][사회]2022 자이스토리 수능사회 문학</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][사회]2022 자이스토리 수능사회 독서</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][사회]자이스토리 수능사회 고전시가</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][사회]원픽 고등 사회 고전 문학</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][사회]원픽 고등 사회 고전 시가</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="textbook_tab05">
 									<div class="list_item">
 										<ul>
-											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 화법</li>
-											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 문학</li>
-											<li class="ellipsis">[고3/N수][과학]2022 자이스토리 수능과학 독서</li>
-											<li class="ellipsis">[고3/N수][과학]자이스토리 수능과학 고전시가</li>
-											<li class="ellipsis">[고2/고1][과학]원픽 고등 과학 고전 문학</li>
-											<li class="ellipsis">[고2/고1][과학]원픽 고등 과학 고전 시가</li>
+											<li class="ellipsis"><a href="">[고3/N수][과학]2022 자이스토리 수능과학 화법</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][과학]2022 자이스토리 수능과학 문학</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][과학]2022 자이스토리 수능과학 독서</a></li>
+											<li class="ellipsis"><a href="">[고3/N수][과학]자이스토리 수능과학 고전시가</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][과학]원픽 고등 과학 고전 문학</a></li>
+											<li class="ellipsis"><a href="">[고2/고1][과학]원픽 고등 과학 고전 시가</a></li>
 										</ul>
 									</div>
 								</li>
