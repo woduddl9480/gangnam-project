@@ -1,5 +1,10 @@
 
 $(document).ready(function(){
+
+    
+
+
+
     $('.openLayer ul li').on('click', function(){
         var layer = $(this).attr('data-open');
         $(this).addClass('active').siblings().removeClass('active');
