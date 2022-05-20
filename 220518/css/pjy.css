@@ -54,7 +54,9 @@
 .notice_area .notice_content ul li span {font-size: 14px; color: #888;}
 .notice_area .notice_content ul li:last-child {padding-left: 65px;}
 
-/* 강남인강원픽, 추천프로모션 */
+/* 강남인강원픽, 추천프로모션강좌 */
+.onepick_promotion_area .inner {display: flex;}
+/* 강남인강원픽 */
 .onepick_promotion_area .onepick {width: 810px; margin-right: 30px;}
 .onepick_promotion_area .onepick .onepick_title {position: relative; display: flex; margin: 30px 0 30px 0;}
 .onepick_promotion_area .onepick .onepick_title .onepick_button {position: absolute; top: 0; right: 0;}
@@ -62,3 +64,8 @@
 .onepick_promotion_area .onepick .onepick_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 10px;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 14px;}
+
+/* 추천프로모션강좌 */
+/* .onepick_promotion_area .promotion {width: 360px;} */
+.onepick_promotion_area .promotion .promotion_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.onepick_promotion_area .promotion .promotion_title .promotion_button {position: absolute; top: 0; right: 0;}
