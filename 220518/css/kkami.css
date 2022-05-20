@@ -150,3 +150,24 @@
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .tit_k {margin-top: 15px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .txt_k {max-height: 78px; margin-top: 12px; line-height: 26px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
 /* //강좌별 수강후기 */
+
+
+/* 유명출판사별 강의 */
+.publisher_textbook_area {padding: 50px 0; background-color: #e3eaf7;}
+.publisher_textbook_area .inner {display: flex; justify-content: space-between; align-items: center;}
+.publisher_textbook_area .inner > div {box-sizing: border-box; padding: 30px; background-color: #fff; border-radius: 11px;}
+.publisher_textbook_area .inner > div.famous_publisher {width: 810px; padding: 0 0 30px; margin-right: 30px;}
+.publisher_textbook_area .inner > div.famous_publisher .top {display: flex; justify-content: space-between; align-items: center; padding: 30px 30px 0;}
+.publisher_textbook_area .inner > div.famous_publisher .top .left {display: flex; align-items: center;}
+.publisher_textbook_area .inner > div.famous_publisher .top .left .main_tit {margin-right: 10px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item {margin-top: 30px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul {margin: 0 10px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li {text-align: center;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area {}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area img {display: inline-block;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area {margin-top: 10px; }
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .company {display: inline-block; height: 26px; line-height: 26px; padding: 0 10px; border: 1px solid #28426f; border-radius: 13px; font-weight: 700; font-size: 14px; color: #28426f; letter-spacing: -0.4px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .book {line-height: 26px; margin-top: 10px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
+/* //유명출판사별 강의 */
+
+
