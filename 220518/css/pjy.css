@@ -17,7 +17,7 @@
 .customer_service_area .cs_left li {position: relative; flex-grow: 1; text-align: center;}
 .customer_service_area .cs_left li::before { content: ""; display: block; width: 2px; height: 100px; background-color: #d8e5f7; position: absolute; top: 20px; left: 0;}
 .customer_service_area .cs_left li:first-child::before {display: none;}
-.customer_service_area .cs_left li a {display: block; box-sizing: border-box; position: absolute; width: 100%; height: 100%; padding-top: 102px; font-family: "NanumSquare", sans-serif; font-size:16px; color:#333; font-weight:bold}
+.customer_service_area .cs_left li a {display: block; box-sizing: border-box; position: absolute; width: 100%; height: 100%; padding-top: 102px; font-family: "NanumSquare", sans-serif; font-size:16px; color:#333; font-weight:800}
 .customer_service_area .cs_left li:nth-of-type(1) {background-image: url(/220518/images/1.png); background-repeat: no-repeat; background-position: center top 35px;}
 .customer_service_area .cs_left li:nth-of-type(2) {background-image: url(/220518/images/2.png); background-repeat: no-repeat; background-position: center top 37px;}
 .customer_service_area .cs_left li:nth-of-type(3) {background-image: url(/220518/images/3.png); background-repeat: no-repeat; background-position: center top 43px;}
@@ -27,9 +27,9 @@
 .customer_service_area .cs_left li background-image {padding: 32px 44px;}
 .customer_service_area .cs_right {width: 360px; box-sizing: border-box; float: right; padding: 29px 30px; background-color: #f1f6ff; border-radius: 11px;}
 .customer_service_area .cs_right {background-image: url(/220518/images/tel_icon.png); background-repeat: no-repeat; background-position: 240px 28px; font-family: "NanumSquare", sans-serif;}
-.customer_service_area .cs_right .service_name {font-size: 18px; color: #333; font-weight: bold;}
-.customer_service_area .cs_right .service_number {margin-top: 13px;}
-.customer_service_area .cs_right .service_time {margin-top: 12px; font-size: 16px; color: #333; font-weight: 400;}
+.customer_service_area .cs_right .service_name {font-size: 18px; color: #333; font-weight: 800;}
+.customer_service_area .cs_right .service_number {font-size: 36px; font-weight: 800; color: #28426f; margin-top: 5px;}
+.customer_service_area .cs_right .service_time {margin-top: 5px; font-size: 16px; color: #333; font-weight: 400;}
 /* footer */
 .footer_renewal{width:100%; background:#272a2e;font-family: "NanumSquare", sans-serif;}
 .footer_renewal > div{margin: 0 auto;padding: 35px 0 30px;}
