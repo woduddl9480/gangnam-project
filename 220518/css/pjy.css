@@ -95,6 +95,7 @@
 
 /* 챗봇 */
 .btn_chatbot {background-image: url(/220518/images/close.png); background-repeat: no-repeat;}
+.chatbot_renewal {position: absolute; right: 50%; margin-right: -734px; display: block; z-index: 9999; width: 104px; height: auto;}
 .chatbot_renewal li {position: relative;}
-.chatbot_renewal a {position: absolute; right: 50%; margin-right: -734px; display: block; z-index: 9999; width: 104px; height: auto;}
-.chatbot_renewal button {position: absolute; width: 25px; height: 25px; bottom: 5px; right: 216px;}
+.chatbot_renewal a {display: block;}
+.chatbot_renewal button {position: absolute; width: 25px; height: 25px; bottom: 145px; right: 0}
