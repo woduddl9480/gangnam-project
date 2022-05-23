@@ -1,5 +1,5 @@
 /* 웹폰트15픽셀밑으로깨짐현상 */
-p, a, span, h1, h2, h3, h4, h5, h6, button {
+p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
     transform: skew(-0.1deg);
 }
 
