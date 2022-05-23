@@ -1,0 +1,378 @@
+@charset "euc-kr";
+/* 서브 공통 */
+.blue_dott li{position:relative; padding-left: 10px;}
+.blue_dott li:before{content:""; display:inline-block; width: 4px; height: 4px; background:#1ca09c; border-radius: 50%; position: absolute; left: 0; top: 7px;}
+
+.sign_zone {background: #fff; margin: 10px 0;}
+.sign_zone ul{padding:10px; text-align: center}
+.sign_zone ul li {display: inline-block; width: 48%; margin-right:2.5%; text-align: center}
+.sign_zone ul li:last-child{margin-right: 0;}
+.sign_zone ul li a {display: block; width: 100%; height: 100%; padding: 7px 0; border:1px solid #ddd; color:#333333}
+.sign_zone ul li a img {vertical-align: text-bottom; margin-right:5px; max-height:16px}
+
+.myPage_btn {padding:23px 0}
+.myPage_btn ul{text-align: center}
+.myPage_btn ul li {display: inline-block;}
+.myPage_btn ul li:last-child{margin-right: 0;}
+.myPage_btn ul li a {display: block; width: 100%; height: 100%; padding: 3px 0; background:#333; color:#fff; border-radius: 15px; font-size:13px}
+.myPage_btn ul li a img {vertical-align: text-bottom; margin-right:5px}
+
+.tabMenu_list {background: #fff;margin-top: 10px;}
+.tabMenu_list ul {padding: 10px 0; text-align: center}
+.tabMenu_list ul li{display:inline-block;}
+.tabMenu_list ul li a {font-size:14px; text-decoration: none}
+.tabMenu_list ul li a:after {content:"|"; display: inline-block; margin: 0 4px 0 7px; color:#ddd}
+.tabMenu_list ul li:last-child a:after {display: none}
+.tabMenu_list ul li.tab_on a{color:#1ca09c !important; background: none !important}
+.tab_list_box li.tab_on a{color:#333 !important; background: #ffd947 !important; position: relative;}
+.tab_list_box li.tab_on a:after {content:""; display: block; position: absolute; width: 100%; height: 100%; border:1px solid #f2a809; left: -1px; top: -1px;}
+.tab_list_box li.mid_tab_on a{color:#fff !important; background: #1ca09c !important; position: relative;}
+.tab_list_box li.mid_tab_on a:after {content:""; display: block; position: absolute; width: 100%; height: 100%; border:1px solid #0a837f; left: -1px; top: -1px;}
+
+
+.ingang_board {background: #fff;}
+.ingang_board table {width: 100%;}
+.ingang_board table thead tr{background: #eee;}
+.ingang_board table thead tr th{padding:10px 15px; text-align: center; font-size:16px}
+.ingang_board table thead tr th > img{display: block; margin: 0 auto; margin-bottom: 4px;}
+.ingang_board table td{padding: 0 15px;}
+.ingang_board table tbody tr {border-bottom:1px solid #eee}
+.ingang_board table tbody tr th{padding: 5px 0}
+.ingang_board table tbody tr td{padding: 5px 0}
+.ingang_board table tbody .board_txt td{padding: 15px}
+
+/* 고3/N수 - 영역별 - 강좌리스트*/
+.tab_classInfo li {background: #fff;padding: 10px 9px; border-bottom:1px solid #ccc}
+.tab_classInfo li {display: block; width: 100%; height: 100%;}
+.tab_classInfo li .new_bot {line-height: 100%}
+.tab_classInfo li .info_img {float: left; width: 20%;}
+.tab_classInfo li .info_txt {float: left; width: 78%; margin-left:2%;}
+.tab_classInfo li .info_txt > p {color:#333}
+.tab_classInfo li .info_txt > span {font-size:13px; color:#3964ac; margin-top: 5px;}
+.tab_classInfo li.list_more {display: none}
+
+.classList_more {background: #fff; padding: 10px 0;}
+.classList_more p{text-align: center; width: 100%;  margin: 0 auto; padding: 0 10px;}
+.classList_more p a {display: block; width: 100%; height: 100%; padding: 8px 0;border:1px solid #ccc;}
+
+/* 고3/N수 - 영역별 - 강좌상세*/
+.classDetail_teacher {background: #fff; padding: 20px 15px 10px 15px;}
+.classDetail_teacher .classDetail_top > div {float: left;}
+.classDetail_teacher .classDetail_top {padding-bottom: 5px;}
+.teacherDetail_img {width: 40%; padding-top: 15px; position: relative; left: -15px;/*2021.05.21 추가*/text-align: center;}
+.teacherDetail_info {width: 57%;margin-left: 3%;}
+.teacherDetail_info ul li {font-size:13px; color:#1ca09c}
+.classDetail_teacher .sign_zone {margin: 0; padding-top: 20px;}
+.classDetail_teacher .sign_zone ul{padding: 0;}
+
+.classDetail_list {margin-top: 10px; border-top:1px solid #ddd}
+.classDetail_list > ul{display: none;}
+.classDetail_list > ul:first-child{display: block}
+.classDetail_list > ul > li {padding: 15px; background: #fff; border-bottom:1px solid #ddd}
+.classDetail_list > ul > li > .detail_info {float: left;}
+.classDetail_list > ul > li > .detail_num {width: 12%;}
+.classDetail_list > ul > li > .detail_title {width: 64%;}
+.classDetail_list .sign_zone {float: none; margin: 0;}
+.classDetail_list .sign_zone > ul{padding: 0;}
+
+.classDetail_on > ul > li.detail_btn {border-bottom: none; padding-bottom: 10px;}
+.classDetail_on > ul > li  .detail_info {float: left;}
+.classDetail_on > ul > li  .detail_num {width: 15%;}
+.classDetail_on > ul > li  .detail_title {width: 58%;}
+.classDetail_on > ul > li  .sample_view {width: 27%;}
+.classDetail_on > ul > li  .sample_view p{display: inline-block;}
+.progressbar {width: 80%; margin-left: 53px;}
+.progressbar > div {}
+.progressbar .bar_chart{float: left; width: 85%; background-color: rgb(238, 238, 238); margin-top: 4px;}
+.progressbar .bar_txt{float: right; width: 10%; text-align: right}
+
+#detail_progress {height: 15px;}
+.progress-bar {background: -webkit-linear-gradient(left, #177f43 0%,#3964ac 100%); /* Chrome10-25,Safari5.1-6 */}
+
+/* 고3/N수 - 영역별 - 수강후기*/
+.detail_review .notice_list li .list_num{width: 20%;}
+.detail_review .notice_list li .list_txt{width: 80%;}
+.detail_review .notice_list li .review_box_bot{margin-top: 15px; padding-top: 15px; border-top:1px solid #ddd; display: none}
+.detail_review .notice_list li .review_box_bot span {font-size:14px; line-height: 130%; color:#555}
+.detail_review .notice_list li .review_box_bot .review_teacher {border-top:1px dotted #ddd; margin-top: 15px; padding-top: 15px;}
+.detail_review .notice_list li .review_box_bot .review_teacher h5{margin: 0 0; font-size:16px; margin-bottom: 5px;}
+
+/* 고3/N수 - 영역별 - 강의자료*/
+.classDetail_wrap .classList .tab_classInfo .list_num{width: 12%;}
+.classDetail_wrap .classList .tab_classInfo .file_btn{width: 12%;}
+.classDetail_wrap .classList .tab_classInfo .file_btn a {display: block; width: 100%; height: 100%; text-align: center}
+.classDetail_wrap .classList .tab_classInfo .file_btn i {font-size:27px; padding-top: 8px;}
+.classDetail_wrap .classList .tab_classInfo li {padding:10px 15px; border-bottom:1px solid #ddd}
+.classDetail_wrap .classList .tab_classInfo li>div{float: left;}
+.classDetail_wrap .classList .tab_classInfo .check_box{width: 12%;}
+.classDetail_wrap .classList .tab_classInfo .blog_right{width: 88%;}
+.classDetail_wrap .classList .tab_classInfo .blog_right .new_bot{line-height: 100%}
+
+/* 고3/N수 - 프로모션 리스트 */
+.promotion_list {background: #fff; border-top:1px solid #ddd}
+.promotion_list ul li {padding: 15px;border-bottom:1px solid #ddd;}
+
+li {}
+
+li {}
+.promotion_list ul li a {display: block; width: 100%; height: 100%;}
+.promotion_list ul li a .info_img{float: left; width: 30%; min-height: 74px;height: 20vw;max-height: 170px;overflow:hidden;}
+.promotion_list ul li a .info_txt{float: left; width: 67%; margin-left: 3%}
+.promotion_list ul li a .info_txt h3 {font-size:16px; font-weight: lighter; color:#1ca09c}
+.promotion_list ul li a .info_txt p {font-size:16px;}
+.list_date {font-size:13px; color:#999}
+
+/* 고3/N수 - 프로모션 뷰 */
+.promotion_back {padding: 10px 0; text-align: right; background: #fff}
+.promotion_back a {display: inline-block; padding: 2px 14px; border:1px solid #ddd; border-radius: 6px; margin-right: 2%; font-size:14px}
+
+.promotion_view {background: #fff; margin-top: 10px; border-top:1px solid #ddd}
+.promotion_view ul li {padding: 15px; border-bottom:1px solid #ddd}
+.promotion_view ul li > div {float: left;}
+.promotion_view ul li .check_box{width: 12%;}
+.promotion_view ul li .list_info{width: 64%;}
+.promotion_view ul li .list_info .info_title .name {color:#3964ac; font-size:13px; margin-left: 10px;}
+.promotion_view ul li .list_info .info_title .name:after {content:"|"; display: inline-block; position: relative; left: 7px;}
+.promotion_view ul li .list_info .info_title .name:last-child:after{display: none}
+.promotion_view ul li .list_info .info_subject {margin-top: 3px;}
+.promotion_view ul li .list_info .info_subject a span{display:block}
+.sample_view{width: 24%;}
+.sample_btn {background: #1ca09c; display: inline-block; padding:8px 10px; color:#fff; font-size:13px}
+.sample_btn i {color:#fff; font-size:20px; margin-right:3px; vertical-align: middle;}
+
+/* 선생님 - 메인 */
+.ingangTeacher_wrap{}
+.ingangTeacher_list {padding: 0 10px 60px 10px;}
+.ingangTeacher_list ul li {float: left; background: #fff; width: 48.5%;padding: 15px 10px 20px 10px; margin-right: 3%; margin-bottom: 3%; box-shadow: 0px 0px 4px 0px #ccc;position:relative}
+.ingangTeacher_list ul li .new_teacher {position:absolute;width: 40px;height: 20px;background: red;text-align: center;line-height: 20px;color: #fff;font-size: 13px;}
+.ingangTeacher_list ul li:nth-child(2n){margin-right: 0;}
+.ingangTeacher_list ul li a {display: block; width: 100%; height: 100%; text-align: center}
+.ingangTeacher_list ul li a .bot_txt {margin-top: 18px;}
+.ingangTeacher_list ul li a .bot_txt span{font-size:17px; color:#333}
+
+/* 선생님 - 상세*/
+/* .TeacherBlog_menu {padding: 15px 16px;}
+.TeacherBlog_menu img {max-width:40px;}
+.TeacherBlog_menu select {-webkit-appearance: none; width: 84%; height: 40px; font-size:15px; color:#333; padding: 0 10px; border:1px solid #333; background:url("/htmlRes/images/mobile/2020/sub/down.png") no-repeat 95% 50%;;}
+.TeacherBlog_menu i {margin-right: 10px; font-size:30px; vertical-align: middle; color:#3964ac}
+
+.TeacherBlog_imageWrap {background: #f3f3f3; padding-top:10px}
+.TeacherBlog_image {background: #fff; padding:10px 0 20px 0;}
+.TeacherBlog_inner {width: 93%; margin:0 auto; border-bottom: 1px solid #333; padding:0 10px}
+.TeacherBlog_txt {width: 60%; margin-right: 10%; color:#333; padding-top: 35px;}
+.TeacherBlog_txt > p {font-size:25px}
+.TeacherBlog_teacher {width: 30%;} */
+.TeacherBlog_menu {padding: 15px 16px;}
+.TeacherBlog_menu img {max-width:40px;}
+.TeacherBlog_menu select {-webkit-appearance: none; width: 84%; height: 40px; font-size:15px; color:#333; padding: 0 10px; border:1px solid #333; background:url("/htmlRes/images/mobile/2020/sub/down.png") no-repeat 95% 50%;;}
+.TeacherBlog_menu i {margin-right: 10px; font-size:30px; vertical-align: middle; color:#3964ac}
+
+.TeacherBlog_imageWrap {background: #f3f3f3; padding-top:10px}
+.TeacherBlog_image {background: #fff; padding:10px 0 20px 0;}
+.TeacherBlog_inner {width: 100%; margin:0 auto; border-bottom: 1px solid #333; padding:0 10px}
+.TeacherBlog_txt {width: 100%; margin-right: 10%; color:#333; padding:20px 0;}
+.TeacherBlog_txt > p {font-size:25px}
+.TeacherBlog_teacher {width: 100%;}
+.TeacherBlog_txt > span {font-size:13px;}
+
+.teacherblog_wrap .sign_zone{margin: 0;}
+.teacherblog_wrap .classList .tab_classInfo li {padding:10px 16px; border-bottom:1px solid #ccc}
+.teacherblog_wrap .classList .tab_classInfo li>div{float: left;}
+.teacherblog_wrap .classList .tab_classInfo .check_box{width: 14%;}
+.teacherblog_wrap .classList .tab_classInfo .blog_right{width: 86%;}
+.teacherblog_wrap .classList .tab_classInfo .blog_right .new_bot{line-height: 100%}
+.teacherblog_wrap .notice_issue {border-top:none}
+
+.qna_list li {background: #fff; border-bottom:1px solid #ddd; padding:15px;}
+.qna_list li > div {float: left;}
+.qna_list li .qna_title{width: 20%;}
+.qna_list li .qna_info{width: 80%; line-height: 100%}
+.qna_list li .qna_info a {display: block; width: 100%; height: 100%; text-decoration: none}
+.qna_list li .qna_info .info_bot{font-size: 13px; color:#777; margin-top: 5px;}
+.qna_list li .qna_info .info_bot i {font-size:15px; margin-right: 5px;}
+
+.board_basic {background: #fff; padding: 0 15px;}
+.board_basic .view_title{padding:15px 0; border-bottom:1px solid #ddd}
+.board_basic .view_title p span{font-size:14px;}
+.board_basic .view_title .view_titleMain{font-size:16px; font-weight: bold; margin-top: 5px;}
+.board_basic .view_title .view_info{margin-top: 2px;}
+.board_basic .view_title .view_info span{font-size:13px; color:#777; }
+.board_basic .view_title .view_info .survey_dt{margin-right: 5px;}
+.board_basic .view_title .view_info .survey_dd{color: #333;}
+.board_basic .view_title .view_file span{font-size:13px; }
+.board_basic .view_txt{padding:15px 0;}
+.board_basic .view_survey{padding:15px 10px;border-top:1px solid #ddd;}
+.board_basic .view_txt p img {height:auto !important;width: 100% !important; }
+.board_basic .view_reply{padding:15px 0; border-top:1px solid #ddd}
+.board_basic .view_replyList ul li{padding:15px 0; border-top:1px solid #ddd}
+.board_basic .view_replyList ul li p{font-weight: bold; margin-bottom: 3px;}
+.board_basic .view_replyList ul li p > a{font-weight:normal;}
+.ingang_board .classList_more {border-top:1px solid #ddd}
+.view_btnList {padding: 15px; border-top:1px solid #ddd; background: #fff}
+
+.answer-wating {padding:10px 15px; background: #ee600a; color:#fff; font-size:14px}
+.answer-complete {padding: 10px 15px; /* background:#777;  */ background: #ddd; color:#000;}
+.answer-complete p{ font-size:14px; float: right;}
+.answer-complete span{ font-size:14px; float: left;}
+.answer-txt {padding: 15px; background: #fff}
+
+/* 2021.11 설문조사  추가 */
+.view_survey .question{margin-bottom: 5px;font-weight: 700;}
+.view_survey .answer{margin-bottom: 20px;}
+.survey-list{background: #fff;}
+.survey-list [class^=label]{margin-right: 5px;padding: 1px 5px;font-size: 12px;color: #fff;}
+.survey-list .label-play{border: 1px solid #d91404;background-color: #d91404;}
+.survey-list .label-chk{border:1px solid #545454;background-color: #545454;}
+.view_survey .answer input[type="checkbox"]{display: inline-block;width: 13px;height: 13px;margin-right: 2px;border: 1px solid #777;clip: unset;}
+.view_survey .answer input[type="checkbox"]+label{margin: 0;}
+.view_survey .answer input[type="checkbox"]+label:before,
+.view_survey .answer input[type="checkbox"]+after,
+.view_survey .answer input[type="checkbox"]:checked+label:after{display: none;}
+
+.teacherblog_wrap .classList .tab_classInfo .list_num{width: 15%;}
+.teacherblog_wrap .classList .tab_classInfo .blog_right{width: 85%;}
+.teacherblog_wrap .classList .tab_classInfo .file_btn{width: 12%;}
+.teacherblog_wrap .classList .tab_classInfo .file_btn a {display: block; width: 100%; height: 100%; text-align: center}
+.teacherblog_wrap .classList .tab_classInfo .file_btn i {font-size:27px; padding-top: 8px;}
+
+/* 커뮤니티  - 공지사항*/
+.notice_listWrap {}
+.notice_issue {border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding: 15px; background:#edf1f7}
+.notice_issue p {float: left; line-height: 100%}
+.notice_issue p.issue_title {width: 17%; text-align: left}
+.notice_issue p.issue_title span{font-size:13px; color:#fff; background: #b9271b; padding: 1px 6px; display: inline-block;}
+.issue_title span{font-size:13px; color:#fff; background: #b9271b; padding: 1px 6px; display: inline-block;}
+.notice_issue p.issue_txt {width: 83%;}
+.notice_issue p.issue_txt a {font-size:15px; line-height: 100%; margin-top: 3px;}
+
+.notice_list li {background: #fff; border-bottom:1px solid #ddd; padding: 15px;}
+.notice_list li p {float: left; line-height: 100%}
+.notice_list li p.list_num {width: 12%;}
+.notice_list li p.list_num span{padding-left: 3px;}
+.notice_list li p.list_txt {width: 88%;}
+.notice_list li p.list_txt a{font-size:15px; line-height: 100%; margin-top: 3px; width:90%;}
+
+/* 커뮤니티  - 선생님 이벤트*/
+.teacherEvent {border-top:1px solid #ddd}
+.teacherEvent ul li p.list_num{ width: 15%;}
+.teacherEvent ul li p.list_num span {font-size:14px;}
+.teacherEvent ul li p.list_txt {width: 85%;}
+
+/* 멘토링 익스플로러 지원 팝업 */
+/* div.ex_notice {position: absolute; overflow: hidden; top: 0; left: -182px; border: 1px solid #434343; z-index: 1000; display:none;} */
+
+/* 멘토링 - 학부모교실 - 리스트 */
+.parent_wrap {padding:0 15px;}
+.parent_wrap .img_list ul li {float: left; background: #fff; width:48%; margin-right: 4%; margin-bottom: 20px; box-shadow:0px 0px 4px 0px #ccc}
+.parent_wrap .img_list ul li:nth-child(2n){margin-right: 0;}
+.parent_wrap .img_list ul li a {display: block; width: 100%; height: 100%; text-align: center}
+.parent_wrap .img_list ul li a .img_txt{padding: 8px; font-size:14px; height: 130px;}
+.parent_wrap .img_list ul li a .img_txt p {margin-bottom: 8px; line-height: 1.3em; font-weight: bold} /* 2021-05 line-height 수정 */
+.parent_wrap .img_list ul li a .img_txt p .img_title{font-size:13px; padding: 2px;}
+.parent_wrap .img_list ul li a .img_txt p.img_name{font-size:13px; color:#777; font-weight: normal;}
+.parent_wrap .img_study {color:#265bbc; border:1px solid #265bbc}
+.parent_wrap .img_test {color:#82a805; border:1px solid #82a805}
+
+
+/* 멘토링 - 원픽강좌 */
+
+.onepick_wrap {padding:0 15px;}
+.onepick_wrap .img_list ul li {float: left; background: #fff; width:48%; margin-right: 4%; margin-bottom: 20px; box-shadow:0px 0px 4px 0px #ccc}
+.onepick_wrap .img_list ul li:nth-child(2n){margin-right: 0;}
+.onepick_wrap .img_list ul li a {display: block; width: 100%; height: 100%; text-align: center}
+.onepick_wrap .img_list ul li a .img_txt{padding: 8px; font-size:14px}
+.onepick_wrap .img_list ul li a .img_txt p {margin-bottom: 8px;font-weight: bold}
+/* .onepick_wrap .img_list ul li a .img_txt p.lect_title{line-height: 140%;} */
+.onepick_wrap .img_list ul li a .img_txt p.lect_title{line-height: 140%;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-wrap:break-word;overflow: hidden;text-overflow: ellipsis;}
+.onepick_wrap .img_list ul li a .img_txt p .img_title{font-size:13px; padding: 2px;}
+.onepick_wrap .img_list ul li a .img_txt p.img_name{font-size:13px; color:#777; font-weight: normal;}
+.onepick_wrap .img_list ul li a.lect_btn {background:#4c7fff; height:40px;line-height: 40px;color: #fff;font-weight: bold;letter-spacing:-1px;}
+.onepick_wrap .img_study {color:#265bbc; border:1px solid #265bbc}
+.onepick_wrap .img_test {color:#00aa90; border:1px solid #00aa90;}
+
+
+
+/* 강남인강 소개 */
+.introM {background: #fff}
+.introM p {font-size:25px; font-weight: bold; padding-top: 20px; color:#333}
+
+
+/* 2021-05 태블릿 코드 추가 */
+@media screen and (min-width:1000px){
+
+    /* 로고 가운데 정렬 */
+    .header .hd_inbox .logo { left: calc(50% - 107px); }
+
+    /* 프로모션 */
+    .promotion_list ul{padding: 0 16px;}
+    .promotion_list ul:before,
+    .promotion_list ul:after {content: "";display: block;clear: both;}
+    .promotion_list ul li {float: left;width: 49%;margin-right: 2%;}
+    .promotion_list ul li:nth-child(2n) {margin-right: 0;}
+    .promotion_list ul li a .info_txt h3 {height: 45px;line-height: 1.3em;}
+    .promotion_list ul li a .info_img{float: left;width: 30%;min-height: 74px;height: 20vw;max-height: 120px;overflow:hidden;}
+    .mobile_pager{float: left;}
+
+    /* 선생님 - 목록 */
+    .ingangTeacher_list ul li {width: 23.5%;margin-right: 2%;margin-bottom: 2%;}
+    .ingangTeacher_list ul li:nth-child(2n){margin-right: 2%;}
+    .ingangTeacher_list ul li:nth-child(4n){margin-right: 0;}
+
+    /* 강남인강 Pick */
+    .onepick_wrap .img_list ul li {width: 32%;margin-right: 2%;}
+    .onepick_wrap .img_list ul li:nth-child(2n){margin-right: 2%;}
+    .onepick_wrap .img_list ul li:nth-child(3n){margin-right: 0;}
+    .onepick_wrap .img_list ul li a .img_txt{height: 115px;}
+
+    /* 멘토링 - 학부모교실 - 리스트 */
+    .parent_wrap .img_list ul li {width:32%; margin-right: 2%;}
+    .parent_wrap .img_list ul li:nth-child(2n){margin-right: 2%;}
+    .parent_wrap .img_list ul li:nth-child(3n){margin-right: 0;}
+
+    /* 메인 - 영역별BEST & 신규강좌*/
+    .info_inner {margin: 24px 16px 0 16px;}
+    .info_inner:before,
+    .info_inner:after {content: "";display: block;clear: both;}
+    .info_inner li.best_section {float: left;width:24%;margin: 0 1.3% 0 0;padding:0;border:1px solid #ccc;}
+    .info_inner li.best_section:nth-child(4) {margin: 0;}
+    .info_inner li.new_section {margin: 0;clear: both}
+    .info_inner li a {display: block; width: 100%; height: 100%;}
+    .info_inner li a .info_img {float: none; width: 100%;background: #f9f9f9;}
+    .info_inner li a .info_img img{width: 88%;position: relative;left: 50%;margin-top: 16px;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .info_inner li a .info_txt {float: none; width: 100%; margin-left:0;padding: 15px;border-top: 1px solid #ccc;}
+    .info_inner li a .info_txt > p{margin-bottom: 1px;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 3em;}
+
+	/* 메인 - 강남인강 pick */
+	.pick_slide{overflow:hidden;}
+	.pick_slide li{float: left;width: 50%;}
+	.pick_contents{overflow:hidden;}
+	.pick_contents > li {float:left;width:50%;  padding:16px; border-bottom: none;}
+	.pick_contents > li > a > div {float: left;}
+	.pick_contents > li > a > .video_img {width: 100%; height: auto;}
+	.pick_contents > li > a > .video_txt {width: 100%;margin-left: 0;}
+	.pick_contents > li > a > .video_txt > p{margin-top: 3px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;height: 3em;}
+	.pick_contents > li > a > .video_txt > .video_txt_bottom {margin-top: 2px;}
+	.pick_contents > li > a > .video_txt > .video_txt_bottom > span {color:#999; font-weight: normal;font-size:13px;}
+
+    /* 선생님 - 상세페이지  */
+    .TeacherBlog_image {padding:10px 0 20px 0;}
+    .TeacherBlog_inner {display: table;padding: 0 16px;}
+    .TeacherBlog_txt,
+    .TeacherBlog_teacher {float: none !important;display: table-cell;}
+    .TeacherBlog_txt {width: 70%; margin-right: 0;padding:20px 0;vertical-align: middle;word-break: keep-all;}
+    .TeacherBlog_txt > p {margin-bottom: 8px;margin-top: -10px;}
+    .TeacherBlog_teacher {width: 30%; }
+    .TeacherBlog_teacher img{width: 90%; position: relative;left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);}
+
+
+}

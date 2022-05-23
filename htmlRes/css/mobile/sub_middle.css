@@ -1,0 +1,72 @@
+@charset "euc-kr";
+
+/* 중등 커뮤니티 검색폼 */
+legend, .blind{display: none;visibility:none;width:1px;height:1px;font-size:0;text-indent:-9999px;}
+/* .subcntsearch{width:100%;padding:2px 1% 6px;} */
+.subcntsearch select{width:25%;height:35px;padding:5px;font-size:13px;border:1px solid #ddd;}
+.subcntsearch input[type="text"]{width:55%;height:35px;border:1px solid #ddd;padding:0 3px;box-sizing:border-box;}
+.search_btn{background: #777;display: inline-block;width:16%;padding: 8px 10px;color: #fff;font-size: 13px;border:none;}
+
+/* 대학맛보기 */
+/*
+.univer_content{position: relative;}
+.univer_arrow{position: absolute;top:38vw;left:50%;width: 40px;height: 40px;margin-left:-20px;background: url(/htmlRes/images/user/common/sub/arrow_univer.png) no-repeat center;background-size:100%;}
+.rec_list{margin:0 0 0 22%;position: absolute;left:50%;top:90.5vw;width:26.4vw;}
+.rec_list li{margin-bottom:5vw;}
+.rec_list li img{width:100%;}
+.rec_list li.end{margin-bottom:15.2vw;}
+.rec_list li.eend{margin-bottom:26.5vw;}
+.rec_list li.eend2{margin-bottom:9.5vw;}
+.univer_btn{position: absolute;bottom:30px;left:50%;width:80%;margin-left:-40%;}
+.univer_btn a img{width:100%;}
+*/
+
+.univer_visual {}
+.univer_arrow{position: absolute;top:38vw;left:50%;width: 30px;height: 30px;margin-left:-20px;background: url(/htmlRes/images/user/common/sub/arrow_univer.png) no-repeat center;background-size:100%;}
+.univer_info_bg {background: #eee; padding: 20px 0;}
+.univer_info {width: 98%; margin: 0 auto;}
+.univer_info .info_list {background:#e16245; height:100px;}
+.univer_info .info_list ul li{float: left;width:14.2%;height:70px;text-align: center;border-right:1px solid #ea917d;margin-top: 10px;}
+.univer_info .info_list ul li img{display:block;margin: 0 auto;margin-top: 10px;width:40px}
+.univer_info .info_list ul li:last-child{border-right: none;}
+.univer_info .info_list ul li a span{color:#fff;font-size: 13px;text-align:center;display:block;margin-top: 10px;}
+.univer_info .info_list ul li a span.clicked {color:#ffe269}
+.univer_info .info_list ul li a:hover span {color:#ffe269}
+
+
+.univer_info .info_content {margin-top:20px;}
+
+.univer_info .info_content table {background:#fff;width:100%;}
+.univer_info .info_content table {display: none}
+.univer_info .info_content > table:FIRST-CHILD{display: table}
+
+.univer_info .info_content table tr {border-bottom: 1px solid #cccccc;margin:10px 0;}
+.univer_info .info_content table tr .kmooclogo {text-align: center;}
+.univer_info .info_content table tr .kmooclogo img {width:50px;	}
+
+.univer_info .info_content table tr .class_info {padding:10px 0;}
+.univer_info .info_content table tr .class_info p.univer_name{font-size: 17px;font-weight:bolder;color:#1c3a64}
+.univer_info .info_content table tr .class_info p.class_name{font-size: 13px;font-weight: bold; color:#333333}
+
+.univer_info .info_content table tr .watch_class {text-align: center;}
+.univer_info .info_content table tr .watch_class a.watch_btn {margin:0 auto;display:block;width:70px;background:#6d8fc9;height:30px;border-radius:30px;line-height:30px;color:#fff;font-size: 13px;font-weight: bold;;}
+.univer_info .info_content table tr .watch_class a.watch_btn img {display:none;margin-left: 20px;margin-bottom: 5px;;}
+
+.more_class {margin-top: 60px;}
+.more_class a {display:block;height:130px;border:1px solid #777;color:#777;font-size: 50px;font-weight: bold;text-align: center;line-height:130px;} 
+.more_kmooc {margin-top:20px;}
+.more_kmooc a {margin:0 auto;display:block;width:100%;;height:50px;font-size: 20px;font-weight: bold;border-radius:50px;background:#0a2046;color:#fff;text-align: center;line-height:50px;}
+.more_kmooc a span {color:#ffe269;font-size: 20px;}
+
+
+
+
+
+
+/* 이벤트 뷰페이지 */
+.tbl_view01 {width: 100%;}
+.tbl_view01 table{width: 100%;}
+.tbl_view01 table iframe{width: 100% !important;overflow:hidden;}
+.tbl_view01 table iframe[title="open_event"]{}
+.tbl_view01 table iframe[title="janghak_recruit"]{min-height:705vw !important;}
+/* .tbl_view01 table iframe[title="janghak_recruit_200311"]{height:215vw !important;} */

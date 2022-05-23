@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- iPhone icon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/htmlRes/images/mobile/icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/htmlRes/images/mobile/icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/htmlRes/images/mobile/icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/htmlRes/images/mobile/icon144x144.png" />
+<!-- android icon -->
+<link rel="shortcut icon" href="/htmlRes/images/mobile/icon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<title>강남구청 인터넷수능방송</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=720, user-scalable=no">
+
+<!-- eGovFrame Common import -->    
+
+<link rel="stylesheet" href="/htmlRes/css/mobile/common.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/jquery-ui.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick-theme.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/mediaq.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/layout.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub_middle.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/all.min.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="/htmlRes/js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.history.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/begin_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.touchslider.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/slick.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/player/starplayer_appweb.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/lecture/lecture_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/popup.js"></script>
+<script type="text/javascript" src="/htmlRes/js/upload.js"></script>
+<script type="text/javascript" src="/htmlRes/js/calendar.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/bbs/bbs_script.js"></script>
+
+
+
+<!-- 220518추가 -->
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/common.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/kkami.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/pjy.css">
+<script type="text/javascript" src="/mobile/220518/js/kkami.js"></script>
+<!-- //220518추가 -->
+
+
+
+<script type="text/javascript">
+	//주소창제어
+	//if (document.URL.indexOf("#")<=0) { 
+	//  window.addEventListener('load', function(){ 
+	//    setTimeout(scrollTo, 0, 0, 1); 
+	//  }, false); 
+	//} 
+	
+	// 접속 체크
+	chkUserConnectIn();
+	
+	function chkUserConnectIn() {		
+		
+		if (getCookie("userConnect") != "Y") {
+		   document.cookie = "userConnect=Y; path=/;";
+		   var params = "os_div="+getUserAgentInfo(navigator.userAgent, "os_div")+"&browser="+getUserAgentInfo(navigator.userAgent, "browser")+"&inflow_url="+document.referrer;  
+		   var postURL = "../insertStudConnectInfo.do";	
+		 
+		   getJson(postURL,params);		   
+		}
+	}
+	function getJson(postURL,params)  {
+		
+		var script = document.createElement('script');	
+		script.setAttribute('src', postURL+"?"+params);
+		document.getElementsByTagName("head")[0].appendChild(script);
+		
+	}
+</script>
+</head>
+<body>
+<div class="wrap">
+    <header class="header_gg">
+        111111
+    </header>
+    <div class="container_gg">
+
+    </div>
+    <footer class="footer_gg">
+
+    </footer>
+</div>
+<!-- quick start -->
+<div class="quick">
+	<div class="mbDim d-lg-none"></div>
+	<div id="fixedFloatBtn">
+		
+		<div class="mobBtnSet d-block d-lg-none">
+				
+				<button type="button" class="mobCallBtn"><span>더보기</span></button>
+				<ul class="mobBtnList">
+					<li class="li3">
+						<div class="mob_title">PC화면</div>
+						<div class="mob_icon">
+							<a href="/NGLMS/High/UserMain.do"><i class="fas fa-desktop"></i></a>
+						</div>
+					</li>
+					<li class="li2">
+						<div class="mob_title">다운로드 홈</div>
+						<div class="mob_icon">
+							<a href="javascript:;" title="다운로드 홈" onclick="app('kollus://list');"><i class="fas fa-cloud-download-alt"></i></a>
+						</div>
+					</li>
+					<li class="li1">
+						<div class="mob_title">수강중인 강좌</div>
+						<div class="mob_icon">
+							<a href="/NGLMS/Mobile/High/MyPage/Main.do"><i class="fa fa-envelope"></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 챗봇 -->
+			<button type="button" class="mobChatbot mt10">
+					<!-- <a href="https://www.thecloudgate.io:/webchat/main?brandKey=rEeoP4fy6srA2-dzPSylsQ&type=scenario" target="_blank"><i class="far fa-comment-dots"></i></a> -->
+					<a href="#" onclick="window.open('https://www.thecloudgate.io:/webchat/main?brandKey=rEeoP4fy6srA2-dzPSylsQ&type=scenario', '상담방', 'width=410, height=768, menubar=no, status=no, toolbar=no');"><img src="https://storage.googleapis.com/cloud-gate-storage/img/chatbot-icon.png" width="100%" alt="챗봇아이콘"/></a>
+			</button>
+			
+		<div class="totopBtn mt10" style="display: none;"><span>맨 위로</span></div>
+		
+	</div>
+</div>
+<script>
+var dim = $(".mbDim");
+// mobile fixed btn
+$(".mobCallBtn").click(function(){
+	$(".mobBtnList").toggleClass("open");
+	$(".mobCallBtn").toggleClass("open");
+
+	if ( $(this).hasClass("open") ) {
+		dim.fadeIn(300);
+		$("body").addClass("scrollDfd");
+	} else {
+		dim.fadeOut(300);
+		$("body").removeClass("scrollDfd");
+	}
+
+	$("#fixedFloatBtn .acBtn").click(function(){
+		dim.fadeOut(300);
+		$("body").removeClass("scrollDfd");
+		$(".mobBtnList").removeClass("open");
+		$(".mobCallBtn").removeClass("open");
+	});
+});
+
+//totop btn show/hide event
+if ( $("#fixedFloatBtn").is(":visible") ) {
+	totopBtn();
+	$(window).scroll(function(){
+		totopBtn();
+	});
+}
+	
+function totopBtn() {
+	var scl = $(window).scrollTop();
+	var totop = $(".totopBtn");
+
+	if ( scl > 100 ) {
+		totop.show();
+	} else {
+		totop.hide();
+	}
+}
+	
+// go top plugin
+(function ($, window, document) {
+	$.fn.goTop = function (options) {
+		var defaults = {
+		scrollTop: 100,
+		scrollSpeed: 1000
+	};
+	var options = $.extend(defaults, options);
+	var $this = $(this);
+
+	$this.on('click', function () {
+		$('html,body').animate({
+			'scrollTop': 0
+		}, options.speed)
+		})
+	}
+})(jQuery, window, document)
+$(".totopBtn").goTop(); // go top function
+
+
+</script>
+	<!-- quick end -->
+	
+
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$('.notice_slider').slick({
+			   arrows : false,
+			   dots: false,
+			   vertical : true,
+			   autoplay : true
+		   });
+	});
+</script>
+	<!-- footer end -->
+</div>
+<form id="search" name="search" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type" id="type" value="list"/>
+</form>
+<form id="mainListForm" name="mainListForm" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="seq" />
+    <input type="hidden" name="type" />
+</form>
+<form id="mainEventForm" name="mainEventForm" action="/NGLMS/Mobile/High/UserMain.do" method="get">
+    <input type="hidden" name="seq" />
+    <input type="hidden" name="type" />
+</form>
+
+<form id="listGang" name="listGang" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type"/>
+    <input type="hidden" name="gang_seq" id="gang_seq"/>
+    <input type="hidden" name="mem_div" id="mem_div"/>
+    <input type="hidden" name="example_yn" id="example_yn"/>  
+    <input type="hidden" name="vod_file_nm" id="vod_file_nm"/>  
+    <input type="hidden" name="layout_gb" id="layout_gb"/>
+    <input type="hidden" name="stud_id" id="stud_id"/>
+    <input type="hidden" name="lecture_cd" id="lecture_cd"/>
+    <input type="hidden" name="gubun" id="gubun" value="web"/>
+</form>
+
+<form id="uway_form" name="uway_form" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type" id="inputid3_type"  />
+    <input type="hidden" name="url" id="url"  />
+</form>
+
+<form id="searchLectureAndBook" name="searchLectureAndBook">
+	<input type="hidden" name="type" id="inputid6_type"  value="searchCalss"/>
+	<input type="hidden" id="class_cd" name="class_cd"  />
+	<input type="hidden" id="searchProf_id" name="prof_id"  />
+	<input type="hidden" id="code_study_level" name="code_study_level"  />
+</form>	
+
+<form id="searchLectureCK" name="searchLectureCK">
+	<input type="hidden" id="class_cd1" name="class_cd1"  />
+	<input type="hidden" id="class_cd2" name="class_cd2"  />
+	<input type="hidden" id="class_cd3" name="class_cd3"  />
+	<input type="hidden" id="class_cd4" name="class_cd4"  />
+</form>
+
+
+<script type="text/javascript">
+
+function category_open() {
+	var recentURL = location.href;
+	 if(recentURL.substring(recentURL.indexOf('/NGLMS/'), recentURL.length) == '/NGLMS/Mobile/Main.do')
+		$.mobile.changePage("/NGLMS/Mobile/Main.do?type=menu", {transition: "slide", reverse:false});
+	 else 
+		 $.mobile.changePage("/NGLMS/Mobile/Main.do", {transition: "slide", reverse:true});
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72115146-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72115146-15');
+</script>
+
+</body>
+</html>
+
