@@ -243,3 +243,7 @@
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li::before {content: ''; position: absolute; top: 18px; left: 0; width: 4px; height: 4px; background-color: #333; border-radius: 2px;}				
 .publisher_textbook_area .inner > div.learning_textbook .cont .tab_item_area .tab_item_ul > li .list_item ul li a {line-height: 40px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
 /* //영역별 학습교재 */
+
+/* 퀵메뉴 */
+.chatbotbox {top: 288px; margin-right: -730px;}
+/* //퀵메뉴 */

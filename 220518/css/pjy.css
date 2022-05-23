@@ -10,7 +10,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 /* .more_btn .round {display: inline-block; width: 23px; height: 23px; box-sizing: border-box; border: 1px solid #dedede; border-radius: 50%; position: relative; vertical-align: middle;}
 .more_btn .round::before {content: ""; display: block; width: 2px; height: 11px; background-color: #b1b1b1; position: absolute; top: 5px; left: 10px;}
 .more_btn .round::after {content: ""; display: block; width: 11px; height: 2px; background-color: #b1b1b1; position: absolute; top: 5px; left: 10px;} */
-.button_plus {background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
+.button_plus {display: block; background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
 .clearfix:after{content:''; display:block; clear: both;}
 
 /* 고객센터 */
@@ -65,37 +65,55 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 /* 강남인강원픽, 추천프로모션강좌 */
 .onepick_promotion_area .inner {display: flex;}
 /* 강남인강원픽 */
-.onepick_promotion_area .onepick {width: 810px; margin-right: 30px;}
-.onepick_promotion_area .onepick .onepick_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.onepick_promotion_area .onepick {width: 840px;}
+.onepick_promotion_area .onepick .onepick_title {position: relative; display: flex; align-items: center; width: 810px; margin: 30px 0 30px 0;}
+.onepick_promotion_area .onepick .onepick_title .left {display: flex; align-items: center;}
+.onepick_promotion_area .onepick .onepick_title .left .main_tit {margin-right: 10px;}
 .onepick_promotion_area .onepick .onepick_title .button_plus {position: absolute; top: 0; right: 0;}
-.onepick_promotion_area .onepick .onepick_content ul {display: flex;}
-.onepick_promotion_area .onepick .onepick_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 11px;}
+.onepick_promotion_area .onepick .onepick_content ul {position: relative; right: 15px;}
+.onepick_promotion_area .onepick .onepick_content ul li {box-sizing: border-box; width: 250px !important; margin: 0 15px; border: 1px solid #ddd; border-radius: 11px;}
+
+
+
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 14px;}
 .onepick_promotion_area .onepick .onepick_content ul li img {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
 
 /* 추천프로모션강좌 */
-.onepick_promotion_area .promotion {width: 360px;}
-.onepick_promotion_area .promotion .promotion_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.onepick_promotion_area .promotion {width: 380px;}
+.onepick_promotion_area .promotion .promotion_title {position: relative; display: flex; width: 360px; margin: 30px 0 30px 0;}
+.onepick_promotion_area .promotion .promotion_title .left {display: flex; align-items: center;}
+.onepick_promotion_area .promotion .promotion_title .left .main_tit {margin-right: 10px;}
 .onepick_promotion_area .promotion .promotion_title .promotion_button {position: absolute; top: 0; right: 0;}
+.onepick_promotion_area .promotion .promotion_content {position: relative; right: 10px;}
+.onepick_promotion_area .promotion .promotion_content ul {}
+.onepick_promotion_area .promotion .promotion_content ul li {box-sizing: border-box; margin: 0 10px;}
 .onepick_promotion_area .promotion .promotion_content ul li img {display: block; width: 100%; height: 300px; border-radius: 11px; object-fit: cover;}
 
 
 /* 강남인강멘토링, 이벤트 */
 .mentoring_event_area .inner {display: flex;}
 /* 강남인강멘토링 */
-.mentoring_event_area .mentoring {width: 810px; margin-right: 30px;}
-.mentoring_event_area .mentoring .mentoring_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.mentoring_event_area .mentoring {width: 840px;}
+.mentoring_event_area .mentoring .mentoring_title {position: relative; display: flex; align-items: center; width: 810px; margin: 30px 0 30px 0;}
+.mentoring_event_area .mentoring .mentoring_title .left {display: flex; align-items: center;}
+.mentoring_event_area .mentoring .mentoring_title .left .main_tit {margin-right: 10px;}
 .mentoring_event_area .mentoring .mentoring_title .button_plus {position: absolute; top: 0; right: 0;}
-.mentoring_event_area .mentoring .mentoring_content ul {display: flex;}
-.mentoring_event_area .mentoring .mentoring_content ul li {width: 252px; border: 1px solid #ddd; border-radius: 11px;}
+.mentoring_event_area .mentoring .mentoring_content ul {position: relative; right: 15px;}
+.mentoring_event_area .mentoring .mentoring_content ul li {box-sizing: border-box; width: 250px !important; margin: 0 15px; border: 1px solid #ddd; border-radius: 11px;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_name {padding: 20px 20px; font-size: 16px; font-weight: bold;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 14px;}
 .mentoring_event_area .mentoring .mentoring_content ul li img  {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
 /* 이벤트 */
-.mentoring_event_area .event {width: 360px;}
-.mentoring_event_area .event .event_title {position: relative; display: flex; margin: 30px 0 30px 0;}
+.mentoring_event_area .event {width: 380px;}
+.mentoring_event_area .event .event_title {position: relative; display: flex; width: 360px; margin: 30px 0 30px 0;}
+.mentoring_event_area .event .event_title .left {display: flex; align-items: center;}
+.mentoring_event_area .event .event_title .left .main_tit {margin-right: 10px;}
+
 .mentoring_event_area .event .event_title .button_plus {position: absolute; top: 0; right: 0;}
+.mentoring_event_area .event .event_content {position: relative; right: 10px;}
+.mentoring_event_area .event .event_content ul {}
+.mentoring_event_area .event .event_content ul li {box-sizing: border-box; margin: 0 10px;}
 .mentoring_event_area .event .event_content ul li img {display: block; width: 100%; height: 300px; border-radius: 11px; object-fit: cover; }
 
 /* 챗봇 */
