@@ -18,10 +18,10 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 
 /* 고객만족센터 */
 .footer_renewal .footer_tel {padding: 29px 30px; background-color: #f1f6ff;background-image: url(/mobile/220518/images/tel_icon.png); background-repeat: no-repeat; background-position: 453px 53px; font-family: "NanumSquare", sans-serif;}
-.footer_renewal .footer_tel .tel_txt {margin-left: 135px; line-height: 50px;}
-.footer_renewal .footer_tel .tel_txt .service_name {font-size: 28px; color: #333; font-weight: 800;}
-.footer_renewal .footer_tel .tel_txt .service_number {font-size: 50px; font-weight: 800; color: #28426f;}
-.footer_renewal .footer_tel .tel_txt .service_time {font-size: 24px; color: #333; font-weight: 400;}
+.footer_renewal .footer_tel .tel_txt { margin-left: 135px;}
+.footer_renewal .footer_tel .tel_txt .service_name {font-family: "NanumSquare", sans-serif; font-size: 28px; color: #333; font-weight: 800;}
+.footer_renewal .footer_tel .tel_txt .service_number {font-family: "NanumSquare", sans-serif; font-size: 50px; font-weight: 800; color: #28426f;}
+.footer_renewal .footer_tel .tel_txt .service_time {font-family: "NanumSquare", sans-serif; font-size: 24px; color: #333; font-weight: 400;}
 
 /* sns */
 .footer_renewal .footer_sns {background: #272a2e; padding: 30px 0;}
