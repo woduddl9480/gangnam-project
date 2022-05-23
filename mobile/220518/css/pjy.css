@@ -37,13 +37,13 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .footer_renewal .footer_sns ul li {display: inline-block; margin: 0 10px;}
 .footer_renewal .footer_sns ul li a img{vertical-align: middle;}
 
-.footer_renewal .footer_information {background: #272a2e; padding: 12px 0;}
+.footer_renewal .footer_information {background: #272a2e; padding: 12px 0; margin: -1px 0;}
 .footer_renewal .footer_information ul {text-align: center}
 .footer_renewal .footer_information ul li {display: inline-block;}
 .footer_renewal .footer_information ul li a{font-size:13px; color: #fff; margin: 0 10px;}
 .footer_renewal .footer_information ul li:after {content:"";width: 1px; height: 12px; display: inline-block; background-color:#fff;position: relative; right: -3px; top: 2px;}
 .footer_renewal .footer_information ul li:last-child:after {display: none}
 
-.footer_renewal .footer_address {background:#272a2e; padding: 15px 0;}
+.footer_renewal .footer_address {background:#272a2e; padding: 15px 0 60px 0;}
 .footer_renewal .footer_address p{font-size:13px;color:#777; text-align: center}
 .footer_renewal .footer_address p.footer_logo{margin-top: 10px;}
