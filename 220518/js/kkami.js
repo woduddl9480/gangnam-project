@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-    /*
     $('.gnb_area .depth01 > li').on('mouseover', function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
@@ -9,7 +8,6 @@ $(document).ready(function(){
     $('.gnb_area .depth02, .depth01').on('mouseout', function(){
         $('.gnb_area .depth01 > li').removeClass('active');
     });
-    */
 
     $('.openLayer ul li').on('click', function(){
         var layer = $(this).attr('data-open');
