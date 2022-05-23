@@ -178,11 +178,95 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.famous_publisher_current').text(nextSlide / 4 + 1);
     });
+    /* //유명출판사별 강의 */
 
+
+    /* 강남인강 ONEPICK */
+    $('.onepick_promotion_slide').on('init', function(event, slick) {
+        $('.onepick_promotion_counter').append('<span class="onepick_promotion_current"></span><span class="onepick_promotion_slash">/</span><span class="onepick_promotion_total"></span>');
+        // alert(slick.currentSlide + 1 * 4);
+        $('.onepick_promotion_current').text( slick.currentSlide + 1);
+        $('.onepick_promotion_total').text(Math.ceil(slick.slideCount / 3));
+        
+    })
+    .slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.onepick_promotion_prev'), 
+        nextArrow: $('.onepick_promotion_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.onepick_promotion_current').text(nextSlide / 3 + 1);
+    });
+    /* //강남인강 ONEPICK */
+
+
+    /* 추천 프로모션 강좌 */
+    $('.promotion_slide').on('init', function(event, slick) {
+        $('.promotion_counter').append('<span class="promotion_current"></span><span class="promotion_slash">/</span><span class="promotion_total"></span>');
+        // alert(slick.currentSlide + 1 * 4);
+        $('.promotion_current').text( slick.currentSlide + 1);
+        $('.promotion_total').text(Math.ceil(slick.slideCount));
+        
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.promotion_prev'), 
+        nextArrow: $('.promotion_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.promotion_current').text(nextSlide + 1);
+    });
+    /* //추천 프로모션 강좌 */
 
     
+    /* 강남인강 멘토링 */
+    $('.mentoring_event_slide').on('init', function(event, slick) {
+        $('.mentoring_event_counter').append('<span class="mentoring_event_current"></span><span class="mentoring_event_slash">/</span><span class="mentoring_event_total"></span>');
+        // alert(slick.currentSlide + 1 * 4);
+        $('.mentoring_event_current').text( slick.currentSlide + 1);
+        $('.mentoring_event_total').text(Math.ceil(slick.slideCount / 3));
+        
+    })
+    .slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.mentoring_event_prev'), 
+        nextArrow: $('.mentoring_event_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.mentoring_event_current').text(nextSlide / 3 + 1);
+    });
+    /* //강남인강 멘토링 */
 
-    /* //유명출판사별 강의 */
+    
+    /* 이벤트 */
+    $('.event_slide').on('init', function(event, slick) {
+        $('.event_counter').append('<span class="event_current"></span><span class="event_slash">/</span><span class="event_total"></span>');
+        // alert(slick.currentSlide + 1 * 4);
+        $('.event_current').text( slick.currentSlide + 1);
+        $('.event_total').text(Math.ceil(slick.slideCount));
+        
+    })
+    .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // vertical: true,
+        prevArrow: $('.event_prev'), 
+        nextArrow: $('.event_next'),
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.event_current').text(nextSlide + 1);
+    });
+    /* //이벤트 */
 
 
 });
