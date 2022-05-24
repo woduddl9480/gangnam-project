@@ -194,7 +194,9 @@
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left {display: flex; align-items: center;}
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left .subject {display: flex; justify-content: center; align-items: center; height: 26px; padding: 0 10px; margin-right: 5px; border: 1px solid #28426f; border-radius: 13px; font-weight: 700; font-size: 14px; color: #28426f; letter-spacing: -0.4px;}
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .left .teacher {font-size: 14px; color: #333; letter-spacing: -0.4px;}
-.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .right .star {}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .right .star {display: flex;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .right .star > li {margin-right: 3px;}
+.best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .top .right .star > li:last-of-type {margin-right: 0;}
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .tit_k {margin-top: 15px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
 .best_review_area .inner .tab_item_area > ul > li .lecture_review .list_item .slide_item .txt_k {max-height: 78px; margin-top: 12px; line-height: 26px; font-size: 14px; color: #333; letter-spacing: -0.4px;}
 /* //강좌별 수강후기 */
@@ -211,6 +213,7 @@
 .publisher_textbook_area .inner > div.famous_publisher .list_item {margin-top: 30px;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul {margin: 0 10px;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li {text-align: center;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li a {display: inline-block;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area {}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area img {display: inline-block;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area {margin-top: 10px; }

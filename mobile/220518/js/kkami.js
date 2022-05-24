@@ -36,6 +36,26 @@ $(document).ready(function(){
     });
     /* //강좌별 BEST */
 
+    
+    /* 강좌별 수강후기 */
+    $('.lecture_review .review_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //강좌별 수강후기 */
+
+
+    /* 유명 출판사별 강의 */
+    $('.famous_publisher .slide_ul').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //유명 출판사별 강의 */
+
 });
 
     
