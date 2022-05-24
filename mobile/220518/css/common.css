@@ -33,9 +33,11 @@ html, body {width: 720px !important; margin: 0 auto !important; background-color
 /* 제목 */
 .main_mtit {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 36px; color: #333; letter-spacing: -0.4px;}
 
+
+/* * */
 select {-webkit-appearance: none; -moz-appearance: none; appearance: none; line-height: initial;}
-
-
+button {cursor: pointer; background: none; border: none;}
+h2 {margin: 0;}
 
 /* header */
 
