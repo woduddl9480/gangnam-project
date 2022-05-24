@@ -11,7 +11,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 /* .more_btn .round {display: inline-block; width: 23px; height: 23px; box-sizing: border-box; border: 1px solid #dedede; border-radius: 50%; position: relative; vertical-align: middle;}
 .more_btn .round::before {content: ""; display: block; width: 2px; height: 11px; background-color: #b1b1b1; position: absolute; top: 5px; left: 10px;}
 .more_btn .round::after {content: ""; display: block; width: 11px; height: 2px; background-color: #b1b1b1; position: absolute; top: 5px; left: 10px;} */
-.button_plus {background-image: url(/220518/images/plus.png); width: 25px; height: 25px; background-repeat: no-repeat;}
+.button_mplus {background-image: url(/mobile/220518/images/plus.png); width: 48px; height: 48px; background-repeat: no-repeat;}
 .clearfix:after{content:''; display:block; clear: both;}
 
 
@@ -46,8 +46,8 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 
 /* 공지사항 */
 .notice_area .notice_title {position: relative;}
-.notice_area .notice_title .button_plus {position: absolute; top: 0; right: 0;}
-.notice_area .notice_content {padding: 30px 30px; margin: 30px 30px; border: 1px solid #ddd; border-radius: 11px;}
+.notice_area .notice_title .button_mplus {position: absolute; bottom: 0; right: 0;}
+.notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 11px;}
 .notice_area .notice_content ul {display: flex;}
 .notice_area .notice_content ul li a {width: 458px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 26px; color:#333; font-weight: bold; line-height: 26px;}
 .notice_area .notice_content ul li span {font-size: 26px; color: #888;}
