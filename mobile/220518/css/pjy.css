@@ -48,38 +48,53 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .notice_area .notice_title {position: relative;}
 .notice_area .notice_title .button_mplus {position: absolute; bottom: 0; right: 0;}
 .notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 11px;}
-.notice_area .notice_content ul {display: flex;}
+.notice_area .notice_content ul {}
+.notice_area .notice_content ul li {display: flex; justify-content: space-between; align-items: center;}
 .notice_area .notice_content ul li a {width: 458px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 26px; color:#333; font-weight: bold; line-height: 26px;}
-.notice_area .notice_content ul li span {font-size: 26px; color: #888;}
+.notice_area .notice_content ul li span {font-size: 24px; color: #888;}
 
 .span_grey {color: #888;}
 
 /* 추천프로모션 */
 .promotion_area .promotion_tit {position: relative;}
-.promotion_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.promotion_area .img_area img {}
 .promotion_area .promotion_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
 
 /* 이벤트 */
 .event_area .event_tit {position: relative;}
 .event_area .event_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
-.event_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.event_area .img_area img {}
 
 /* 강남인강원픽 */
 .onepick_mentoring_area .onepick_tit {position: relative; margin: 30px 0 40px 0;}
 .onepick_mentoring_area .onepick_tit .button_mplus {position: absolute; top: 0; right: 0;}
-.onepick_mentoring_area .onepick_mcontent {margin-left: 15px;}
-.onepick_mentoring_area .onepick_mcontent ul {position: relative; right: 15px;}
-.onepick_mentoring_area .onepick_mcontent ul li {box-sizing: border-box; width: 360px !important; margin-right: 30px; border: 1px solid #ddd; border-radius: 11px;}
+.onepick_mentoring_area .onepick_mcontent {}
+.onepick_mentoring_area .onepick_mcontent ul {display: flex; margin-left: 15px;}
+.onepick_mentoring_area .onepick_mcontent ul .slick-list {padding-right: 313px;}
+.onepick_mentoring_area .onepick_mcontent ul li {margin: 0 15px; border: 1px solid #ddd; border-radius: 20px;}
 .onepick_mentoring_area .onepick_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
 .onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
 .onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 24px;}
 
 /* 강남인강멘토링 */
-.onepick_mentoring_area .mentoring_tit {position: relative; margin: 30px 0 40px 0;}
+.onepick_mentoring_area .mentoring_tit {position: relative; margin: 55px 0 40px;}
 .onepick_mentoring_area .mentoring_tit .button_mplus {position: absolute; top: 0; right: 0;}
-.onepick_mentoring_area .mentoring_mcontent {margin-left: 15px;}
-.onepick_mentoring_area .mentoring_mcontent ul {position: relative; right: 15px;}
-.onepick_mentoring_area .mentoring_mcontent ul li {box-sizing: border-box; width: 360px !important; margin-right: 30px; border: 1px solid #ddd; border-radius: 11px;}
+.onepick_mentoring_area .mentoring_mcontent {}
+.onepick_mentoring_area .mentoring_mcontent ul {display: flex; margin-left: 15px;}
+.onepick_mentoring_area .mentoring_mcontent ul .slick-list {padding-right: 313px;}
+.onepick_mentoring_area .mentoring_mcontent ul li {margin: 0 15px; border: 1px solid #ddd; border-radius: 22px;}
 .onepick_mentoring_area .mentoring_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
 .onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
 .onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 24px;}
+
+/* 추천 프로모션 강좌 */
+.promotion_area .promotion_slide {display: flex; margin-left: 15px;}
+.promotion_area .promotion_slide .slick-list {padding-right: 125px;}
+.promotion_area .promotion_slide li {margin: 0 15px;}
+
+/* 이벤트 */
+.event_area .event_slide {display: flex; margin-left: 15px;}
+.event_area .event_slide .slick-list {padding-right: 125px;}
+.event_area .event_slide li {margin: 0 15px;}
+
+/* 공지사항 */

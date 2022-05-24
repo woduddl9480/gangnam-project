@@ -56,6 +56,56 @@ $(document).ready(function(){
     });
     /* //유명 출판사별 강의 */
 
+    
+    /* 강남인강 ONEPICK */
+    $('.onepick_mcontent ul').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //강남인강 ONEPICK */
+
+
+    
+    /* 강남인강 멘토링 */
+    $('.mentoring_mcontent ul').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //강남인강 멘토링 */
+
+    /* 추천 프로모션 강좌 */
+    $('.promotion_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //추천 프로모션 강좌 */
+
+    /* 이벤트 */
+    $('.event_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        // centerMode: true,
+    });
+    /* //이벤트 */
+
+    /* 공지사항 */
+    $('.notice_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        vertical: true,
+        autoplay: true,
+        // centerMode: true,
+    });
+    /* //공지사항 */
+
 });
 
     
