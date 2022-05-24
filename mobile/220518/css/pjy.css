@@ -34,7 +34,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .footer_renewal .footer_information {background: #272a2e; padding: 12px 0; margin: -1px 0;}
 .footer_renewal .footer_information ul {text-align: center}
 .footer_renewal .footer_information ul li {display: inline-block;}
-.footer_renewal .footer_information ul li a{font-size:24px; color: #aaa; margin: 0 10px; font-family: "NanumSquare", sans-serif;}
+.footer_renewal .footer_information ul li a{font-size:24px; color: #aaa; margin: 0 29px; font-family: "NanumSquare", sans-serif;}
 .footer_renewal .footer_information ul li a:hover {text-decoration: none!important;}
 .footer_renewal .footer_information ul li:after {content:"";width: 1px; height: 20px; display: inline-block; background-color:#aaa;position: relative; right: -3px; top: 2px;}
 .footer_renewal .footer_information ul li:last-child:after {display: none}
@@ -55,12 +55,31 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .span_grey {color: #888;}
 
 /* 추천프로모션 */
-.lower_slide_area .promotion_area .promotion_tit {position: relative;}
-.lower_slide_area .promotion_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
-.lower_slide_area .promotion_area .promotion_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
-
+.promotion_area .promotion_tit {position: relative;}
+.promotion_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.promotion_area .promotion_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
 
 /* 이벤트 */
-.lower_slide_area .event_area .event_tit {position: relative;}
-.lower_slide_area .event_area .event_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
-.lower_slide_area .event_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.event_area .event_tit {position: relative;}
+.event_area .event_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
+.event_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+
+/* 강남인강원픽 */
+.onepick_mentoring_area .onepick_tit {position: relative; margin: 30px 0 40px 0;}
+.onepick_mentoring_area .onepick_tit .button_mplus {position: absolute; top: 0; right: 0;}
+.onepick_mentoring_area .onepick_mcontent {margin-left: 15px;}
+.onepick_mentoring_area .onepick_mcontent ul {position: relative; right: 15px;}
+.onepick_mentoring_area .onepick_mcontent ul li {box-sizing: border-box; width: 360px !important; margin-right: 30px; border: 1px solid #ddd; border-radius: 11px;}
+.onepick_mentoring_area .onepick_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
+.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
+.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 24px;}
+
+/* 강남인강멘토링 */
+.onepick_mentoring_area .mentoring_tit {position: relative; margin: 30px 0 40px 0;}
+.onepick_mentoring_area .mentoring_tit .button_mplus {position: absolute; top: 0; right: 0;}
+.onepick_mentoring_area .mentoring_mcontent {margin-left: 15px;}
+.onepick_mentoring_area .mentoring_mcontent ul {position: relative; right: 15px;}
+.onepick_mentoring_area .mentoring_mcontent ul li {box-sizing: border-box; width: 360px !important; margin-right: 30px; border: 1px solid #ddd; border-radius: 11px;}
+.onepick_mentoring_area .mentoring_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
+.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
+.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 24px;}
