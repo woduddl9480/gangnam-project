@@ -36,13 +36,13 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .footer_renewal .footer_information ul li {display: inline-block;}
 .footer_renewal .footer_information ul li a{font-size:24px; color: #aaa; margin: 0 10px; font-family: "NanumSquare", sans-serif;}
 .footer_renewal .footer_information ul li a:hover {text-decoration: none!important;}
-.footer_renewal .footer_information ul li:after {content:"";width: 1px; height: 12px; display: inline-block; background-color:#fff;position: relative; right: -3px; top: 2px;}
+.footer_renewal .footer_information ul li:after {content:"";width: 1px; height: 20px; display: inline-block; background-color:#aaa;position: relative; right: -3px; top: 2px;}
 .footer_renewal .footer_information ul li:last-child:after {display: none}
 
 /* 주소 및 기타정보 */
-.footer_renewal .footer_address {background:#272a2e; padding: 15px 0 60px;}
-.footer_renewal .footer_address p, span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 40px;}
-.footer_renewal .footer_address p.footer_logo{margin-top: 10px;}
+.footer_renewal .footer_add {background:#272a2e; padding: 15px 0 60px;}
+.footer_renewal .footer_add p, .footer_renewal .footer_add span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 40px;}
+.footer_renewal .footer_add p.footer_logo{margin-top: 10px;}
 
 /* 공지사항 */
 .notice_area .notice_title {position: relative;}
