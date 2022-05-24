@@ -1,7 +1,4 @@
-
 $(document).ready(function(){
-
-    /* 메인배너 */
     $('.main_banner_slide').on('init', function(event, slick) {
         $('.main_banner_counter').append('<span class="main_banner_current"></span><span class="main_banner_slash">/</span><span class="main_banner_total"></span>');
         $('.main_banner_current').text(slick.currentSlide + 1);
@@ -18,84 +15,53 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.main_banner_current').text(nextSlide + 1);
     });
-    /* //메인배너 */
-
-
     $('.tab_btn_area .tab_btn_ul > li').on('click', function(){
         var layer = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
         $('.' + layer).addClass('active').siblings().removeClass('active');
     });
-
-    /* 강좌별 BEST */
     $('.lecture_best ul').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //강좌별 BEST */
-
-    
-    /* 강좌별 수강후기 */
     $('.lecture_review .review_slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //강좌별 수강후기 */
-
-
-    /* 유명 출판사별 강의 */
     $('.famous_publisher .slide_ul').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //유명 출판사별 강의 */
-
-    
-    /* 강남인강 ONEPICK */
     $('.onepick_mcontent ul').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //강남인강 ONEPICK */
-
-
-    
-    /* 강남인강 멘토링 */
     $('.mentoring_mcontent ul').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //강남인강 멘토링 */
-
-    /* 추천 프로모션 강좌 */
     $('.promotion_slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //추천 프로모션 강좌 */
-
-    /* 이벤트 */
     $('.event_slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         // centerMode: true,
     });
-    /* //이벤트 */
-
-    /* 공지사항 */
     $('.notice_slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -104,8 +70,6 @@ $(document).ready(function(){
         autoplay: true,
         // centerMode: true,
     });
-    /* //공지사항 */
-
 });
 
     
