@@ -92,30 +92,26 @@
 <div class="wrap">
 	<style>
 		.header_renewal {}
-		.header_renewal .header_logo {display: flex; align-items: center; height: 120px; border-bottom: 2px solid #f0f0f0;}
+		.header_renewal .header_logo {}
 		.header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center;}
 		.header_renewal .header_logo .inner .memewe {margin-right: 30px;}
 		.header_renewal .header_logo .inner .logo {}
 		.header_renewal .header_logo .inner .change_link {}
 		.header_renewal .header_logo .inner .change_link a {display: flex; justify-content: center; align-items: center; width: 100px; height: 74px; line-height: 28px; background-color: #17978b; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-align: center;}
 
-		.header_renewal .header_select {border-bottom: 2px solid #f0f0f0;}
-		.header_renewal .header_select .inner {padding: 10px 0; font-size: 0;}
-		.header_renewal .header_select .inner span {display: inline-block; width: 320px; height: 76px; margin-right: 20px;}
-		.header_renewal .header_select .inner span:last-of-type {margin-right: 0;}
-		.header_renewal .header_select .inner span select {width: 100%; height: 100%; padding: 0 60px 0 30px; background: url(/mobile/220518/images/select_arrow.png) no-repeat right 20px center; border: 2px solid #ddd; border-radius: 10px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 32px; color: #333;}
+		.header_renewal .header_select {}
 	</style>
     <header class="header_renewal">
         <div class="header_logo">
 			<div class="inner">
 				<div class="memewe">
 					<span>
-						<a href="/NGLMS/Mobile/High/Community/Event.do?pageIndex=1&type=view&seq=3174&post_yn=G&search_key=02"><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
+						<a href=""><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
 					</span>
 				</div>
 				<div class="logo">
 					<h1>
-						<a href="/NGLMS/Mobile/High/UserMain.do"><img src="/mobile/220518/images/logo.png" alt="강남구청 인터넷수능방송 고등부"></a>
+						<a href=""><img src="/mobile/220518/images/logo.png" alt="강남구청 인터넷수능방송 고등부"></a>
 					</h1>
 				</div>
 				<div class="change_link">
@@ -124,23 +120,29 @@
 			</div>
 		</div>
 		<div class="header_select">
-			<div class="inner">
-				<span>
-					<select>
-						<option value="">선생님</option>
-					</select>
-				</span>
-				<span>
-					<select>
-						<option value="">국어영역</option>
-					</select>
-				</span>
-			</div>
+
 		</div>
     </header>
     <div class="container_renewal">
-		<div>
-			
+		<div class="notice_area">
+			<div class="inner">
+				<div class="notice_title mt30">
+					<h2 class="main_mtit">공지사항</h2>
+					<div class="notice_button">
+						<a href="/NGLMS/High/Community/Notice.do" class="button_mplus">
+							
+						</a>
+					</div>
+				</div>
+				<div class="notice_content mt30">
+					<ul>
+						<li>
+							<a href="" class="notice_name">정현경선생님과 함께하는 Face Time (고등수학편) 만족도 조사 테스트 테스트</a>
+							<span class="notice_date">2022-04-13</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
     </div>
 	<!-- 푸터 -->
@@ -170,7 +172,7 @@
 		</div>
 		<div class="footer_address">
 			<p>(우) 06263. 서울시 강남구 도곡로 18길 7 (구 : 도곡동 548번지)</p>
-			<p>대표자 : 강남구청장 | 사업자등록번호 : <span>120-83-00097</span></p>
+			<p>대표자 : 강남구청장 | 사업자등록번호 : 120-83-00097</p>
 			<p>통신판매업 신고 : 제 2009-서울강남-01039호 | 개인정보관리책임(CPO) : 행정국장</p>
 			<p>COPYRIGHT(c) 2017 GANGNAM-GU OFFICE, ALL RIGHT RESERVED</p>
 		</div>
@@ -182,6 +184,7 @@
 	<div id="fixedFloatBtn">
 		
 		<div class="mobBtnSet d-block d-lg-none">
+				
 				<button type="button" class="mobCallBtn"><span>더보기</span></button>
 				<ul class="mobBtnList">
 					<li class="li3">
