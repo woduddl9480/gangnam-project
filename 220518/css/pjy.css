@@ -84,7 +84,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .onepick_promotion_area .promotion .promotion_title {position: relative; display: flex; width: 360px; margin: 30px 0 30px 0;}
 .onepick_promotion_area .promotion .promotion_title .left {display: flex; align-items: center;}
 .onepick_promotion_area .promotion .promotion_title .left .main_tit {margin-right: 10px;}
-.onepick_promotion_area .promotion .promotion_title .promotion_button {position: absolute; top: 0; right: 0;}
+.onepick_promotion_area .promotion .promotion_title .right .button_plus {position: absolute; top: 0; right: 0;}
 .onepick_promotion_area .promotion .promotion_content {position: relative; right: 10px;}
 .onepick_promotion_area .promotion .promotion_content ul {}
 .onepick_promotion_area .promotion .promotion_content ul li {box-sizing: border-box; margin: 0 10px;}
