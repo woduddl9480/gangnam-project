@@ -47,7 +47,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 /* 공지사항 */
 .notice_area .notice_title {position: relative;}
 .notice_area .notice_title .button_mplus {position: absolute; bottom: 0; right: 0;}
-.notice_area .notice_content {padding: 30px 30px; margin: 30px 30px; border: 1px solid #ddd; border-radius: 11px;}
+.notice_area .notice_content {padding: 30px 30px; border: 1px solid #ddd; border-radius: 11px;}
 .notice_area .notice_content ul {display: flex;}
 .notice_area .notice_content ul li a {width: 458px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 26px; color:#333; font-weight: bold; line-height: 26px;}
 .notice_area .notice_content ul li span {font-size: 26px; color: #888;}
