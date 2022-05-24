@@ -5,13 +5,19 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 
+
+
 /* 텍스트 none */
 .blind {overflow: hidden; position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px;}
+
+
+a:hover, a:active, a:focus {text-decoration: none;}
 
 /* Layer */
 html, body {width: 720px !important; margin: 0 auto !important; background-color: #fff !important;}
 .wrap {overflow: hidden; position: relative;}
-.inner {position:relative; max-width:1200px; width:100%; margin:0 auto}
+
+.inner {position: relative; width: 660px; margin:0 auto;}
 
 
 /* 폰트 */
