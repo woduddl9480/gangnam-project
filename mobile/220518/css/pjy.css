@@ -41,7 +41,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 
 /* 주소 및 기타정보 */
 .footer_renewal .footer_address {background:#272a2e; padding: 15px 0 60px;}
-.footer_renewal .footer_address p, span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important;; text-align: center; line-height: 40px;}
+.footer_renewal .footer_address p, span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 40px;}
 .footer_renewal .footer_address p.footer_logo{margin-top: 10px;}
 
 /* 공지사항 */
@@ -53,3 +53,14 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .notice_area .notice_content ul li span {font-size: 26px; color: #888;}
 
 .span_grey {color: #888;}
+
+/* 추천프로모션 */
+.lower_slide_area .promotion_area .promotion_tit {position: relative;}
+.lower_slide_area .promotion_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.lower_slide_area .promotion_area .promotion_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
+
+
+/* 이벤트 */
+.lower_slide_area .event_area .event_tit {position: relative;}
+.lower_slide_area .event_area .event_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
+.lower_slide_area .event_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
