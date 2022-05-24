@@ -8,6 +8,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // vertical: true,
         prevArrow: $('.main_banner_prev'), 
         nextArrow: $('.main_banner_next'),
