@@ -89,31 +89,20 @@
 </script>
 </head>
 <body>
-<div class="wrap">
-	<style>
-		.header_renewal {}
-		.header_renewal .header_logo {display: flex; align-items: center; height: 120px; border-bottom: 2px solid #f0f0f0;}
-		.header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center;}
-		.header_renewal .header_logo .inner .memewe {margin-right: 30px;}
-		.header_renewal .header_logo .inner .logo {}
-		.header_renewal .header_logo .inner .change_link {}
-		.header_renewal .header_logo .inner .change_link a {display: flex; justify-content: center; align-items: center; width: 100px; height: 74px; line-height: 28px; background-color: #17978b; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-align: center;}
-
-		.header_renewal .header_select {border-bottom: 2px solid #f0f0f0;}
-		.header_renewal .header_select .inner {padding: 10px 0; font-size: 0;}
-		.header_renewal .header_select .inner span {display: inline-block; width: 320px; height: 76px; margin-right: 20px;}
-		.header_renewal .header_select .inner span:last-of-type {margin-right: 0;}
-		.header_renewal .header_select .inner span select {width: 100%; height: 100%; padding: 0 60px 0 30px; background: url(/mobile/220518/images/select_arrow.png) no-repeat right 20px center; border: 2px solid #ddd; border-radius: 10px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 32px; color: #333;}
-	</style>
+<div class="wrap">	
+	<!-- 헤더 -->
     <header class="header_renewal">
         <div class="header_logo">
 			<div class="inner">
-				<div class="memewe">
+				<div class="hamburger">
+					<button type="button">
+						<span></span>
+					</button>
+				</div>
+				<div class="logo">
 					<span>
 						<a href="/NGLMS/Mobile/High/Community/Event.do?pageIndex=1&type=view&seq=3174&post_yn=G&search_key=02"><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
 					</span>
-				</div>
-				<div class="logo">
 					<h1>
 						<a href="/NGLMS/Mobile/High/UserMain.do"><img src="/mobile/220518/images/logo.png" alt="강남구청 인터넷수능방송 고등부"></a>
 					</h1>
@@ -138,10 +127,87 @@
 			</div>
 		</div>
     </header>
+	<!-- //헤더 -->
+	
     <div class="container_renewal">
-		<div>
-			
+		<!-- 메인 배너 -->
+		<div class="main_banner_area">
+			<div class="main_banner">
+				<ul class="main_banner_slide">
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+				</ul>
+				<div class="slide_btn_area">
+					<div class="counter_area main_banner_counter">
+
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- //메인 배너 -->
+
+		<!-- 강좌별 BEST, 강좌별 수강후기 -->
+		<div class="best_review_area">
+			<div class="inner">
+				<h2 class="main_mtit">강좌별 BEST</h2>
+				<!-- tab 버튼 영역 -->
+				<div class="tab_btn_area">
+					<ul class="tab_btn_ul">
+						<li data-tab="best_review_tab" class="active"><button type="button">국어</button></li>
+						<li data-tab="best_review_tab02"><button type="button">영어</button></li>
+						<li data-tab="best_review_tab03"><button type="button">수학</button></li>
+						<li data-tab="best_review_tab04"><button type="button">사회</button></li>
+						<li data-tab="best_review_tab05"><button type="button">과학</button></li>
+						<li data-tab="best_review_tab05"><button type="button">NEW</button></li>
+					</ul>
+				</div>
+				<!-- //tab 버튼 영역 -->
+			</div>
+			<style>
+				.best_review_area .tab_item_area {margin-top: 40px;}
+				.best_review_area .tab_item_area > ul {margin-left: 15px;}
+				.best_review_area .tab_item_area > ul > li {}
+				.best_review_area .tab_item_area > ul > li .lecture_best {}
+				.best_review_area .tab_item_area > ul > li .lecture_best ul {position: relative; left: 0;}
+				.best_review_area .tab_item_area > ul > li .lecture_best ul .slick-list {padding-right: 87px;}
+				.best_review_area .tab_item_area > ul > li .lecture_best ul li {margin: 0 15px;}
+				.best_review_area .tab_item_area > ul > li .lecture_best ul li a {display: block; }
+			</style>
+			<div class="tab_item_area">
+				<ul>
+					<!-- 국어 -->
+					<li class="best_review_tab active">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->
+						<div class="lecture_review">
+
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //강좌별 BEST, 강좌별 수강후기 -->
+
     </div>
 	<!-- 푸터 -->
     <footer class="footer_renewal">
