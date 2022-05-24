@@ -1027,16 +1027,16 @@ function totopBtn() {
 (function ($, window, document) {
 	$.fn.goTop = function (options) {
 		var defaults = {
-		scrollTop: 100,
-		scrollSpeed: 1000
-	};
-	var options = $.extend(defaults, options);
-	var $this = $(this);
-
-	$this.on('click', function () {
-		$('html,body').animate({
-			'scrollTop': 0
-		}, options.speed)
+			scrollTop: 100,
+			scrollSpeed: 1000
+		};
+		var options = $.extend(defaults, options);
+		var $this = $(this);
+		
+		$this.on('click', function () {
+			$('html,body').animate({
+				'scrollTop': 0
+			}, options.speed)
 		})
 	}
 })(jQuery, window, document)
