@@ -20,9 +20,9 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 /* 고객만족센터 */
 .footer_renewal .footer_tel {padding: 29px 30px; background-color: #f1f6ff;background-image: url(/mobile/220518/images/tel_icon.png); background-repeat: no-repeat; background-position: 453px 53px; font-family: "NanumSquare", sans-serif;}
 .footer_renewal .footer_tel .tel_txt { margin-left: 135px;}
-.footer_renewal .footer_tel .tel_txt .service_name {font-family: "NanumSquare", sans-serif; font-size: 28px; color: #333; font-weight: 800;}
+.footer_renewal .footer_tel .tel_txt .service_name {font-family: "NanumSquare", sans-serif; font-size: 28px; color: #333; font-weight: 800; margin-bottom: 20px;}
 .footer_renewal .footer_tel .tel_txt .service_number {font-family: "NanumSquare", sans-serif; font-size: 50px; font-weight: 800; color: #28426f;}
-.footer_renewal .footer_tel .tel_txt .service_time {font-family: "NanumSquare", sans-serif; font-size: 24px; color: #333; font-weight: 400;}
+.footer_renewal .footer_tel .tel_txt .service_time {font-family: "NanumSquare", sans-serif; font-size: 24px; color: #333; font-weight: 400; margin-top: 12px;}
 
 /* sns */
 .footer_renewal .footer_snslist {background: #272a2e; padding: 30px 0;}
@@ -41,7 +41,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 
 /* 주소 및 기타정보 */
 .footer_renewal .footer_address {background:#272a2e; padding: 15px 0 60px;}
-.footer_renewal .footer_address p{font-size:20px; font-family: "NanumSquare", sans-serif; color:#888; text-align: center; line-height: 40px;}
+.footer_renewal .footer_address p, span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 40px;}
 .footer_renewal .footer_address p.footer_logo{margin-top: 10px;}
 
 /* 공지사항 */
@@ -51,3 +51,16 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .notice_area .notice_content ul {display: flex;}
 .notice_area .notice_content ul li a {width: 458px; padding-right: 40px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 26px; color:#333; font-weight: bold; line-height: 26px;}
 .notice_area .notice_content ul li span {font-size: 26px; color: #888;}
+
+.span_grey {color: #888;}
+
+/* 추천프로모션 */
+.lower_slide_area .promotion_area .promotion_tit {position: relative;}
+.lower_slide_area .promotion_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
+.lower_slide_area .promotion_area .promotion_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
+
+
+/* 이벤트 */
+.lower_slide_area .event_area .event_tit {position: relative;}
+.lower_slide_area .event_area .event_tit .button_mplus {position: absolute; bottom: 0; right: 0;}
+.lower_slide_area .event_area .img_area img {width: 550px; height: 250px; border-radius: 25px; object-fit: cover;}
