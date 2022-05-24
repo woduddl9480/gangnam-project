@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
     $('.gnb_area .depth01 > li').on('mouseover', function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
@@ -8,25 +7,19 @@ $(document).ready(function(){
     $('.gnb_area .depth02, .depth01').on('mouseout', function(){
         $('.gnb_area .depth01 > li').removeClass('active');
     });
-
     $('.openLayer ul li').on('click', function(){
         var layer = $(this).attr('data-open');
         $(this).addClass('active').siblings().removeClass('active');
         $('.' + layer).addClass('active').siblings().removeClass('active');
     });
-
     $('.banner_play_stop button').on('click', function(){
         $(this).removeClass('active').siblings().addClass('active');
     });
-
     $('.tab_btn_area .tab_btn_ul > li').on('click', function(){
         var layer = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
         $('.' + layer).addClass('active').siblings().removeClass('active');
     });
-
-
-    /* 메인 배너 */
     $('.main_slider_for').on('init', function(event, slick) {
         $('.main_counter').append('<span class="main_current"></span><span class="main_slash">/</span><span class="main_total"></span>');
         $('.main_current').text(slick.currentSlide + 1);
@@ -37,6 +30,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: true,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // vertical: true,
         prevArrow: $('.main_prev'), 
         nextArrow: $('.main_next'),
@@ -45,7 +40,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.main_current').text(nextSlide + 1);
     });
-
     $('.main_slider_nav').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -56,10 +50,14 @@ $(document).ready(function(){
         centerMode: false,
         focusOnSelect: true
     });
-    /* //메인 배너 */
+    $('.main_stop').click(function(){
+        $('.main_slider_for').slick('slickPlay');
+    });
+     
+    $('.main_play').click(function(){
+        $('.main_slider_for').slick('slickPause');
+    });
 
-    
-    /* 국어 수강후기 */
     $('.korean_review').on('init', function(event, slick) {
         $('.korean_counter').append('<span class="korean_current"></span><span class="korean_slash">/</span><span class="korean_total"></span>');
         $('.korean_current').text(slick.currentSlide + 1);
@@ -76,10 +74,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.korean_current').text(nextSlide + 1);
     });
-    /* //국어 수강후기 */
-
-
-    /* 영어 수강후기 */
     $('.english_review').on('init', function(event, slick) {
         $('.english_counter').append('<span class="english_current"></span><span class="english_slash">/</span><span class="english_total"></span>');
         $('.english_current').text(slick.currentSlide + 1);
@@ -96,10 +90,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.english_current').text(nextSlide + 1);
     });
-    /* //영어 수강후기 */
-
-    
-    /* 수학 수강후기 */
     $('.math_review').on('init', function(event, slick) {
         $('.math_counter').append('<span class="math_current"></span><span class="math_slash">/</span><span class="math_total"></span>');
         $('.math_current').text(slick.currentSlide + 1);
@@ -116,10 +106,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.math_current').text(nextSlide + 1);
     });
-    /* //수학 수강후기 */
-
-    
-    /* 사회 수강후기 */
     $('.society_review').on('init', function(event, slick) {
         $('.society_counter').append('<span class="society_current"></span><span class="society_slash">/</span><span class="society_total"></span>');
         $('.society_current').text(slick.currentSlide + 1);
@@ -136,10 +122,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.society_current').text(nextSlide + 1);
     });
-    /* //사회 수강후기 */
-
-    
-    /* 과학 수강후기 */
     $('.science_review').on('init', function(event, slick) {
         $('.science_counter').append('<span class="science_current"></span><span class="science_slash">/</span><span class="science_total"></span>');
         $('.science_current').text(slick.currentSlide + 1);
@@ -156,10 +138,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.science_current').text(nextSlide + 1);
     });
-    /* //과학 수강후기 */
-
-
-    /* 유명출판사별 강의 */
     $('.famous_publisher_slide').on('init', function(event, slick) {
         $('.famous_publisher_counter').append('<span class="famous_publisher_current"></span><span class="famous_publisher_slash">/</span><span class="famous_publisher_total"></span>');
         // alert(slick.currentSlide + 1 * 4);
@@ -178,10 +156,8 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.famous_publisher_current').text(nextSlide / 4 + 1);
     });
-    /* //유명출판사별 강의 */
 
 
-    /* 강남인강 ONEPICK */
     $('.onepick_promotion_slide').on('init', function(event, slick) {
         $('.onepick_promotion_counter').append('<span class="onepick_promotion_current"></span><span class="onepick_promotion_slash">/</span><span class="onepick_promotion_total"></span>');
         // alert(slick.currentSlide + 1 * 4);
@@ -200,10 +176,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.onepick_promotion_current').text(nextSlide / 3 + 1);
     });
-    /* //강남인강 ONEPICK */
-
-
-    /* 추천 프로모션 강좌 */
     $('.promotion_slide').on('init', function(event, slick) {
         $('.promotion_counter').append('<span class="promotion_current"></span><span class="promotion_slash">/</span><span class="promotion_total"></span>');
         // alert(slick.currentSlide + 1 * 4);
@@ -222,10 +194,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.promotion_current').text(nextSlide + 1);
     });
-    /* //추천 프로모션 강좌 */
-
-    
-    /* 강남인강 멘토링 */
     $('.mentoring_event_slide').on('init', function(event, slick) {
         $('.mentoring_event_counter').append('<span class="mentoring_event_current"></span><span class="mentoring_event_slash">/</span><span class="mentoring_event_total"></span>');
         // alert(slick.currentSlide + 1 * 4);
@@ -244,10 +212,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.mentoring_event_current').text(nextSlide / 3 + 1);
     });
-    /* //강남인강 멘토링 */
-
-    
-    /* 이벤트 */
     $('.event_slide').on('init', function(event, slick) {
         $('.event_counter').append('<span class="event_current"></span><span class="event_slash">/</span><span class="event_total"></span>');
         // alert(slick.currentSlide + 1 * 4);
@@ -266,9 +230,6 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.event_current').text(nextSlide + 1);
     });
-    /* //이벤트 */
-
-
 });
 
     
