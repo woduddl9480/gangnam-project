@@ -89,20 +89,27 @@
 </script>
 </head>
 <body>
-<div class="wrap">	
-	<!-- 헤더 -->
+<div class="wrap">
+	<style>
+		.header_renewal {}
+		.header_renewal .header_logo {}
+		.header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center;}
+		.header_renewal .header_logo .inner .memewe {margin-right: 30px;}
+		.header_renewal .header_logo .inner .logo {}
+		.header_renewal .header_logo .inner .change_link {}
+		.header_renewal .header_logo .inner .change_link a {display: flex; justify-content: center; align-items: center; width: 100px; height: 74px; line-height: 28px; background-color: #17978b; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-align: center;}
+
+		.header_renewal .header_select {}
+	</style>
     <header class="header_renewal">
         <div class="header_logo">
 			<div class="inner">
-				<div class="hamburger">
-					<button type="button">
-						<span></span>
-					</button>
-				</div>
-				<div class="logo">
+				<div class="memewe">
 					<span>
 						<a href=""><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
 					</span>
+				</div>
+				<div class="logo">
 					<h1>
 						<a href=""><img src="/mobile/220518/images/logo.png" alt="강남구청 인터넷수능방송 고등부"></a>
 					</h1>
@@ -116,8 +123,6 @@
 
 		</div>
     </header>
-	<!-- //헤더 -->
-	
     <div class="container_renewal">
 		<!-- 메인 배너 -->
 		<div class="main_banner_area">
@@ -132,23 +137,21 @@
 						
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- //메인 배너 -->
-
-		<!-- 강좌별 BEST, 강좌별 수강후기 -->
-		<div class="best_review_area">
-			<div class="inner">
-				<h2 class="main_mtit">강좌별 BEST</h2>
-				<!-- tab 버튼 영역 -->
-				<div class="tab_btn_area">
-					<ul class="tab_btn_ul">
-						<li data-tab="best_review_tab" class="active"><button type="button">국어</button></li>
-						<li data-tab="best_review_tab02"><button type="button">영어</button></li>
-						<li data-tab="best_review_tab03"><button type="button">수학</button></li>
-						<li data-tab="best_review_tab04"><button type="button">사회</button></li>
-						<li data-tab="best_review_tab05"><button type="button">과학</button></li>
-						<li data-tab="best_review_tab05"><button type="button">NEW</button></li>
+				<!-- 공지사항 -->
+				<div class="notice_title mt30">
+					<h2 class="main_mtit">공지사항</h2>
+					<div class="notice_button">
+						<a href="/NGLMS/High/Community/Notice.do" class="button_mplus">
+							
+						</a>
+					</div>
+				</div>
+				<div class="notice_content mt30">
+					<ul>
+						<li>
+							<a href="" class="notice_name">정현경선생님과 함께하는 Face Time (고등수학편) 만족도 조사 테스트 테스트</a>
+							<span class="notice_date">2022-04-13</span>
+						</li>
 					</ul>
 				</div>
 				<!-- //tab 버튼 영역 -->
@@ -196,7 +199,65 @@
 				</ul>
 			</div>
 		</div>
-		<!-- //강좌별 BEST, 강좌별 수강후기 -->
+
+
+		
+
+		<div class="notice_area">
+			<div class="inner">
+				<!-- 추천프로모션, 이벤트 -->
+				<div class="lower_slide_area">
+					<div class="promotion_area">
+						<div class="promotion_tit">
+							<h2 class="main_mtit mt30 mb30">추천 프로모션 강좌</h2>
+							<a href="/NGLMS/High/Community/Notice.do" class="button_mplus"></a>
+						</div>
+						<div>
+							<div class="img_area">
+								<a href="">
+									<img src="/mobile/220518/images/recommend_lecture.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="event_area mt30">
+						<div class="event_tit">
+							<h2 class="main_mtit mt30 mb30">이벤트</h2>
+							<a href="/NGLMS/High/Community/Notice.do" class="button_mplus"></a>
+						</div>
+						<div class="img_slide_area">
+							<img src="/mobile/220518/images/event.png" alt="">
+						</div>
+						
+					</div>
+				</div>
+				<!-- 공지사항 -->
+				<div class="notice_title mt30">
+					<h2 class="main_mtit">공지사항</h2>
+					<div class="notice_button">
+						<a href="/NGLMS/High/Community/Notice.do" class="button_mplus">
+							
+						</a>
+					</div>
+				</div>
+				<div class="notice_content mt30">
+					<ul>
+						<li>
+							<a href="" class="notice_name">정현경선생님과 함께하는 Face Time (고등수학편) 만족도 조사 테스트 테스트</a>
+							<span class="notice_date">2022-04-13</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
 
     </div>
 	<!-- 푸터 -->
@@ -225,10 +286,12 @@
 			</ul>
 		</div>
 		<div class="footer_address">
-			<p>(우) 06263. 서울시 강남구 도곡로 18길 7 (구 : 도곡동 548번지)</p>
-			<p>대표자 : 강남구청장 | 사업자등록번호 : 120-83-00097</p>
-			<p>통신판매업 신고 : 제 2009-서울강남-01039호 | 개인정보관리책임(CPO) : 행정국장</p>
-			<p>COPYRIGHT(c) 2017 GANGNAM-GU OFFICE, ALL RIGHT RESERVED</p>
+			<div class="inner">
+				<p>(우) 06263. 서울시 강남구 도곡로 18길 7 (구 : 도곡동 548번지)</p>
+				<p>대표자 : 강남구청장 | 사업자등록번호 : 120-83-00097</p>
+				<p>통신판매업 신고 : 제 2009-서울강남-01039호 | 개인정보관리책임(CPO) : 행정국장</p>
+				<p>COPYRIGHT(c) 2017 GANGNAM-GU OFFICE, ALL RIGHT RESERVED</p>
+			</div>
 		</div>
     </footer>
 </div>
