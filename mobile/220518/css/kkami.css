@@ -63,7 +63,7 @@
 .container_renewal .main_banner_area {}
 .container_renewal .main_banner_area .main_banner {position: relative;}
 .container_renewal .main_banner_area .main_banner .main_banner_slide {}
-.container_renewal .main_banner_area .main_banner .main_banner_slide li {margin: 0 10px;}
+.container_renewal .main_banner_area .main_banner .main_banner_slide li {}
 .container_renewal .main_banner_area .main_banner .slide_btn_area {position: absolute; top: 20px; right: 30px;}
 .container_renewal .main_banner_area .main_banner .slide_btn_area .counter_area {display: flex; align-items: center; height: 50px; padding: 0 17px; background-color: rgba(0, 0, 0, .5); border-radius: 25px;}
 .container_renewal .main_banner_area .main_banner .slide_btn_area .counter_area .main_banner_current > span {font-family: "NanumSquare", sans-serif; font-size: 20px;}
@@ -73,8 +73,8 @@
 
 
 /* 강좌별 BEST, 수강후기 */
-.best_review_area {}
-.best_review_area .inner {margin-top: 54px;}
+.best_review_area {margin-top: 54px;}
+.best_review_area .inner {}
 .best_review_area .inner .main_mtit {}
 .best_review_area .inner .tab_btn_area {margin-top: 35px;}
 .best_review_area .inner .tab_btn_area .tab_btn_ul {display: flex; overflow: hidden; height: 100px; padding: 5px 6px; background-color: #f8f8f8; border: 2px solid #ddd; border-radius: 50px;}
