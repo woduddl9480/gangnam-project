@@ -175,7 +175,7 @@ a.white {color:#fff}
 .text-total {color:#16a086!important}
 
 /* 梨쀫큸 */
-.chatbotbox {position: absolute; right:50%; top:333px; margin-right: -704px;display: block;z-index: 1000;width: 100px; height:auto;}
+.chatbotbox {position: absolute; right:50%; top:333px; margin-right: -704px;display: block;z-index: 10;width: 100px; height:auto;}
 .chatbotbox li{margin-bottom: 15px;position: relative;}
 .chatbotbox a {display: block;}
 .chatbotbox a img {vertical-align: top;width: 100%;}
