@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* header */
-.header_renewal {}
+.header_renewal {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; background-color: #fff;}
 .header_renewal .header_logo {display: flex; align-items: center; height: 122px; border-bottom: 2px solid #f0f0f0;}
 .header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center;}
 .header_renewal .header_logo .inner .hamburger {}
@@ -11,7 +11,10 @@
 .header_renewal .header_logo .inner .hamburger button::after {content: ''; position: absolute; top: 30px; left: 0; width: 100%; height: 4px; background-color: #333;}
 .header_renewal .header_logo .inner .logo {display: flex; align-items: center;}
 .header_renewal .header_logo .inner .change_link {}
-.header_renewal .header_logo .inner .change_link a {display: flex; justify-content: center; align-items: center; width: 100px; height: 74px; line-height: 28px; background-color: #17978b; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-align: center;}
+.header_renewal .header_logo .inner .change_link a {display: flex; justify-content: center; align-items: center; width: 100px; height: 74px; line-height: 28px; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-align: center;}
+.wrap.high .header_renewal .header_logo .inner .change_link a {background-color: #17978b;}
+.wrap.middle .header_renewal .header_logo .inner .change_link a {background-color: #066fa7;}
+
 .header_renewal .header_select {border-bottom: 2px solid #f0f0f0;}
 .header_renewal .header_select .inner {padding: 10px 0; font-size: 0;}
 .header_renewal .header_select .inner span {display: inline-block; width: 320px; height: 76px; margin-right: 20px;}
@@ -19,9 +22,42 @@
 .header_renewal .header_select .inner span select {width: 100%; height: 100%; padding: 0 60px 0 30px; background: url(/mobile/220518/images/select_arrow.png) no-repeat right 20px center; border: 2px solid #ddd; border-radius: 10px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 32px; color: #333;}
 
 
+.header_renewal .header_gnb {display: none; position: absolute; top: 0; left: 0; width: 100%; background-color: #fff;}
+.header_renewal .header_gnb.active {display: block;}
+.header_renewal .header_gnb .top {height: 260px;}
+.wrap.high .header_renewal .header_gnb .top {background-color: #066fa7;}
+.wrap.middle .header_renewal .header_gnb .top {background-color: #17978b;}
+.header_renewal .header_gnb .top .txt_info {position: relative; padding: 40px 0 50px; text-align: center;}
+.header_renewal .header_gnb .top .txt_info button {position: absolute; top: 50%; left: 10px; transform: translateY(-50%);}
+.header_renewal .header_gnb .top .txt_info span {font-weight: 700; font-size: 32px; color: #fff;}
+.header_renewal .header_gnb .top .link_area {display: flex; padding: 0 30px;}
+.header_renewal .header_gnb .top .link_area a {flex-grow: 1; display: flex; justify-content: center; align-items: center; height: 72px; margin-left: 40px; border-radius: 12px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 32px;}
+.header_renewal .header_gnb .top .link_area a:first-of-type {margin-left: 0;}
+.header_renewal .header_gnb .top .link_area .login {background-color: #fff; color: #066fa7;}
+.header_renewal .header_gnb .top .link_area .sign_up {border: 2px solid #fff; color: #fff;}
+
+.header_renewal .header_gnb .mid {}
+.header_renewal .header_gnb .mid .gnb {}
+.header_renewal .header_gnb .mid .gnb .depth01 {}
+.header_renewal .header_gnb .mid .gnb .depth01 > li {}
+.header_renewal .header_gnb .mid .gnb .depth01 > li > a {display: flex; align-items: center; height: 109px; padding: 0 60px; background: url(/mobile/220518/images/gnb_arrow.png) no-repeat right 40px center; border-bottom: 2px solid #f0f0f0; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 32px; color: #333;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li .depth02 {display: none; padding: 10px 80px; background-color: #f8faff; border-bottom: 2px solid #f0f0f0;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li.active .depth02 {display: block;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li.active > a {background: url(/mobile/220518/images/gnb_arrow02.png) no-repeat right 40px center;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li .depth02 > li {position: relative; padding-left: 15px;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li .depth02 > li::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 7px; height: 7px; background-color: #333;}
+.header_renewal .header_gnb .mid .gnb .depth01 > li .depth02 > li > a {line-height: 74px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 26px; color: #333;}
+
+.header_renewal .header_gnb .btm {margin-top: 140px; background-color: #333;}
+.header_renewal .header_gnb .btm ul {display: flex; align-items: center; height: 100px; text-align: center;}
+.header_renewal .header_gnb .btm ul li {flex-grow: 1; position: relative;}
+.header_renewal .header_gnb .btm ul li {border-left: 2px solid #fff;}
+.header_renewal .header_gnb .btm ul li:first-of-type {border-left: none;}
+.header_renewal .header_gnb .btm ul li a {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 28px; color: #fff;}
 
 
-.container_renewal {}
+
+.container_renewal {padding-top: 220px;}
 
 /* 메인 배너 */
 .container_renewal .main_banner_area {}
@@ -109,7 +145,7 @@
 #fixedFloatBtn .mobBtnList > li > div > a {width: 60px; height: 60px;}
 #fixedFloatBtn .mobBtnList.open .li2 {bottom: 145px;}
 #fixedFloatBtn .mobBtnList.open .li1 {bottom: 225px;}
-#fixedFloatBtn .mobBtnList li >.mob_icon a i {top: 50% !important; transform: translateY(-50%); font-size: 38px !important;}
+#fixedFloatBtn .mobBtnList li >.mob_icon a i {top: 50% !important; transform: translateY(-50%); font-size: 44px !important;}
 #fixedFloatBtn .mobChatbot {width: 75px; height: 75px;}
 #fixedFloatBtn .totopBtn {width: 75px; height: 75px;}
 #fixedFloatBtn .totopBtn:before {width: 27px; height: 5px; margin-left: -21px;}

@@ -16,6 +16,7 @@
 /* 폰트 */
 .font_orange {color:#ea563a!important;}
 .font_blue {color:#066fa7!important;}
+.font_green {color:#17978b!important;}
 
 /* 말줄임 */
 .ellipsis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 

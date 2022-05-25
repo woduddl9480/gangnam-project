@@ -1,4 +1,19 @@
 $(document).ready(function(){
+
+    $('.header_renewal .hamburger button').on('click', function(){
+        $('.header_renewal .header_gnb').addClass('active');
+    });
+    $('.header_renewal .txt_info button').on('click', function(){
+        $('.header_renewal .header_gnb').removeClass('active');
+    });
+    for(let i = 0; i < $('.header_gnb .depth01 > li').length; i++ ) {
+        if ($('.header_gnb .depth01 > li').eq(i).find('.depth02').length === 0) {
+            $('.header_gnb .depth01 > li').eq(i).find('a').css('background', 'none');
+        }
+    }
+    $('.header_gnb .depth01 > li').on('click', function(){
+        $(this).toggleClass('active');
+    });
     $('.main_banner_slide').on('init', function(event, slick) {
         $('.main_banner_counter').append('<span class="main_banner_current"></span><span class="main_banner_slash">/</span><span class="main_banner_total"></span>');
         $('.main_banner_current').text(slick.currentSlide + 1);

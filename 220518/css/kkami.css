@@ -25,10 +25,16 @@
 .header_renewal .header_logo .inner .logo h1 {margin-right: 20px;}
 .header_renewal .header_logo .inner .switch_area {display: flex; align-items: center;}
 .header_renewal .header_logo .inner .switch_area > div {}
-.header_renewal .header_logo .inner .switch_area > div.txt {margin-right: 15px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px; color: #17978b;}
-.header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border: 2px solid #17978b; border-radius: 20px;}
+.header_renewal .header_logo .inner .switch_area > div.txt {margin-right: 15px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 18px;}
+.wrap.high .header_renewal .header_logo .inner .switch_area > div.txt { color: #17978b;}
+.wrap.middle .header_renewal .header_logo .inner .switch_area > div.txt { color: #066fa7;}
+.header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border-radius: 20px;}
+.wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff {border: 2px solid #17978b;}
+.wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff {border: 2px solid #066fa7;}
 .header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #17978b; text-align: center;}
-.header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); background-color: #17978b; border-radius: 18px; color: #fff;}
+.header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); border-radius: 18px; color: #fff;}
+.wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {background-color: #17978b;}
+.wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {background-color: #066fa8;}
 
 
 .header_renewal .header_gnb {position: relative;}
@@ -76,7 +82,9 @@
 .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li:first-of-type {padding-left: 0; margin-left: 0;}
 .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1px; height: 14px; background-color: #066fa7;}
 .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li:first-of-type::before {display: none;}
-.header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li button {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #066fa7;}
+.header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li button {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px;}
+.wrap.high .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li button {color: #066fa7;}
+.wrap.middle .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li button {color: #17978b;}
 .header_renewal .header_search .inner .left .search_toggle_k .btn_area ul li.is_active {} 
 .header_renewal .header_search .inner .left .search_toggle_k .toggle_area {}
 .header_renewal .header_search .inner .left .search_toggle_k .toggle_area ul {width: 100%; height: 100%;}
@@ -140,7 +148,9 @@
 .main_banner_area .main_banner .main_slider_nav {width: 250px; height: 100%; margin-top: -1px;}
 .main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide {box-sizing: border-box; cursor: pointer; display: flex; justify-content: center; align-items: center; height: 60px; background-color: #0d0d34; border-top: 1px solid #fff; font-family: "NanumSquare", sans-serif; font-size: 15px; color: #fff;}
 .main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide:first-of-type {border-top: none;}
-.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {background-color: #066fa7;}
+.main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {}
+.wrap.high .main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {background-color: #066fa7;}
+.wrap.middle .main_banner_area .main_banner .main_slider_nav .slick-list .slick-slide.slick-current {background-color: #17978b;}
 /* //메인 배너 */
 
 
