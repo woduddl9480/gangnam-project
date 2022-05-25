@@ -43,6 +43,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .footer_renewal .footer_add {background:#272a2e; padding: 15px 0 60px;}
 .footer_renewal .footer_add p, .footer_renewal .footer_add span {font-size:20px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 40px;}
 .footer_renewal .footer_add p.footer_logo{margin-top: 10px;}
+.footer_renewal .footer_add .color_grey {color: #888!important;}
 
 /* 공지사항 */
 .notice_area .notice_title {position: relative;}
