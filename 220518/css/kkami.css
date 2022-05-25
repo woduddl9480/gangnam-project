@@ -31,8 +31,12 @@
 .header_renewal .header_logo .inner .switch_area > div.onoff {display: flex; justify-content: center; align-items: center; width: 144px; height: 40px; border-radius: 20px;}
 .wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff {border: 2px solid #17978b;}
 .wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff {border: 2px solid #066fa7;}
-.header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #17978b; text-align: center;}
-.header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); border-radius: 18px; color: #fff;}
+.header_renewal .header_logo .inner .switch_area > div.onoff > a {display: flex; justify-content: center; align-items: center; width: calc(50% - 2px); font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; text-align: center;}
+.wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff > a {color: #17978b;}
+.wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff > a {color: #066fa8;}
+
+.wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); border-radius: 18px; color: #fff;}
+.wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {height: calc(100% - 4px); border-radius: 18px; color: #fff;}
 .wrap.high .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {background-color: #17978b;}
 .wrap.middle .header_renewal .header_logo .inner .switch_area > div.onoff > a.active {background-color: #066fa8;}
 

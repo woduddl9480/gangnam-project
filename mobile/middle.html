@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- iPhone icon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/htmlRes/images/mobile/icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/htmlRes/images/mobile/icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/htmlRes/images/mobile/icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/htmlRes/images/mobile/icon144x144.png" />
+<!-- android icon -->
+<link rel="shortcut icon" href="/htmlRes/images/mobile/icon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<title>강남구청 인터넷수능방송</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=720, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+
+<!-- eGovFrame Common import -->    
+<link rel="shortcut icon" href="/220518/images/favicon.ico">
+<link rel="stylesheet" href="/htmlRes/css/mobile/common.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/jquery-ui.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick-theme.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/mediaq.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/layout.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub_middle.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/all.min.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="/htmlRes/js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.history.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/begin_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.touchslider.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/slick.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/player/starplayer_appweb.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/lecture/lecture_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/popup.js"></script>
+<script type="text/javascript" src="/htmlRes/js/upload.js"></script>
+<script type="text/javascript" src="/htmlRes/js/calendar.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/bbs/bbs_script.js"></script>
+
+
+
+<!-- 220518추가 -->
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/common.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/kkami.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/pjy.css">
+<script type="text/javascript" src="/mobile/220518/js/kkami.js"></script>
+<!-- //220518추가 -->
+
+
+
+<script type="text/javascript">
+	//주소창제어
+	//if (document.URL.indexOf("#")<=0) { 
+	//  window.addEventListener('load', function(){ 
+	//    setTimeout(scrollTo, 0, 0, 1); 
+	//  }, false); 
+	//} 
+	
+	// 접속 체크
+	chkUserConnectIn();
+	
+	function chkUserConnectIn() {		
+		
+		if (getCookie("userConnect") != "Y") {
+		   document.cookie = "userConnect=Y; path=/;";
+		   var params = "os_div="+getUserAgentInfo(navigator.userAgent, "os_div")+"&browser="+getUserAgentInfo(navigator.userAgent, "browser")+"&inflow_url="+document.referrer;  
+		   var postURL = "../insertStudConnectInfo.do";	
+		 
+		   getJson(postURL,params);		   
+		}
+	}
+	function getJson(postURL,params)  {
+		
+		var script = document.createElement('script');	
+		script.setAttribute('src', postURL+"?"+params);
+		document.getElementsByTagName("head")[0].appendChild(script);
+		
+	}
+</script>
+</head>
+<body>
+<div class="wrap middle">	
+	<!-- 헤더 -->
+    <header class="header_renewal">
+        <div class="header_logo">
+			<div class="inner">
+				<div class="hamburger">
+					<button type="button">
+						<span></span>
+					</button>
+				</div>
+				<div class="logo">
+					<span>
+						<a href=""><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
+					</span>
+					<h1>
+						<a href=""><img src="/mobile/220518/images/logo_middle.png" alt="강남구청 인터넷수능방송 고등부"></a>
+					</h1>
+				</div>
+				<div class="change_link">
+					<a href="/NGLMS/Mobile/High/UserMain.do">고등부<br>바로가기</a>
+				</div>
+			</div>
+		</div>
+		<div class="header_select">
+			<div class="inner">
+				<span>
+					<select>
+						<option value="">선생님</option>
+					</select>
+				</span>
+				<span>
+					<select>
+						<option value="">국어영역</option>
+					</select>
+				</span>
+			</div>
+		</div>		
+		<div class="header_gnb">
+			<div class="top middle">
+				<div class="inner">
+					<div class="txt_info">
+						<button type="button"><img src="/mobile/220518/images/arrow.png" alt="이전"></button>
+						<span>로그인을 해주세요.</span>
+					</div>
+					<div class="link_area">
+						<a href="" class="login">로그인</a>
+						<a href="" class="sign_up">회원가입</a>
+					</div>
+				</div>
+			</div>			
+			<div class="mid">
+				<nav class="gnb">
+					<ul class="depth01">
+						<li>
+							<a href="javascript:void(0);">중321</a>
+							<ul class="depth02">
+								<li><a href="">중321</a></li>
+								<li><a href="">학년별</a></li>
+								<li><a href="">과목별</a></li>
+								<li><a href="">학습단계</a></li>
+								<li><a href="">프로모션</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">선생님</a>
+							<ul class="depth02">
+								<li><a href="">국어영역</a></li>
+								<li><a href="">영어영역</a></li>
+								<li><a href="">수학영역</a></li>
+								<li><a href="">사회영역</a></li>
+								<li><a href="">과학영역</a></li>
+								<li><a href="">코딩</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">강남인강Pick</a>
+							<ul class="depth02">
+								<li><a href="">원픽</a></li>
+								<li><a href="">선생님 멘토링</a></li>
+								<li><a href="">장학생 멘토링</a></li>
+								<li><a href="">학부모교실</a></li>
+								<li><a href="">영어원서</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/NGLMS/Mobile/Middle/Kmooc/kmoocCollegeInfo.do">대학맛보기</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">입시정보</a>
+							<ul class="depth02">
+								<li><a href="">대입수능</a></li>
+								<li><a href="">고3 모평</a></li>
+								<li><a href="">고2 학평</a></li>
+								<li><a href="">고1 학평</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">커뮤니티</a>
+							<ul class="depth02">
+								<li><a href="">선생님 이벤트</a></li>
+								<li><a href="">공지사항</a></li>
+								<li><a href="">이벤트/행사</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="btm">
+				<ul>
+					<li><a href="/NGLMS/Mobile/High/Introduce/Intro.do">강남인강소개</a></li>
+					<li><a href="/NGLMS/Mobile/High/High3/PromotionView.do?seq=84899">커리큘럼</a></li>
+				</ul>
+			</div>
+		</div>
+    </header>
+	<!-- //헤더 -->
+	
+    <div class="container_renewal">
+		<!-- 메인 배너 -->
+		<div class="main_banner_area">
+			<div class="main_banner">
+				<ul class="main_banner_slide">
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+					<li><a href=""><img src="/mobile/220518/images/main_banner.png" alt=""></a></li>
+				</ul>
+				<div class="slide_btn_area">
+					<div class="counter_area main_banner_counter">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //메인 배너 -->
+
+		<!-- 강좌별 BEST, 강좌별 수강후기 -->
+		<div class="best_review_area">
+			<div class="inner">
+				<h2 class="main_mtit">강좌별 BEST</h2>
+				<!-- tab 버튼 영역 -->
+				<div class="tab_btn_area">
+					<ul class="tab_btn_ul">
+						<li data-tab="best_review_tab" class="active"><button type="button">국어</button></li>
+						<li data-tab="best_review_tab02"><button type="button">영어</button></li>
+						<li data-tab="best_review_tab03"><button type="button">수학</button></li>
+						<li data-tab="best_review_tab04"><button type="button">사회</button></li>
+						<li data-tab="best_review_tab05"><button type="button">과학</button></li>
+						<li data-tab="best_review_tab06"><button type="button">NEW</button></li>
+					</ul>
+				</div>
+				<!-- //tab 버튼 영역 -->
+			</div>
+			<div class="tab_item_area">
+				<ul>
+					<!-- 국어 -->
+					<li class="best_review_tab active">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">국어</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 국어 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">국어</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 국어 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //국어 -->
+
+					<!-- 영어 -->
+					<li class="best_review_tab02">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">영어</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 영어 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">영어</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 영어 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //영어 -->
+					
+					<!-- 수학 -->
+					<li class="best_review_tab03">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">수학</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 수학 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">수학</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 수학 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //수학 -->
+
+					<!-- 사회 -->
+					<li class="best_review_tab04">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">사회</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 사회 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">사회</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 사회 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //사회 -->
+
+					<!-- 과학 -->
+					<li class="best_review_tab05">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">과학</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 과학 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">과학</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. 과학 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //과학 -->
+					
+					<!-- NEW -->
+					<li class="best_review_tab06">
+						<!-- 강좌별 BEST -->
+						<div class="lecture_best">
+							<ul>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner.png" alt=""></a>
+								</li>
+								<li>
+									<a href=""><img src="/mobile/220518/images/best_banner02.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 BEST -->
+
+						<!-- 강좌별 수강후기 -->						
+						<div class="lecture_review">
+							<div class="lecture_review_tit">
+								<div class="inner">
+									<h2 class="main_mtit">강좌별 수강후기</h2>
+								</div>
+							</div>
+							<ul class="review_slide">
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">NEW</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. NEW 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="review_slide_item">
+									<a href="">
+										<div class="slide_box">
+											<div class="top">
+												<div class="left">
+													<span class="subject">NEW</span>
+													<span class="teacher">조효준 선생님</span>
+												</div>
+												<div class="right">
+													<ul>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+														<li><img src="/mobile/220518/images/star.png" alt="별점"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="mid">
+												<dl>
+													<dt>자이스토리 문법(언어) 실전 - 2022 수능대비</dt>
+													<dd class="ellipsis03">
+														진짜 감사합니다. NEW 시험 전에 문법이 푸는 족족 다틀려서 충격을 받고 이 강의를 들었는데요 이 강의 듣고 오답정리 하니 다 이해할 수 있었고 기말
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //강좌별 수강후기 -->
+					</li>
+					<!-- //NEW -->
+				</ul>
+			</div>
+		</div>
+		<!-- //강좌별 BEST, 강좌별 수강후기 -->
+
+
+		<!-- 유명 출판사별 강의 -->		
+		<div class="famous_publisher">
+			<div class="inner">
+				<div class="famous_publisher_title">
+					<h2 class="main_mtit">유명 출판사별 강의</h2>
+				</div>
+			</div>
+			<div class="slide_area">
+				<ul class="slide_ul">
+					<li>
+						<a href="">
+							<div class="img_area"><img src="/mobile/220518/images/famous_lecture.png" alt=""></div>
+							<div class="company">NE능률</div>
+							<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img_area"><img src="/mobile/220518/images/famous_lecture02.png" alt=""></div>
+							<div class="company">진학사</div>
+							<div class="book">블랙라벨 시리즈</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img_area"><img src="/mobile/220518/images/famous_lecture.png" alt=""></div>
+							<div class="company">NE능률</div>
+							<div class="book">능률VOCA,<br>빠른독해 바른독해</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //유명 출판사별 강의 -->
+
+
+		<!-- 강남인강원픽, 멘토링 -->
+		<div class="onepick_mentoring_area">
+			
+			<!-- 강남인강ONEPICK -->
+			<div class="onepick_area">
+				<div class="inner">
+					<div class="onepick_tit">
+						<h2 class="main_mtit">강남인강 ONEPICK</h2>
+						<a href="/NGLMS/Mobile/High/Parent/onePick.do" class="button_mplus"></a>
+					</div>
+				</div>
+				<div class="onepick_mcontent">
+					<ul>
+						<li>
+							<a href="">
+								<img src="/mobile/220518/images/gangnam_lecture.png" alt="강남인강원픽" class="onepick_thumb">
+								<div class="onepick_txt">
+									<p class="onepick_name">화학 반응과 용액의 농도 (완자 화학I 7강)</p>
+									<p class="onepick_teacher">박인수 선생님</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="/mobile/220518/images/gangnam_lecture.png" alt="강남인강원픽" class="onepick_thumb">
+								<div class="onepick_txt">
+									<p class="onepick_name">화학 반응과 용액의 농도 (완자 화학I 7강)</p>
+									<p class="onepick_teacher">박인수 선생님</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 멘토링 -->
+			<div class="mentoring_area">
+				<div class="inner">
+					<div class="mentoring_tit">
+						<h2 class="main_mtit">강남인강 멘토링</h2>
+						<a href="/NGLMS/Mobile/High/Parent/Mentoring.do" class="button_mplus"></a>
+					</div>
+				</div>
+			</div>
+			<div class="mentoring_mcontent">
+				<ul>
+					<li>
+						<a href="">
+							<img src="/mobile/220518/images/mentor_lecture.png" alt="강남인강멘토링" class="mentoring_thumb">
+							<div class="mentoring_txt">
+								<p class="mentoring_name">서지나 선생님의 3월 학평 고1 수학 총평</p>
+								<p class="mentoring_teacher">서지나 선생님</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="/mobile/220518/images/mentor_lecture.png" alt="강남인강멘토링" class="mentoring_thumb">
+							<div class="mentoring_txt">
+								<p class="mentoring_name">서지나 선생님의 3월 학평 고1 수학 총평</p>
+								<p class="mentoring_teacher">서지나 선생님</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 추천프로모션, 이벤트 -->
+		<div class="promotion_event_area">
+			<!-- 프로모션 -->
+			<div class="promotion_area">
+				<div class="inner">
+					<div class="promotion_tit">
+						<h2 class="main_mtit mt55 mb35">추천 프로모션 강좌</h2>
+						<a href="/NGLMS/Mobile/High/High3/PromotionList.do" class="button_mplus"></a>
+					</div>
+				</div>
+				<ul class="promotion_slide">
+					<li class="img_area">
+						<a href="">
+							<img src="/mobile/220518/images/recommend_lecture.png" alt="">
+						</a>
+					</li>
+					<li class="img_area">
+						<a href="">
+							<img src="/mobile/220518/images/recommend_lecture.png" alt="">
+						</a>
+					</li>
+					<li class="img_area">
+						<a href="">
+							<img src="/mobile/220518/images/recommend_lecture.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 이벤트 -->
+			<div class="event_area mt55">
+				<div class="inner">
+					<div class="event_tit">
+						<h2 class="main_mtit mb35">이벤트</h2>
+						<a href="/NGLMS/Mobile/High/Community/Event.do" class="button_mplus"></a>
+					</div>
+				</div>
+				<ul class="event_slide">
+					<li class="img_area">
+						<a href=""><img src="/mobile/220518/images/event.png" alt=""></a>
+					</li>
+					<li class="img_area">
+						<a href=""><img src="/mobile/220518/images/event.png" alt=""></a>
+					</li>
+					<li class="img_area">
+						<a href=""><img src="/mobile/220518/images/event.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 공지사항 -->
+		<div class="notice_area">
+			<div class="inner">
+				<div class="notice_title mt30">
+					<h2 class="main_mtit">공지사항</h2>
+					<div class="notice_button">
+						<a href="/NGLMS/Mobile/High/Community/Notice.do" class="button_mplus"></a>
+					</div>
+				</div>
+				<div class="notice_content mt30">
+					<ul class="notice_slide">
+						<li>
+							<a href="" class="notice_name">정현경선생님과 함께하는 Face Time (고등수학편) 만족도 조사 테스트 테스트</a>
+							<span class="notice_date">2022-04-13</span>
+						</li>
+						<li>
+							<a href="" class="notice_name">진로진학상담실 꿈마당 진로진학 상담신청(5월) 안내 테스트 테스트 테스트 테스트</a>
+							<span class="notice_date">2022-04-13</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+
+	<!-- 푸터 -->
+    <footer class="footer_renewal">
+		<div class="footer_tel mt30">
+			<div class="tel_txt">
+				<p class="service_name">고객만족센터</p>
+				<a href="tel:1577-9100" class="service_number">1577-9100</a>
+				<p class="service_time">(365일 10:00~24:00)</p>
+			</div>
+		</div>
+		<div class="footer_snslist">
+			<ul>
+				<li class="mr48"><a href="https://blog.naver.com/gangnamingang" target="_blank"><img src="/mobile/220518/images/blog.png" alt="네이버블로그" /></a></li>
+				<li class="mr48"><a href="https://ko-kr.facebook.com/gangnamingang1/" target="_blank"><img src="/mobile/220518/images/facebook.png" alt="페이스북" /></a></li>
+				<li class="mr48"><a href="https://www.instagram.com/edu.ingang.go.kr/" target="_blank"><img src="/mobile/220518/images/instargram.png" alt="인스타그램" /></a></li>
+				<li class="mr48"><a href="https://www.youtube.com/channel/UCokSmriiLfoQDw0XPvMz04Q/featured" target="_blank"><img src="/mobile/220518/images/youtube.png" alt="유튜브" /></a></li>
+				<li><a href="https://tv.naver.com/gangnamingang" target="_blank"><img src="/mobile/220518/images/player.png" alt="네이버TV" /></a></li>
+			</ul>
+		</div>
+		<div class="footer_information">
+			<ul>
+				<li><a href="/NGLMS/Mobile/High/Introduce/Intro.do">강남구청 인터넷 수능방송 소개</a></li>
+				<li><a href="/NGLMS/Mobile/CustomerPolicy.do">이용약관</a></li>
+				<li><a href="/NGLMS/Mobile/PrivacyPolicy.do">개인정보처리방침</a></li>
+			</ul>
+		</div>
+		<div class="footer_add">
+			<p>(우) 06263. 서울시 강남구 도곡로 18길 7 (구 : 도곡동 548번지)</p>
+			<p>대표자 : 강남구청장 | 사업자등록번호 : 120-83-00097</p>
+			<p>통신판매업 신고 : 제 2009-서울강남-01039호 | 개인정보관리책임(CPO) : 행정국장</p>
+			<p>COPYRIGHT(c) 2017 GANGNAM-GU OFFICE, ALL RIGHT RESERVED</p>
+		</div>
+    </footer>
+</div>
+<!-- quick start -->
+<div class="quick">
+	<div class="mbDim d-lg-none"></div>
+	<div id="fixedFloatBtn">
+		
+		<div class="mobBtnSet d-block d-lg-none">
+				
+				<button type="button" class="mobCallBtn"><span>더보기</span></button>
+				<ul class="mobBtnList">
+					<li class="li3">
+						<div class="mob_title">PC화면</div>
+						<div class="mob_icon">
+							<a href="/NGLMS/High/UserMain.do"><i class="fas fa-desktop"></i></a>
+						</div>
+					</li>
+					<li class="li2">
+						<div class="mob_title">다운로드 홈</div>
+						<div class="mob_icon">
+							<a href="javascript:;" title="다운로드 홈" onclick="app('kollus://list');"><i class="fas fa-cloud-download-alt"></i></a>
+						</div>
+					</li>
+					<li class="li1">
+						<div class="mob_title">수강중인 강좌</div>
+						<div class="mob_icon">
+							<a href="/NGLMS/Mobile/High/MyPage/Main.do"><i class="fa fa-envelope"></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 챗봇 -->
+			<button type="button" class="mobChatbot mt10">
+					<!-- <a href="https://www.thecloudgate.io:/webchat/main?brandKey=rEeoP4fy6srA2-dzPSylsQ&type=scenario" target="_blank"><i class="far fa-comment-dots"></i></a> -->
+					<a href="#" onclick="window.open('https://www.thecloudgate.io:/webchat/main?brandKey=rEeoP4fy6srA2-dzPSylsQ&type=scenario', '상담방', 'width=410, height=768, menubar=no, status=no, toolbar=no');"><img src="https://storage.googleapis.com/cloud-gate-storage/img/chatbot-icon.png" width="100%" alt="챗봇아이콘"/></a>
+			</button>
+			
+		<div class="totopBtn mt10" style="display: none;"><span>맨 위로</span></div>
+		
+	</div>
+</div>
+<script>
+var dim = $(".mbDim");
+// mobile fixed btn
+$(".mobCallBtn").click(function(){
+	$(".mobBtnList").toggleClass("open");
+	$(".mobCallBtn").toggleClass("open");
+
+	if ( $(this).hasClass("open") ) {
+		dim.fadeIn(300);
+		$("body").addClass("scrollDfd");
+	} else {
+		dim.fadeOut(300);
+		$("body").removeClass("scrollDfd");
+	}
+
+	$("#fixedFloatBtn .acBtn").click(function(){
+		dim.fadeOut(300);
+		$("body").removeClass("scrollDfd");
+		$(".mobBtnList").removeClass("open");
+		$(".mobCallBtn").removeClass("open");
+	});
+});
+
+//totop btn show/hide event
+if ( $("#fixedFloatBtn").is(":visible") ) {
+	totopBtn();
+	$(window).scroll(function(){
+		totopBtn();
+	});
+}
+	
+function totopBtn() {
+	var scl = $(window).scrollTop();
+	var totop = $(".totopBtn");
+
+	if ( scl > 100 ) {
+		totop.show();
+	} else {
+		totop.hide();
+	}
+}
+	
+// go top plugin
+(function ($, window, document) {
+	$.fn.goTop = function (options) {
+		var defaults = {
+			scrollTop: 100,
+			scrollSpeed: 1000
+		};
+		var options = $.extend(defaults, options);
+		var $this = $(this);
+		
+		$this.on('click', function () {
+			$('html,body').animate({
+				'scrollTop': 0
+			}, options.speed)
+		})
+	}
+})(jQuery, window, document)
+$(".totopBtn").goTop(); // go top function
+
+
+</script>
+	<!-- quick end -->
+	
+
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$('.notice_slider').slick({
+			   arrows : false,
+			   dots: false,
+			   vertical : true,
+			   autoplay : true
+		   });
+	});
+</script>
+	<!-- footer end -->
+</div>
+<form id="search" name="search" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type" id="type" value="list"/>
+</form>
+<form id="mainListForm" name="mainListForm" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="seq" />
+    <input type="hidden" name="type" />
+</form>
+<form id="mainEventForm" name="mainEventForm" action="/NGLMS/Mobile/High/UserMain.do" method="get">
+    <input type="hidden" name="seq" />
+    <input type="hidden" name="type" />
+</form>
+
+<form id="listGang" name="listGang" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type"/>
+    <input type="hidden" name="gang_seq" id="gang_seq"/>
+    <input type="hidden" name="mem_div" id="mem_div"/>
+    <input type="hidden" name="example_yn" id="example_yn"/>  
+    <input type="hidden" name="vod_file_nm" id="vod_file_nm"/>  
+    <input type="hidden" name="layout_gb" id="layout_gb"/>
+    <input type="hidden" name="stud_id" id="stud_id"/>
+    <input type="hidden" name="lecture_cd" id="lecture_cd"/>
+    <input type="hidden" name="gubun" id="gubun" value="web"/>
+</form>
+
+<form id="uway_form" name="uway_form" action="/NGLMS/Mobile/High/UserMain.do" method="post">
+    <input type="hidden" name="type" id="inputid3_type"  />
+    <input type="hidden" name="url" id="url"  />
+</form>
+
+<form id="searchLectureAndBook" name="searchLectureAndBook">
+	<input type="hidden" name="type" id="inputid6_type"  value="searchCalss"/>
+	<input type="hidden" id="class_cd" name="class_cd"  />
+	<input type="hidden" id="searchProf_id" name="prof_id"  />
+	<input type="hidden" id="code_study_level" name="code_study_level"  />
+</form>	
+
+<form id="searchLectureCK" name="searchLectureCK">
+	<input type="hidden" id="class_cd1" name="class_cd1"  />
+	<input type="hidden" id="class_cd2" name="class_cd2"  />
+	<input type="hidden" id="class_cd3" name="class_cd3"  />
+	<input type="hidden" id="class_cd4" name="class_cd4"  />
+</form>
+
+
+<script type="text/javascript">
+
+function category_open() {
+	var recentURL = location.href;
+	 if(recentURL.substring(recentURL.indexOf('/NGLMS/'), recentURL.length) == '/NGLMS/Mobile/Main.do')
+		$.mobile.changePage("/NGLMS/Mobile/Main.do?type=menu", {transition: "slide", reverse:false});
+	 else 
+		 $.mobile.changePage("/NGLMS/Mobile/Main.do", {transition: "slide", reverse:true});
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72115146-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72115146-15');
+</script>
+
+</body>
+</html>
+
