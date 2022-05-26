@@ -145,7 +145,7 @@
 #fixedFloatBtn .mobBtnList > li > div > a {width: 60px; height: 60px;}
 #fixedFloatBtn .mobBtnList.open .li2 {bottom: 145px;}
 #fixedFloatBtn .mobBtnList.open .li1 {bottom: 225px;}
-#fixedFloatBtn .mobBtnList li >.mob_icon a i {top: 50% !important; transform: translateY(-50%); font-size: 44px !important;}
+#fixedFloatBtn .mobBtnList li >.mob_icon a i {top: 50% !important; transform: translateY(-50%); font-size: 35px !important;}
 #fixedFloatBtn .mobChatbot {width: 75px; height: 75px;}
 #fixedFloatBtn .totopBtn {width: 75px; height: 75px;}
 #fixedFloatBtn .totopBtn:before {width: 27px; height: 5px; margin-left: -21px;}
