@@ -24,6 +24,7 @@
 
 .header_renewal .header_gnb {display: none; position: absolute; top: 0; left: 0; width: 100%; background-color: #fff;}
 .header_renewal .header_gnb.active {display: block;}
+.header_renewal .header_gnb.active::before {content: ''; position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; background: rgba(0, 0, 0, .5);}
 .header_renewal .header_gnb .top {height: 260px;}
 .wrap.high .header_renewal .header_gnb .top {background-color: #066fa7;}
 .wrap.middle .header_renewal .header_gnb .top {background-color: #17978b;}
