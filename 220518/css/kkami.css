@@ -8,7 +8,7 @@
 .header_renewal .header_top .inner .info_btn {}
 .header_renewal .header_top .inner .info_btn ul {display: flex;}
 .header_renewal .header_top .inner .info_btn ul li {position: relative; padding-left: 12px; margin-left: 12px;}
-.header_renewal .header_top .inner .info_btn ul li a {font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 14px; color: #333;}
+.header_renewal .header_top .inner .info_btn ul li a {font-family: "NanumSquare", sans-serif; font-size: 14px; color: #333;}
 .header_renewal .header_top .inner .info_btn ul li::before {content: ''; position: absolute; top: 0; left: 0; width: 1px; height: 10px; background-color: #dcdcdc;}
 .header_renewal .header_top .inner .info_btn ul li:first-of-type {padding-left: 0; margin-left: 0;}
 .header_renewal .header_top .inner .info_btn ul li:first-of-type::before {display: none;}
@@ -18,7 +18,7 @@
 .header_renewal .header_top .inner .user_btn ul li::before {content: ''; position: absolute; top: 0; left: 0; width: 1px; height: 10px; background-color: #dcdcdc;}
 .header_renewal .header_top .inner .user_btn ul li:first-of-type {padding-left: 0; margin-left: 0;}
 .header_renewal .header_top .inner .user_btn ul li:first-of-type::before {display: none;}
-.header_renewal .header_top .inner .user_btn ul li a {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #888;}
+.header_renewal .header_top .inner .user_btn ul li a {font-family: "NanumSquare", sans-serif; font-size: 14px; color: #888;}
 .header_renewal .header_logo {}
 .header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center; height: 88px;}
 .header_renewal .header_logo .inner .logo {display: flex; align-items: center;}
