@@ -78,7 +78,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 
 
 
-.onepick_promotion_area .onepick .onepick_content ul li .onepick_txt {position: relative; box-sizing: border-box; height: 120px; padding: 20px 20px; }
+.onepick_promotion_area .onepick .onepick_content ul li .onepick_txt {position: relative; box-sizing: border-box; height: 111px; padding: 13px 20px; }
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_name {letter-spacing: -0.4px; line-height: 26px; font-size: 16px; font-weight: bold;}
 .onepick_promotion_area .onepick .onepick_content ul li .onepick_txt .onepick_teacher {position: absolute; bottom: 20px; left: 20px; font-size: 14px;}
 .onepick_promotion_area .onepick .onepick_content ul li img {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
@@ -105,7 +105,7 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .mentoring_event_area .mentoring .mentoring_title .button_plus {position: absolute; top: 0; right: 0;}
 .mentoring_event_area .mentoring .mentoring_content ul {position: relative; right: 15px;}
 .mentoring_event_area .mentoring .mentoring_content ul li {box-sizing: border-box; width: 250px !important; margin: 0 15px; border: 1px solid #ddd; border-radius: 11px;}
-.mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt {position: relative; padding: 20px; height: 120px; box-sizing: border-box;}
+.mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt {position: relative; padding: 13px 20px; height: 111px; box-sizing: border-box;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_name {line-height: 26px; letter-spacing: -0.4px; font-size: 16px; font-weight: bold;}
 .mentoring_event_area .mentoring .mentoring_content ul li .mentoring_txt .mentoring_teacher {position: absolute; bottom: 20px; left: 20px; font-size: 14px;}
 .mentoring_event_area .mentoring .mentoring_content ul li img  {width: 100%; height: 187px; object-fit: cover; border-radius: 11px 11px 0 0;}
