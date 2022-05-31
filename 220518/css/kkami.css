@@ -73,7 +73,7 @@
 .header_renewal .header_search .inner .left {display: flex; justify-content: center; align-items: center;}
 .header_renewal .header_search .inner .left .search_area_k {margin-right: 20px;}
 .header_renewal .header_search .inner .left .search_area_k > div {position: relative;}
-.header_renewal .header_search .inner .left .search_area_k > div input[type="text"] {box-sizing: border-box; width: 300px; height: 48px; padding: 0 50px 0 30px; border: 2px solid #28426f; border-radius: 25px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; }
+.header_renewal .header_search .inner .left .search_area_k > div input[type="text"] {box-sizing: border-box; width: 300px; height: 48px; padding: 0 50px 0 30px; border: 2px solid #28426f; border-radius: 25px; font-family: "NanumSquare", sans-serif; font-size: 14px; }
 .header_renewal .header_search .inner .left .search_area_k > div input[type="text"]::placeholder {color: #888;}
 .header_renewal .header_search .inner .left .search_area_k > div input[type="text"]::-webkit-input-placeholder {color: #888;}
 .header_renewal .header_search .inner .left .search_area_k > div input[type="text"]:-ms-input-placeholder {color: #888;}
