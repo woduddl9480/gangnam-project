@@ -230,6 +230,13 @@ $(document).ready(function(){
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.event_current').text(nextSlide + 1);
     });
+    $('.notice_slide').slick({
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
 });
 
     
