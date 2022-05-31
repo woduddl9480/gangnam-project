@@ -264,3 +264,12 @@
 /* 퀵메뉴 */
 .chatbotbox {top: 288px; margin-right: -730px;}
 /* //퀵메뉴 */
+
+
+.pop0531 {position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .6);}
+.pop0531 .pop_cont {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.pop0531 .pop_cont .img_area {}
+.pop0531 .pop_cont .txt_area {position: relative; padding: 10px; background: #434343;}
+.pop0531 .pop_cont .txt_area input[type="checkbox"] {display: inline-block; width: 15px; height: 15px; margin: 0 2px 0 0; vertical-align: middle;}
+.pop0531 .pop_cont .txt_area label {display: inline-block; vertical-align: middle; color: #fff; font-size: 13px;}
+.pop0531 .pop_cont .txt_area button {color: #fff; font-size: 13px; display: inline-block; vertical-align: middle; margin-left: 3px;}

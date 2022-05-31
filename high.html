@@ -661,7 +661,53 @@ var schoolType = '/High';
 								</ul>
 							</li>
 							<li>
-								<span><a href="">마이페이지</a></span>
+								<span><a href="/NGLMS/High/MyPage/Main.do">마이페이지</a></span>
+								<ul class="depth02">
+									<li>
+										<div class="inner">
+											<div class="left">
+												<dl>
+													<dt>마이페이지</dt>
+													<dd>
+														유명강사진과 함께하는<br>
+														강남인강이<br>
+														여러분의 학습을 도와드립니다.
+													</dd>
+												</dl>
+											</div>
+											<div class="right">	
+												<div class="depth03_area">
+													<ul>
+														<li>
+															<div class="box_info">나의 학습</div>
+															<ul class="depth03">
+																<li><a href="">나의 학습</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">나의 게시판</div>
+															<ul class="depth03">
+																<li><a href="">나의 게시판</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">결제정보</div>
+															<ul class="depth03">
+																<li><a href="">결제정보</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="box_info">회원정보</div>
+															<ul class="depth03">
+																<li><a href="">회원정보</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</nav>
@@ -2134,17 +2180,17 @@ var schoolType = '/High';
 	
 
 
-
-
-
-
-
-
-
-
-
-
-	
+	<!-- 팝업 -->
+	<div class="pop0531">
+		<div class="pop_cont">			
+			<div class="img_area"><a href="/NGLMS/High/Community/Event.do?pageIndex=1&amp;type=view&amp;seq=3955&amp;post_yn=G&amp;search_key=02" target="_blank"><img src="/220518/images/award.jpg" alt=""></a></div>
+			<div class="txt_area">
+				<input type="checkbox" id="ggg">
+				<label for="ggg"> 하루동안 보이지 않기</label>
+				<button type="button">X</button>
+			</div>
+		</div>
+	</div>	
 	<form id="listGang" name="listGang" action="/NGLMS/High/UserMain.do" method="post">
 	    <input type="hidden" name="type" id="inputid1_type" />
 	    <input type="hidden" name="gang_seq" id="gang_seq"  />
@@ -2566,8 +2612,42 @@ if ($.cookie('mainTopBanner')) {
   gtag('js', new Date());
 
   gtag('config', 'UA-72115146-15');
-</script>
 
+  var App = new Object();
+	App.TopPop = function () {
+		var self;
+		return {
+			init: function () {
+				self = this;
+	
+				// popup close
+				$('.pop0531 button').on('click', function() {
+					if($('#ggg').is(':checked')) {
+						self.setCookie('todayCookie', 'done', 1);
+					}
+					$('.pop0531').hide();
+				});
+	
+				// Do not open today.
+				self.getCookie();
+			},
+			setCookie: function(name, value, expiredays) {
+				var todayDate = new Date();
+				todayDate.setDate(todayDate.getDate() + expiredays);
+				document.cookie = name + '=' + escape(value) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+			},
+			getCookie: function() {
+				var cookiedata = document.cookie;
+				if (cookiedata.indexOf('todayCookie=done') < 0 ){
+					$('.pop0531').show();
+				} else {
+					$('.pop0531').hide();
+				}
+			}
+		}
+	}();
+	App.TopPop.init();
+</script>
 
 </body>
 </html>
