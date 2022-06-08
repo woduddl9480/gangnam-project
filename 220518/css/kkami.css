@@ -101,7 +101,7 @@
 .header_renewal .header_search .inner .right .link_area_k ul li a {display: flex; justify-content: center; align-items: center; width: 94px; height: 32px; background-color: #333; border-radius: 18px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #fff;}
 
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li.active > .depth02 {display: block; min-height: 275px; box-shadow: 0px 4px 10px 0px #e1e1e2;}
-.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 {display: none; position: absolute; top: calc(100% + 1px); left: 0; z-index: 20; width: 100%; background-color: #fff;}
+.header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 {display: none; position: absolute; top: calc(100% + 1px); left: 0; z-index: 30; width: 100%; background-color: #fff;}
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li {display: flex; min-height: 275px; background: url(/220518/images/header_bg.png) repeat center;}
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner {display: flex; padding: 40px 0 10px;}
 .header_renewal .header_gnb .inner .gnb_area nav .depth01 > li > .depth02 > li .inner > div {flex-shrink: 0;}

@@ -15,6 +15,13 @@ $(document).ready(function(){
     $('.banner_play_stop button').on('click', function(){
         $(this).removeClass('active').siblings().addClass('active');
     });
+
+    var len = $('.best_review_area .tab_btn_area .tab_btn_ul > li').length;
+    var ran = Math.floor(Math.random() * len);
+    $('.best_review_area .tab_btn_area .tab_btn_ul > li').eq(ran).addClass('active').siblings().removeClass('active');
+    $('.tab_item_area > ul > li').eq(ran).addClass('active').siblings().removeClass('active');
+
+
     $('.tab_btn_area .tab_btn_ul > li').on('click', function(){
         var layer = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
@@ -67,6 +74,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
         // vertical: true,
         prevArrow: $('.korean_prev'), 
         nextArrow: $('.korean_next'),
@@ -83,6 +91,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
         // vertical: true,
         prevArrow: $('.english_prev'), 
         nextArrow: $('.english_next'),
@@ -99,6 +108,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
         // vertical: true,
         prevArrow: $('.math_prev'), 
         nextArrow: $('.math_next'),
@@ -115,6 +125,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
         // vertical: true,
         prevArrow: $('.society_prev'), 
         nextArrow: $('.society_next'),
@@ -131,6 +142,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        autoplay: true,
         // vertical: true,
         prevArrow: $('.science_prev'), 
         nextArrow: $('.science_next'),

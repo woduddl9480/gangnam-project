@@ -50,6 +50,8 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -71,6 +73,8 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -92,6 +96,8 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -113,11 +119,19 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.society_best_current').text(nextSlide + 1);
     });
+
+    var len = $('.best_review_area .tab_btn_area .tab_btn_ul > li').length;
+    var ran = Math.floor(Math.random() * len);
+    $('.best_review_area .tab_btn_area .tab_btn_ul > li').eq(ran).addClass('active').siblings().removeClass('active');
+    $('.tab_item_area > ul > li').eq(ran).addClass('active').siblings().removeClass('active');
+
     $('.tab_btn_area .tab_btn_ul > li').on('click', function(){
         var layer = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
@@ -134,6 +148,8 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -155,7 +171,10 @@ $(document).ready(function(){
     .slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: false,        
+        autoplay: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -177,6 +196,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -191,6 +212,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -205,6 +228,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -219,6 +244,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -233,6 +260,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -249,6 +278,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         // centerMode: true,
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
