@@ -224,15 +224,15 @@
 .publisher_textbook_area .inner > div.famous_publisher .top {display: flex; justify-content: space-between; align-items: center; padding: 30px 30px 0;}
 .publisher_textbook_area .inner > div.famous_publisher .top .left {display: flex; align-items: center;}
 .publisher_textbook_area .inner > div.famous_publisher .top .left .main_tit {margin-right: 10px;}
-.publisher_textbook_area .inner > div.famous_publisher .list_item {margin-top: 30px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item {margin-top: 35px;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul {margin: 0 10px;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li {text-align: center;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li a {display: inline-block;}
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area {}
-.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area img {display: inline-block;}
-.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area {margin-top: 10px; }
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .img_area img {display: inline-block; width: 136px; height: 181px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area {margin-top: 18px; }
 .publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .company {display: inline-block; height: 26px; line-height: 26px; padding: 0 10px; border: 1px solid #28426f; border-radius: 13px; font-weight: 700; font-size: 14px; color: #28426f; letter-spacing: -0.4px;}
-.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .book {height: 52px; line-height: 26px; margin-top: 10px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
+.publisher_textbook_area .inner > div.famous_publisher .list_item ul li .txt_area .book {height: 52px; line-height: 26px; margin-top: 7px; font-weight: 700; font-size: 16px; color: #333; letter-spacing: -0.4px;}
 /* //유명출판사별 강의 */
 
 
