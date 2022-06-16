@@ -14,6 +14,18 @@ $(document).ready(function(){
     $('.header_gnb .depth01 > li').on('click', function(){
         $(this).toggleClass('active').siblings().removeClass('active');
     });
+
+
+    $('.header_sub .hamburger button').on('click', function(){
+        $('.header_sub .header_gnb').addClass('active');
+    });
+    $('.header_sub .txt_info button').on('click', function(){
+        $('.header_sub .header_gnb').removeClass('active');
+    });
+    
+
+
+
     $('.main_banner_slide').on('init', function(event, slick) {
         $('.main_banner_counter').append('<span class="main_banner_current"></span><span class="main_banner_slash">/</span><span class="main_banner_total"></span>');
         $('.main_banner_current').text(slick.currentSlide + 1);

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- iPhone icon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/htmlRes/images/mobile/icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/htmlRes/images/mobile/icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/htmlRes/images/mobile/icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/htmlRes/images/mobile/icon144x144.png" />
+<!-- android icon -->
+<link rel="shortcut icon" href="/htmlRes/images/mobile/icon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<title>강남구청 인터넷수능방송</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+
+<!-- eGovFrame Common import -->    
+<link rel="shortcut icon" href="/220518/images/favicon.ico">
+<link rel="stylesheet" href="/htmlRes/css/mobile/common.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/jquery-ui.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick-theme.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/mediaq.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/layout.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub_middle.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/all.min.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="/htmlRes/js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.history.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/begin_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.touchslider.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/slick.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/player/starplayer_appweb.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/lecture/lecture_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/popup.js"></script>
+<script type="text/javascript" src="/htmlRes/js/upload.js"></script>
+<script type="text/javascript" src="/htmlRes/js/calendar.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/bbs/bbs_script.js"></script>
+
+
+
+<!-- 220518추가 -->
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/common.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/kkami.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/pjy.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<script type="text/javascript" src="/mobile/220518/js/kkami.js"></script>
+<!-- //220518추가 -->
+
+
+
+<script type="text/javascript">
+	//주소창제어
+	//if (document.URL.indexOf("#")<=0) { 
+	//  window.addEventListener('load', function(){ 
+	//    setTimeout(scrollTo, 0, 0, 1); 
+	//  }, false); 
+	//} 
+	
+	// 접속 체크
+	chkUserConnectIn();
+	
+	function chkUserConnectIn() {		
+		
+		if (getCookie("userConnect") != "Y") {
+		   document.cookie = "userConnect=Y; path=/;";
+		   var params = "os_div="+getUserAgentInfo(navigator.userAgent, "os_div")+"&browser="+getUserAgentInfo(navigator.userAgent, "browser")+"&inflow_url="+document.referrer;  
+		   var postURL = "../insertStudConnectInfo.do";	
+		 
+		   getJson(postURL,params);		   
+		}
+	}
+	function getJson(postURL,params)  {
+		
+		var script = document.createElement('script');	
+		script.setAttribute('src', postURL+"?"+params);
+		document.getElementsByTagName("head")[0].appendChild(script);
+		
+	}
+</script>
+</head>
+<body>
+<div class="wrap high">	
+
+	<style>
+		html, body {width: auto !important; margin: auto !important; background-color: #fff !important;}
+        .wrap {min-height: 200vh;}
+        .m_inner {position: relative; max-width: 360px; width: 100%; margin:0 auto;}
+				
+
+		/* 모바잂푸터 */
+
+		/* 고객만족센터 */
+		.footer_sub .footer_tel {padding: 15px 0; background-color: #f1f6ff; font-family: "NanumSquare", sans-serif; text-align: center;}
+		.footer_sub .footer_tel .tel_txt {display: inline-block; position: relative; padding-right: 68px; text-align: left;}
+		.footer_sub .footer_tel .tel_txt::after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 50px; height: 47px; background: url(/mobile/220518/images/tel_icon.png); background-size: 100%;}
+		.footer_sub .footer_tel .tel_txt .service_name {font-family: "NanumSquare", sans-serif; font-size: 14px; color: #333; font-weight: 800; margin-bottom: 5px;}
+		.footer_sub .footer_tel .tel_txt .service_number {font-family: "NanumSquare", sans-serif; font-size: 25px; font-weight: 800; color: #28426f;}
+		.footer_sub .footer_tel .tel_txt .service_time {font-family: "NanumSquare", sans-serif; font-size: 12px; color: #333; font-weight: 400; margin-top: 2px;}
+
+		/* sns */
+		.footer_sub .footer_snslist {padding: 15px 0; background: #272a2e;}
+		.footer_sub .footer_snslist ul {text-align: center}
+		.footer_sub .footer_snslist ul li {display: inline-block;}
+		.footer_sub .footer_snslist ul li a img{vertical-align: middle;}
+		.footer_sub .footer_snslist ul li:nth-child(1) a img{width: 20.5px;}
+		.footer_sub .footer_snslist ul li:nth-child(2) a img{width: 11px;}
+		.footer_sub .footer_snslist ul li:nth-child(3) a img{width: 21px;}
+		.footer_sub .footer_snslist ul li:nth-child(4) a img{width: 24px;}
+		.footer_sub .footer_snslist ul li:nth-child(5) a img{width: 15.5px;}
+
+		/* 이용약관 */
+		.footer_sub .footer_information {background: #272a2e; margin: -1px 0;}
+		.footer_sub .footer_information ul {text-align: center}
+		.footer_sub .footer_information ul li {display: inline-block;}
+		.footer_sub .footer_information ul li a{font-size:12px; color: #aaa; padding-left: 15px; margin-right: 15px; font-family: "NanumSquare", sans-serif;}
+		.footer_sub .footer_information ul li:first-child a{padding-left: 0;}
+		.footer_sub .footer_information ul li:last-child a{margin-right: 0}
+		.footer_sub .footer_information ul li a:hover {text-decoration: none!important;}
+		.footer_sub .footer_information ul li:after {content:"";width: 1px; height: 10px; display: inline-block; background-color:#aaa;position: relative; right: -3px; top: 2px;}
+		.footer_sub .footer_information ul li:last-child:after {display: none}
+
+		/* 주소 및 기타정보 */
+		.footer_sub .footer_add {background:#272a2e; padding: 7px 0 25px;}
+		.footer_sub .footer_add p, .footer_sub .footer_add span {font-size: 11px; font-family: "NanumSquare", sans-serif; color: #888 !important; text-align: center; line-height: 20px;}
+		.footer_sub .footer_add p.footer_logo{margin-top: 10px;}
+		.footer_sub .footer_add .color_grey {color: #888!important;}
+	</style>
+
+	<!-- 푸터 -->
+    <footer class="footer_sub">
+		<div class="footer_tel mt30">
+			<div class="tel_txt">
+				<p class="service_name">고객만족센터</p>
+				<a href="tel:1577-9100" class="service_number">1577-9100</a>
+				<p class="service_time">(365일 10:00~24:00)</p>
+			</div>
+		</div>
+		<div class="footer_snslist">
+			<ul>
+				<li class="mr48"><a href="https://blog.naver.com/gangnamingang" target="_blank"><img src="/mobile/220518/images/blog.png" alt="네이버블로그" /></a></li>
+				<li class="mr48"><a href="https://ko-kr.facebook.com/gangnamingang1/" target="_blank"><img src="/mobile/220518/images/facebook.png" alt="페이스북" /></a></li>
+				<li class="mr48"><a href="https://www.instagram.com/edu.ingang.go.kr/" target="_blank"><img src="/mobile/220518/images/instargram.png" alt="인스타그램" /></a></li>
+				<li class="mr48"><a href="https://www.youtube.com/channel/UCokSmriiLfoQDw0XPvMz04Q/featured" target="_blank"><img src="/mobile/220518/images/youtube.png" alt="유튜브" /></a></li>
+				<li><a href="https://tv.naver.com/gangnamingang" target="_blank"><img src="/mobile/220518/images/player.png" alt="네이버TV" /></a></li>
+			</ul>
+		</div>
+		<div class="footer_information">
+			<ul>
+				<li><a href="/NGLMS/Mobile/High/Introduce/Intro.do">강남구청 인터넷 수능방송 소개</a></li>
+				<li><a href="/NGLMS/Mobile/CustomerPolicy.do">이용약관</a></li>
+				<li><a href="/NGLMS/Mobile/PrivacyPolicy.do">개인정보처리방침</a></li>
+			</ul>
+		</div>
+		<div class="footer_add">
+			<p>(우) 06263. 서울시 강남구 도곡로 18길 7 (구 : 도곡동 548번지)</p>
+			<p>대표자 : 강남구청장 | 사업자등록번호 : 120-83-00097</p>
+			<p>통신판매업 신고 : 제 2009-서울강남-01039호 | 개인정보관리책임(CPO) : 행정국장</p>
+			<p>COPYRIGHT(c) 2017 GANGNAM-GU OFFICE, ALL RIGHT RESERVED</p>
+		</div>
+    </footer>
+</div>
+
+
+
+	<!-- footer end -->

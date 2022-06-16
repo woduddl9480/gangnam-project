@@ -17,7 +17,7 @@ a:hover, a:active, a:focus {text-decoration: none;}
 html, body {width: 720px !important; margin: 0 auto !important; background-color: #fff !important;}
 .wrap {overflow: hidden; position: relative;}
 
-.inner {position: relative; width: 660px; margin:0 auto;}
+.inner {position: relative; width: 660px; margin: 0 auto;}
 
 
 /* 폰트 */

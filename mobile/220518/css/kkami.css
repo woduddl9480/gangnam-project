@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* header */
-.header_renewal {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; background-color: #fff;}
+.header_renewal {position: relative; z-index: 100; background-color: #fff;}
 .header_renewal .header_logo {display: flex; align-items: center; height: 122px; border-bottom: 2px solid #f0f0f0;}
 .header_renewal .header_logo .inner {display: flex; justify-content: space-between; align-items: center;}
 .header_renewal .header_logo .inner .hamburger {}

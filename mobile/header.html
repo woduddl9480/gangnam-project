@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- iPhone icon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/htmlRes/images/mobile/icon57x57.png" />
+<!-- iPad icon -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/htmlRes/images/mobile/icon72x72.png" />
+<!-- iPhone icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/htmlRes/images/mobile/icon114x114.png" />
+<!-- iPad icon(Retina) -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/htmlRes/images/mobile/icon144x144.png" />
+<!-- android icon -->
+<link rel="shortcut icon" href="/htmlRes/images/mobile/icon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<title>강남구청 인터넷수능방송</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+
+<!-- eGovFrame Common import -->    
+<link rel="shortcut icon" href="/220518/images/favicon.ico">
+<link rel="stylesheet" href="/htmlRes/css/mobile/common.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/jquery-ui.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/slick-theme.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/mediaq.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/layout.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/sub_middle.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/htmlRes/css/mobile/all.min.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="/htmlRes/js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.history.js"></script>
+
+<script type="text/javascript" src="/htmlRes/js/mobile/begin_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/jquery.touchslider.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/slick.min.js"></script>
+<script type="text/javascript" src="/htmlRes/js/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/common.js"></script>
+<script type="text/javascript" src="/htmlRes/js/player/starplayer_appweb.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/lecture/lecture_script.js"></script>
+<script type="text/javascript" src="/htmlRes/js/popup.js"></script>
+<script type="text/javascript" src="/htmlRes/js/upload.js"></script>
+<script type="text/javascript" src="/htmlRes/js/calendar.js"></script>
+<script type="text/javascript" src="/htmlRes/js/mobile/bbs/bbs_script.js"></script>
+
+
+
+<!-- 220518추가 -->
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/common.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/kkami.css">
+<link type="text/css" rel="stylesheet" href="/mobile/220518/css/pjy.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<script type="text/javascript" src="/mobile/220518/js/kkami.js"></script>
+<!-- //220518추가 -->
+
+
+
+<script type="text/javascript">
+	//주소창제어
+	//if (document.URL.indexOf("#")<=0) { 
+	//  window.addEventListener('load', function(){ 
+	//    setTimeout(scrollTo, 0, 0, 1); 
+	//  }, false); 
+	//} 
+	
+	// 접속 체크
+	chkUserConnectIn();
+	
+	function chkUserConnectIn() {		
+		
+		if (getCookie("userConnect") != "Y") {
+		   document.cookie = "userConnect=Y; path=/;";
+		   var params = "os_div="+getUserAgentInfo(navigator.userAgent, "os_div")+"&browser="+getUserAgentInfo(navigator.userAgent, "browser")+"&inflow_url="+document.referrer;  
+		   var postURL = "../insertStudConnectInfo.do";	
+		 
+		   getJson(postURL,params);		   
+		}
+	}
+	function getJson(postURL,params)  {
+		
+		var script = document.createElement('script');	
+		script.setAttribute('src', postURL+"?"+params);
+		document.getElementsByTagName("head")[0].appendChild(script);
+		
+	}
+</script>
+</head>
+<body>
+<div class="wrap high">	
+	<!-- 헤더 -->
+
+    <style>
+        html, body {width: auto !important; margin: auto !important; background-color: #fff !important;}
+        .wrap {min-height: 200vh;}
+        .m_inner {position: relative; max-width: 360px; width: 100%; margin:0 auto;}
+
+
+        /* header */
+        .header_sub {position: relative; z-index: 100; background-color: #fff;}
+        .header_sub .header_logo {display: flex; align-items: center; height: 61px; border-bottom: 1px solid #f0f0f0;}
+        .header_sub .header_logo .m_inner {display: flex; justify-content: space-between; align-items: center;}
+        .header_sub .header_logo .m_inner .hamburger {}
+        .header_sub .header_logo .m_inner .hamburger button {position: relative; width: 20px; height: 17px;}
+        .header_sub .header_logo .m_inner .hamburger button::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; background-color: #333;}
+        .header_sub .header_logo .m_inner .hamburger button span {position: absolute; top: 7.5px; left: 0; width: 100%; height: 2px; background-color: #333;}
+        .header_sub .header_logo .m_inner .hamburger button::after {content: ''; position: absolute; top: 15px; left: 0; width: 100%; height: 2px; background-color: #333;}
+        .header_sub .header_logo .m_inner .logo {display: flex; align-items: center;}
+        .header_sub .header_logo .m_inner .logo span {margin-right: 4px;}
+        .header_sub .header_logo .m_inner .logo span img {width: 23px;}
+        .header_sub .header_logo .m_inner .logo h1 img {width: 205px;}
+        .header_sub .header_logo .m_inner .change_link {}
+        .header_sub .header_logo .m_inner .change_link a {display: flex; justify-content: center; align-items: center; width: 50px; height: 37px; line-height: 14px; border-radius: 3px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 11px; color: #fff; text-align: center;}
+        .wrap.high .header_sub .header_logo .m_inner .change_link a {background-color: #17978b;}
+        .wrap.middle .header_sub .header_logo .m_inner .change_link a {background-color: #066fa7;}
+
+        .header_sub .header_select {border-bottom: 1px solid #f0f0f0;}
+        .header_sub .header_select .m_inner {display: flex; align-items: center; padding: 5px 0; font-size: 0;}
+        .header_sub .header_select .m_inner span {display: inline-block; position: relative;  width: 142.5px; height: 38px; margin-right: 16px;}
+        .header_sub .header_select .m_inner span::after {content: ''; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 0px; height: 0px; border-top: 20px solid #666666; border-left: 15px solid transparent; border-right: 15px solid transparent;}
+        .header_sub .header_select .m_inner span:nth-of-type(2)::after {border-top: 10px solid #37ABF0; border-left: 7.5px solid transparent; border-right: 7.5px solid transparent;}
+        .header_sub .header_select .m_inner span.home {width: 18px; height: auto;}
+        .header_sub .header_select .m_inner span.home::after {display: none;}
+        .header_sub .header_select .m_inner span:last-of-type {margin-right: 0;}
+        .header_sub .header_select .m_inner span select {width: 100%; height: 100%; padding: 0 30px 0 15px; border: none; border-radius: 5px; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #333;}
+
+
+        .header_sub .header_gnb {display: none; position: absolute; top: 0; left: 0; width: 100%; background-color: #fff;}
+        .header_sub .header_gnb.active {display: block;}
+        .header_sub .header_gnb.active::before {content: ''; position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; background: rgba(0, 0, 0, .5);}
+        .header_sub .header_gnb .top {height: 130px;}
+        .wrap.high .header_sub .header_gnb .top {background-color: #066fa7;}
+        .wrap.middle .header_sub .header_gnb .top {background-color: #17978b;}
+        .header_sub .header_gnb .top .txt_info {position: relative; padding: 20px 0 25px; text-align: center;}
+        .header_sub .header_gnb .top .txt_info button {position: absolute; top: 50%; left: 3px; transform: translateY(-50%);}
+        .header_sub .header_gnb .top .txt_info button img {width: 14px;}
+        .header_sub .header_gnb .top .txt_info span {font-weight: 700; font-size: 16px; color: #fff;}
+        .header_sub .header_gnb .top .link_area {display: flex; padding: 0 15px;}
+        .header_sub .header_gnb .top .link_area a {flex-grow: 1; display: flex; justify-content: center; align-items: center; height: 36px; margin-left: 20px; border-radius: 6px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 16px;}
+        .header_sub .header_gnb .top .link_area a:first-of-type {margin-left: 0;}
+        .header_sub .header_gnb .top .link_area .login {background-color: #fff; color: #066fa7;}
+        .header_sub .header_gnb .top .link_area .sign_up {border: 2px solid #fff; color: #fff;}
+
+        .header_sub .header_gnb .mid {}
+        .header_sub .header_gnb .mid .gnb {}
+        .header_sub .header_gnb .mid .gnb .depth01 {}
+        .header_sub .header_gnb .mid .gnb .depth01 > li {}
+        .header_sub .header_gnb .mid .gnb .depth01 > li > a {display: flex; align-items: center; height: 54.5px; padding: 0 30px; background: url(/mobile/220518/images/gnb_arrow.png) no-repeat right 40px center; background-size: 24px; border-bottom: 1px solid #f0f0f0; font-family: "NanumSquare", sans-serif; font-weight: 800; font-size: 16px; color: #333;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li .depth02 {display: none; padding: 5px 40px; background-color: #f8faff; border-bottom: 1px solid #f0f0f0;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li.active .depth02 {display: block;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li.active > a {background: url(/mobile/220518/images/gnb_arrow02.png) no-repeat right 40px center; background-size: 24px;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li .depth02 > li {position: relative; padding-left: 7.5px;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li .depth02 > li::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 3.5px; height: 3.5px; background-color: #333;}
+        .header_sub .header_gnb .mid .gnb .depth01 > li .depth02 > li > a {line-height: 37px; font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 13px; color: #333;}
+
+        .header_sub .header_gnb .btm {margin-top: 70px; background-color: #333;}
+        .header_sub .header_gnb .btm ul {display: flex; align-items: center; height: 50px; text-align: center;}
+        .header_sub .header_gnb .btm ul li {flex-grow: 1; position: relative;}
+        .header_sub .header_gnb .btm ul li::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1px; height: 12px; background-color: #fff;}
+        .header_sub .header_gnb .btm ul li:first-of-type::before {display: none}
+        .header_sub .header_gnb .btm ul li a {font-family: "NanumSquare", sans-serif; font-weight: 700; font-size: 14px; color: #fff;}
+    </style>
+    <header class="header_sub">
+        <div class="header_logo">
+			<div class="m_inner">
+				<div class="hamburger">
+					<button type="button">
+						<span></span>
+					</button>
+				</div>
+				<div class="logo">
+					<span>
+						<a href=""><img src="/mobile/220518/images/memewe.png" alt="MEMEWE GANGNAM"></a>
+					</span>
+					<h1>
+						<a href="/NGLMS/Mobile/High/UserMain.do"><img src="/mobile/220518/images/logo_high.png" alt="강남구청 인터넷수능방송 고등부"></a>
+					</h1>
+				</div>
+				<div class="change_link">
+					<a href="/NGLMS/Mobile/Middle/UserMain.do">중등부<br>바로가기</a>
+				</div>
+			</div>
+		</div>
+		<div class="header_select">
+			<div class="m_inner">
+				<span class="home">
+					<a href="/NGLMS/Mobile/High/UserMain.do"><img src="/mobile/220518/images/home.png" alt=""></a>
+				</span>
+				<span>
+					<select>
+						<option value="">선생님</option>
+					</select>
+				</span>
+			</div>
+		</div>		
+		<div class="header_gnb">
+			<div class="top middle">
+				<div class="m_inner">
+					<div class="txt_info">
+						<button type="button"><img src="/mobile/220518/images/arrow.png" alt="이전"></button>
+						<span>로그인을 해주세요.</span>
+					</div>
+					<div class="link_area">
+						<a href="" class="login">로그인</a>
+						<a href="" class="sign_up">회원가입</a>
+					</div>
+				</div>
+			</div>			
+			<div class="mid">
+				<nav class="gnb">
+					<ul class="depth01">
+						<li>
+							<a href="javascript:void(0);">고3/N수</a>
+							<ul class="depth02">
+								<li><a href="">고3/N수</a></li>
+								<li><a href="">영역별</a></li>
+								<li><a href="">학습단계별</a></li>
+								<li><a href="">프로모션</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">고2/고1</a>
+							<ul class="depth02">
+								<li><a href="">고2/고1</a></li>
+								<li><a href="">영역별</a></li>
+								<li><a href="">학습단계별</a></li>
+								<li><a href="">프로모션</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">선생님</a>
+							<ul class="depth02">
+								<li><a href="">국어영역</a></li>
+								<li><a href="">영어영역</a></li>
+								<li><a href="">수학영역</a></li>
+								<li><a href="">사회탐구영역</a></li>
+								<li><a href="">과학탐구영역</a></li>
+								<li><a href="">입시영역</a></li>
+								<li><a href="">베스트강좌</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">강남인강Pick</a>
+							<ul class="depth02">
+								<li><a href="">원픽</a></li>
+								<li><a href="">선생님 멘토링</a></li>
+								<li><a href="">장학생 멘토링</a></li>
+								<li><a href="">학부모 교실</a></li>
+								<li><a href="">장학생 합격수기</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/NGLMS/Mobile/High/Kmooc/kmoocCollegeInfo.do">대학맛보기</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">입시정보</a>
+							<ul class="depth02">
+								<li><a href="">강남인강 입시강좌</a></li>
+								<li><a href="">기출문제&해설강의</a></li>
+								<li><a href="">유웨이 대입정보</a></li>
+								<li><a href="">종로학원 대입정보</a></li>
+								<li><a href="">종로학원하늘교육 고입정보</a></li>
+								<li><a href="">강남인강 입시설명회</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">커뮤니티</a>
+							<ul class="depth02">
+								<li><a href="">선생님 이벤트</a></li>
+								<li><a href="">공지사항</a></li>
+								<li><a href="">이벤트/행사</a></li>
+								<li><a href="">설문조사</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="btm">
+				<ul>
+					<li><a href="/NGLMS/Mobile/High/Introduce/Intro.do">강남인강소개</a></li>
+					<li><a href="/NGLMS/Mobile/High/High3/PromotionView.do?seq=84899">커리큘럼</a></li>
+				</ul>
+			</div>
+		</div>
+    </header>
+	<!-- //헤더 -->
+</div>
