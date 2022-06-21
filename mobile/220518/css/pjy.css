@@ -75,8 +75,8 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .onepick_mentoring_area .onepick_mcontent ul .slick-list {padding-right: 313px;}
 .onepick_mentoring_area .onepick_mcontent ul li {margin: 0 15px; border: 1px solid #ddd; border-radius: 20px;}
 .onepick_mentoring_area .onepick_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
-.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
-.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; font-size: 24px;}
+.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_name  {height: 140px; padding: 20px 22px 0; font-size: 26px; font-weight: 700; line-height: 40px;}
+.onepick_mentoring_area .onepick_mcontent ul li .onepick_txt .onepick_teacher {padding: 0 20px 20px; margin-top: 20px; font-size: 24px;}
 
 /* 강남인강멘토링 */
 .onepick_mentoring_area .mentoring_tit {display: flex; justify-content: space-between; align-items: center; position: relative; padding-right: 65px; margin: 55px 0 40px;}
@@ -86,17 +86,19 @@ p, a, span, h1, h2, h3, h4, h5, h6, dd, dt, button {
 .onepick_mentoring_area .mentoring_mcontent ul .slick-list {padding-right: 313px;}
 .onepick_mentoring_area .mentoring_mcontent ul li {margin: 0 15px; border: 1px solid #ddd; border-radius: 22px;}
 .onepick_mentoring_area .mentoring_mcontent ul li img {width: 100%; height: 268px; object-fit: cover; border-radius: 11px 11px 0 0;}
-.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_name  {padding: 20px 22px; font-size: 26px; font-weight: 700; line-height: 40px;}
-.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_teacher {padding: 0 20px 20px; font-size: 24px;}
+.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_name  {height: 140px; padding: 20px 22px 0; font-size: 26px; font-weight: 700; line-height: 40px;}
+.onepick_mentoring_area .mentoring_mcontent ul li .mentoring_txt .mentoring_teacher {margin-top: 20px; padding: 0 20px 20px; font-size: 24px;}
 
 /* 추천 프로모션 강좌 */
 .promotion_area .promotion_slide {display: flex; margin-left: 15px;}
 .promotion_area .promotion_slide .slick-list {padding-right: 125px;}
-.promotion_area .promotion_slide li {margin: 0 15px;}
+.promotion_area .promotion_slide li {border: 1px solid #ddd; border-radius: 25px; overflow: hidden; margin: 0 15px;}
 
 /* 이벤트 */
-.event_area .event_slide {display: flex; margin-left: 15px;}
-.event_area .event_slide .slick-list {padding-right: 125px;}
-.event_area .event_slide li {margin: 0 15px;}
+.event_area .event_slide {display: flex; margin-left: 15px; justify-content: center;}
+/* .event_area .event_slide .slick-list {padding-right: 125px;} */
+.event_area .event_slide .slick-list img {width: auto;}
+.event_area .event_slide li {margin: 0 15px; text-align: center;}
+.event_area .event_slide li a {display: inline-block;}
 
 /* 공지사항 */
